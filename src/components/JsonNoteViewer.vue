@@ -10,7 +10,7 @@
         </div>
         <span 
           @click="emit('download-pdf')" 
-          class="text-orange-600 hover:text-orange-700 underline cursor-pointer text-sm font-medium"
+          class="text-red-600 hover:text-red-700 underline cursor-pointer text-sm font-medium"
         >
           Download PDF
         </span>
@@ -27,7 +27,7 @@
             <div v-if="section.type === 'heading'" 
                  class="mt-6 lg:mt-8 first:mt-0">
               <h2 v-if="section.level === 2" 
-                  class="text-lg lg:text-xl font-semibold text-gray-900 border-b-2 border-orange-200 pb-2 mb-3 lg:mb-4">
+                  class="text-lg lg:text-xl font-semibold text-gray-900 border-b-2 border-green-200 pb-2 mb-3 lg:mb-4">
                 {{ section.text }}
               </h2>
             </div>
@@ -37,7 +37,7 @@
                  class="mt-4 lg:mt-6">
               <h3 class="text-base lg:text-lg font-medium text-gray-800 mb-2 lg:mb-3">
                 {{ section.text }}
-                <span v-if="section.reference" class="block sm:inline text-sm text-orange-600 font-normal sm:ml-2 mt-1 sm:mt-0">
+                <span v-if="section.reference" class="block sm:inline text-sm text-red-600 font-normal sm:ml-2 mt-1 sm:mt-0">
                   ({{ section.reference.surah }} {{ section.reference.chapter }}:{{ section.reference.verse }})
                 </span>
               </h3>
@@ -53,11 +53,11 @@
             <div v-else-if="section.type === 'definition'" 
                  class="ml-2 lg:ml-4 mb-2 lg:mb-3">
               <div class="flex items-start space-x-2">
-                <span class="text-orange-600 font-medium text-sm lg:text-base">•</span>
+                <span class="text-green-600 font-medium text-sm lg:text-base">•</span>
                 <div class="text-sm lg:text-base">
                   <span class="font-semibold text-gray-900">{{ section.term }}</span>: 
                   <span class="text-gray-700">{{ section.definition }}</span>
-                  <span v-if="section.reference" class="block sm:inline text-xs lg:text-sm text-orange-600 sm:ml-2 mt-1 sm:mt-0">
+                  <span v-if="section.reference" class="block sm:inline text-xs lg:text-sm text-red-600 sm:ml-2 mt-1 sm:mt-0">
                     ({{ section.reference.surah }} {{ section.reference.chapter }}:{{ section.reference.verse }})
                   </span>
                 </div>
@@ -66,14 +66,28 @@
 
             <!-- Verse Group -->
             <div v-else-if="section.type === 'verse-group'" 
-                 class="my-3 lg:my-4 p-3 lg:p-4 bg-orange-50/50 rounded-lg border border-orange-500">
+                 class="my-3 lg:my-4 p-3 lg:p-4 bg-red-50/30 rounded-lg border border-red-400">
               <div v-for="(verse, vIndex) in section.verses" :key="vIndex" 
                    class="mb-3 lg:mb-4 last:mb-0">
+                <!-- Divider between verses (not for first verse) -->
+                <div v-if="vIndex > 0" class="my-3 lg:my-4">
+                  <hr class="border-red-200">
+                </div>
                 <!-- Arabic Text -->
                 <div class="text-right mb-2">
-                  <p class="text-lg lg:text-2xl xl:text-3xl leading-relaxed text-gray-900 font-arabic" 
+                  <!-- Loading state for Arabic -->
+                  <div v-if="getVerseState(verse).loadingArabic" class="text-center">
+                    <p class="text-xs lg:text-sm text-gray-500">Memuat teks Arab...</p>
+                  </div>
+                  <!-- Error state for Arabic -->
+                  <div v-else-if="getVerseState(verse).arabicError" class="text-center">
+                    <p class="text-xs lg:text-sm text-red-500">Gagal memuat teks Arab</p>
+                  </div>
+                  <!-- Arabic text -->
+                  <p v-else-if="getVerseState(verse).arabic" 
+                     class="text-lg lg:text-2xl xl:text-3xl leading-relaxed text-gray-900 font-arabic" 
                      style="font-family: 'Amiri', 'Traditional Arabic', serif; direction: rtl; line-height: 1.8;">
-                    {{ verse.arabic }}
+                    {{ getVerseState(verse).arabic }}
                   </p>
                 </div>
                 
@@ -96,8 +110,8 @@
               </div>
               
               <!-- Combined reference at the bottom -->
-              <div class="text-left mt-2 lg:mt-3 pt-2 border-t border-orange-200">
-                <p class="text-xs lg:text-sm text-orange-600 font-medium">
+              <div class="text-left mt-2 lg:mt-3 pt-2 border-t border-red-200">
+                <p class="text-xs lg:text-sm text-red-600 font-medium">
                   QS. {{ section.verses[0].surah }} {{ section.verses[0].chapter }}:{{ getVerseRange(section.verses) }}
                 </p>
               </div>
@@ -106,7 +120,7 @@
               <div class="text-right mt-2">
                 <button 
                   @click="toggleTranslations(section.verses)"
-                  class="text-xs lg:text-sm text-orange-600 hover:text-orange-700 underline px-2 py-1 rounded"
+                  class="text-xs lg:text-sm text-green-600 hover:text-green-700 underline px-2 py-1 rounded"
                   :disabled="section.verses.some((v: any) => getVerseState(v).loadingTranslation)"
                 >
                   <span class="hidden sm:inline">{{ getVerseState(section.verses[0]).indonesian ? 'Sembunyikan Terjemahan' : 'Tampilkan Terjemahan' }}</span>
@@ -117,12 +131,22 @@
 
             <!-- Single Verse -->
             <div v-else-if="section.type === 'verse'" 
-                 class="my-3 lg:my-4 p-3 lg:p-4 bg-orange-50/50 rounded-lg border border-orange-500">
+                 class="my-3 lg:my-4 p-3 lg:p-4 bg-red-50/30 rounded-lg border border-red-400">
               <!-- Arabic Text -->
               <div class="text-right mb-2">
-                <p class="text-lg lg:text-2xl xl:text-3xl leading-relaxed text-gray-900 font-arabic" 
+                <!-- Loading state for Arabic -->
+                <div v-if="getVerseState(section).loadingArabic" class="text-center">
+                  <p class="text-xs lg:text-sm text-gray-500">Memuat teks Arab...</p>
+                </div>
+                <!-- Error state for Arabic -->
+                <div v-else-if="getVerseState(section).arabicError" class="text-center">
+                  <p class="text-xs lg:text-sm text-red-500">Gagal memuat teks Arab</p>
+                </div>
+                <!-- Arabic text -->
+                <p v-else-if="getVerseState(section).arabic" 
+                   class="text-lg lg:text-2xl xl:text-3xl leading-relaxed text-gray-900 font-arabic" 
                    style="font-family: 'Amiri', 'Traditional Arabic', serif; direction: rtl; line-height: 1.8;">
-                  {{ section.arabic }}
+                  {{ getVerseState(section).arabic }}
                 </p>
               </div>
               
@@ -144,14 +168,14 @@
               </div>
               
               <div class="flex flex-col sm:flex-row sm:justify-between sm:items-center space-y-2 sm:space-y-0">
-                <p class="text-xs lg:text-sm text-orange-600 font-medium">
+                <p class="text-xs lg:text-sm text-red-600 font-medium">
                   QS. {{ section.surah }} {{ section.chapter }}:{{ section.verse }}
                 </p>
                 
                 <!-- Translation toggle -->
                 <button 
                   @click="toggleTranslation(section)"
-                  class="text-xs lg:text-sm text-orange-600 hover:text-orange-700 underline px-2 py-1 rounded self-start sm:self-auto"
+                  class="text-xs lg:text-sm text-green-600 hover:text-green-700 underline px-2 py-1 rounded self-start sm:self-auto"
                   :disabled="getVerseState(section).loadingTranslation"
                 >
                   <span class="hidden sm:inline">{{ getVerseState(section).indonesian ? 'Sembunyikan Terjemahan' : 'Tampilkan Terjemahan' }}</span>
@@ -164,7 +188,7 @@
             <div v-else-if="section.type === 'concept'" 
                  class="ml-3 lg:ml-6 mb-2">
               <span class="text-gray-700 text-sm lg:text-base">{{ section.title }}</span>
-              <span v-if="section.reference" class="block sm:inline text-xs lg:text-sm text-orange-600 sm:ml-2 mt-1 sm:mt-0">
+              <span v-if="section.reference" class="block sm:inline text-xs lg:text-sm text-red-600 sm:ml-2 mt-1 sm:mt-0">
                 ({{ section.reference.surah }} {{ section.reference.chapter }}:{{ section.reference.verse }})
               </span>
             </div>
@@ -175,7 +199,7 @@
               <ol class="space-y-2">
                 <li v-for="(item, idx) in section.items" :key="idx" 
                     class="flex items-start space-x-2 lg:space-x-3">
-                  <span class="flex-shrink-0 w-5 h-5 lg:w-6 lg:h-6 rounded-full bg-orange-100 text-orange-700 text-xs lg:text-sm font-medium flex items-center justify-center mt-0.5">
+                  <span class="flex-shrink-0 w-5 h-5 lg:w-6 lg:h-6 rounded-full bg-green-100 text-green-700 text-xs lg:text-sm font-medium flex items-center justify-center mt-0.5">
                     {{ idx + 1 }}
                   </span>
                   <span class="text-gray-700 text-sm lg:text-base">{{ item }}</span>
@@ -249,8 +273,11 @@ const props = defineProps<Props>()
 
 // Reactive state
 interface VerseState {
+    arabic: string | null
     indonesian: string | null
+    loadingArabic: boolean
     loadingTranslation: boolean
+    arabicError: boolean
     translationError: boolean
 }
 
@@ -341,12 +368,53 @@ function getVerseState(verse: any): VerseState {
     const key = getVerseKey(verse)
     if (!verseStates[key]) {
         verseStates[key] = {
+            arabic: null,
             indonesian: null,
+            loadingArabic: false,
             loadingTranslation: false,
+            arabicError: false,
             translationError: false
         }
+        // Automatically fetch Arabic text when state is created
+        fetchArabicText(verse)
     }
     return verseStates[key]
+}
+
+async function fetchArabicText(verse: any) {
+    const state = getVerseState(verse)
+    
+    // If Arabic is already loaded or loading, do nothing
+    if (state.arabic || state.loadingArabic) {
+        return
+    }
+
+    // Start loading Arabic text
+    state.loadingArabic = true
+    state.arabicError = false
+
+    try {
+        const verseNumbers = parseVerseRange(verse.verse)
+        
+        if (verseNumbers.length === 1) {
+            // Single verse
+            const apiData = await fetchVerse(verse.chapter, verseNumbers[0])
+            state.arabic = apiData.arabic
+        } else {
+            // Multiple verses - fetch all and join Arabic text
+            const promises = verseNumbers.map((vNum: number) => 
+                fetchVerse(verse.chapter, vNum)
+            )
+            const results = await Promise.all(promises)
+            const combinedArabic = results.map(r => r.arabic).join(' ۝ ')
+            state.arabic = combinedArabic
+        }
+    } catch (error) {
+        console.error('Error fetching Arabic text:', error)
+        state.arabicError = true
+    } finally {
+        state.loadingArabic = false
+    }
 }
 
 async function toggleTranslation(verse: any) {

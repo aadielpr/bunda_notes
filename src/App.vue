@@ -60,11 +60,11 @@
           <!-- Search -->
           <div class="mb-6">
             <input 
-              v-model="searchQuery" 
-              type="text" 
-              placeholder="Cari catatan..." 
-              class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-orange-500 focus:border-orange-500 text-sm bg-gray-50/50 transition-all duration-200"
-            >
+            v-model="searchQuery" 
+            type="text" 
+            placeholder="Cari catatan..." 
+            class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-green-600 focus:border-green-600 text-sm bg-gray-50/50 transition-all duration-200"
+          >
           </div>
           
           <!-- Notes List -->
@@ -74,16 +74,16 @@
                 v-for="note in filteredNotes" 
                 :key="note.id"
                 @click="selectNoteAndCloseSidebar(note.id)"
-                class="cursor-pointer transition-all duration-200 group rounded-md p-3 hover:bg-orange-50"
-                :class="selectedNoteId === note.id ? 'bg-orange-100 border-l-4 border-orange-500' : ''"
+                class="cursor-pointer transition-all duration-200 group rounded-md p-3 hover:bg-green-50"
+                :class="selectedNoteId === note.id ? 'bg-red-50 border-l-4 border-red-600' : ''"
               >
                 <div class="flex items-start space-x-3">
-                  <div class="flex-shrink-0 w-2 h-2 rounded-full bg-orange-400 mt-2"></div>
+                  <div class="flex-shrink-0 w-2 h-2 rounded-full bg-green-600 mt-2"></div>
                   <div class="flex-1 min-w-0">
                     <h3 
                       class="font-medium text-sm leading-relaxed truncate"
                       :class="selectedNoteId === note.id 
-                        ? 'text-orange-700' 
+                        ? 'text-red-700' 
                         : 'text-gray-700 group-hover:text-gray-900'"
                     >
                       {{ note.title }}
@@ -121,7 +121,7 @@
             <p class="text-gray-500 text-sm mt-1">untuk mulai membaca</p>
             <button 
               @click="toggleMobileSidebar"
-              class="lg:hidden mt-4 px-4 py-2 bg-orange-500 text-white rounded-md text-sm font-medium hover:bg-orange-600 transition-colors"
+              class="lg:hidden mt-4 px-4 py-2 bg-green-600 text-white rounded-md text-sm font-medium hover:bg-green-700 transition-colors"
             >
               Buka Menu
             </button>
@@ -137,6 +137,7 @@ import { ref, computed, onMounted, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { getAllNotes, getNoteById } from './data/notes'
 import JsonNoteViewer from './components/JsonNoteViewer.vue'
+import { fetchVerse, parseVerseRange } from './services/quranApi'
 
 // Type definitions
 interface NoteContent {
@@ -146,11 +147,21 @@ interface NoteContent {
         text?: string
         term?: string
         definition?: string
-        arabic?: string
         surah?: string
         chapter?: number
         verse?: string | number
         items?: string[]
+        reference?: {
+            surah: string
+            chapter: number
+            verse: string | number
+        }
+        title?: string
+        verses?: Array<{
+            surah: string
+            chapter: number
+            verse: string | number
+        }>
     }>
 }
 
@@ -229,7 +240,7 @@ async function loadNoteContent(id: string) {
         }
     }
 }
-function downloadPDF() {
+async function downloadPDF() {
     if (!selectedNote.value || !noteContent.value) return
     
     // Enhanced PDF generation - match website styling
@@ -282,6 +293,69 @@ function downloadPDF() {
         }
     }
     
+    // Fetch Arabic text for all verses first
+    const versePromises: Promise<any>[] = []
+    const verseMap = new Map<string, string>()
+    
+    for (const section of groupedSections) {
+        if (section.type === 'verse') {
+            const key = `${section.chapter}:${section.verse}`
+            if (!verseMap.has(key)) {
+                versePromises.push(
+                    (async () => {
+                        try {
+                            const verseNumbers = parseVerseRange(section.verse)
+                            if (verseNumbers.length === 1) {
+                                const apiData = await fetchVerse(section.chapter, verseNumbers[0])
+                                verseMap.set(key, apiData.arabic)
+                            } else {
+                                const promises = verseNumbers.map((vNum: number) => 
+                                    fetchVerse(section.chapter, vNum)
+                                )
+                                const results = await Promise.all(promises)
+                                const combinedArabic = results.map(r => r.arabic).join(' ۝ ')
+                                verseMap.set(key, combinedArabic)
+                            }
+                        } catch (error) {
+                            console.error(`Error fetching Arabic for ${key}:`, error)
+                            verseMap.set(key, 'خطأ في تحميل النص العربي')
+                        }
+                    })()
+                )
+            }
+        } else if (section.type === 'verse-group') {
+            for (const verse of section.verses) {
+                const key = `${verse.chapter}:${verse.verse}`
+                if (!verseMap.has(key)) {
+                    versePromises.push(
+                        (async () => {
+                            try {
+                                const verseNumbers = parseVerseRange(verse.verse)
+                                if (verseNumbers.length === 1) {
+                                    const apiData = await fetchVerse(verse.chapter, verseNumbers[0])
+                                    verseMap.set(key, apiData.arabic)
+                                } else {
+                                    const promises = verseNumbers.map((vNum: number) => 
+                                        fetchVerse(verse.chapter, vNum)
+                                    )
+                                    const results = await Promise.all(promises)
+                                    const combinedArabic = results.map(r => r.arabic).join(' ۝ ')
+                                    verseMap.set(key, combinedArabic)
+                                }
+                            } catch (error) {
+                                console.error(`Error fetching Arabic for ${key}:`, error)
+                                verseMap.set(key, 'خطأ في تحميل النص العربي')
+                            }
+                        })()
+                    )
+                }
+            }
+        }
+    }
+    
+    // Wait for all Arabic text to be fetched
+    await Promise.all(versePromises)
+    
     // Generate HTML for each section
     groupedSections.forEach(section => {
         switch (section.type) {
@@ -318,10 +392,12 @@ function downloadPDF() {
                 
             case 'verse-group':
                 htmlContent += `<div class="verse-card">`
-                section.verses.forEach((verse: any) => {
+                section.verses.forEach((verse: any, vIndex: number) => {
+                    const arabicText = verseMap.get(`${verse.chapter}:${verse.verse}`) || 'النص العربي غير متوفر'
                     htmlContent += `
                         <div class="verse-item">
-                            <div class="arabic">${verse.arabic}</div>
+                            ${vIndex > 0 ? '<hr class="verse-divider">' : ''}
+                            <div class="arabic">${arabicText}</div>
                         </div>
                     `
                 })
@@ -337,10 +413,11 @@ function downloadPDF() {
                 break
                 
             case 'verse':
+                const arabicText = verseMap.get(`${section.chapter}:${section.verse}`) || 'النص العربي غير متوفر'
                 htmlContent += `
                     <div class="verse-card">
                         <div class="verse-item">
-                            <div class="arabic">${section.arabic}</div>
+                            <div class="arabic">${arabicText}</div>
                         </div>
                         <div class="verse-reference">
                             QS. ${section.surah} ${section.chapter}:${section.verse}
@@ -418,7 +495,7 @@ function downloadPDF() {
                     .header {
                         text-align: center;
                         margin-bottom: 40px;
-                        border-bottom: 2px solid #fed7aa;
+                        border-bottom: 2px solid #dc2626;
                         padding-bottom: 20px;
                     }
                     
@@ -430,9 +507,9 @@ function downloadPDF() {
                     }
                     
                     .category {
-                        color: #6b7280;
+                        color: #dc2626;
                         font-size: 11pt;
-                        font-weight: 400;
+                        font-weight: 500;
                     }
                     
                     .content {
@@ -443,7 +520,7 @@ function downloadPDF() {
                         font-size: 16pt;
                         font-weight: 600;
                         color: #1f2937;
-                        border-bottom: 2px solid #fed7aa;
+                        border-bottom: 2px solid #16a34a;
                         padding-bottom: 8px;
                         margin: 32px 0 16px 0;
                     }
@@ -469,7 +546,7 @@ function downloadPDF() {
                     }
                     
                     .definition-bullet {
-                        color: #ea580c;
+                        color: #16a34a;
                         font-weight: 500;
                         margin-top: 2px;
                     }
@@ -484,8 +561,8 @@ function downloadPDF() {
                     }
                     
                     .verse-card {
-                        background: #fef7ed;
-                        border: 1px solid #ea580c;
+                        background: #fef2f2;
+                        border: 1px solid #dc2626;
                         border-radius: 8px;
                         padding: 16px;
                         margin: 16px 0;
@@ -498,6 +575,12 @@ function downloadPDF() {
                     
                     .verse-item:last-of-type {
                         margin-bottom: 0;
+                    }
+                    
+                    .verse-divider {
+                        border: none;
+                        border-top: 1px solid #fecaca;
+                        margin: 12px 0;
                     }
                     
                     .arabic { 
@@ -513,9 +596,9 @@ function downloadPDF() {
                     .verse-reference {
                         text-align: left;
                         font-weight: 600;
-                        color: #ea580c;
+                        color: #dc2626;
                         font-size: 10pt;
-                        border-top: 1px solid #fed7aa;
+                        border-top: 1px solid #fecaca;
                         padding-top: 8px;
                         margin-top: 12px;
                     }
@@ -543,8 +626,8 @@ function downloadPDF() {
                         width: 24px;
                         height: 24px;
                         border-radius: 50%;
-                        background: #fed7aa;
-                        color: #ea580c;
+                        background: #dcfce7;
+                        color: #16a34a;
                         font-size: 10pt;
                         font-weight: 500;
                         display: flex;
@@ -581,7 +664,7 @@ function downloadPDF() {
                     }
                     
                     .reference-inline {
-                        color: #ea580c;
+                        color: #dc2626;
                         font-size: 10pt;
                         font-weight: 400;
                         margin-left: 8px;
