@@ -157,6 +157,7 @@ interface NoteContent {
         }
         title?: string
         verses?: Array<{
+            arabic: string
             surah: string
             chapter: number
             verse: string | number
