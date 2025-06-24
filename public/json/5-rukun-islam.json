@@ -1,0 +1,123 @@
+{
+  "title": "5 Rukun Islam",
+  "category": "Akidah & Ibadah",
+  "sections": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Lima Rukun Islam"
+    },
+    {
+      "type": "paragraph",
+      "text": "Rukun Islam adalah lima fondasi utama dalam agama Islam yang wajib dilaksanakan oleh setiap Muslim. Kelima rukun ini merupakan pilar-pilar yang menopang keislaman seseorang."
+    },
+    {
+      "type": "verse",
+      "arabic": "وَمَا أُمِرُوا إِلَّا لِيَعْبُدُوا اللَّهَ مُخْلِصِينَ لَهُ الدِّينَ حُنَفَاءَ وَيُقِيمُوا الصَّلَاةَ وَيُؤْتُوا الزَّكَاةَ ۚ وَذَٰلِكَ دِينُ الْقَيِّمَةِ",
+      "surah": "Al-Bayyinah",
+      "chapter": 98,
+      "verse": 5
+    },
+    {
+      "type": "subheading",
+      "text": "1. Syahadat (Kesaksian)"
+    },
+    {
+      "type": "definition",
+      "term": "Syahadat Tauhid",
+      "definition": "Bersaksi bahwa tidak ada Tuhan selain Allah"
+    },
+    {
+      "type": "definition",
+      "term": "Syahadat Rasul",
+      "definition": "Bersaksi bahwa Muhammad adalah utusan Allah"
+    },
+    {
+      "type": "paragraph",
+      "text": "Syahadat adalah pintu masuk Islam dan merupakan rukun yang paling fundamental. Dengan mengucapkan syahadat, seseorang menyatakan keimanannya kepada Allah dan Rasul-Nya."
+    },
+    {
+      "type": "subheading",
+      "text": "2. Shalat (Mendirikan Shalat)"
+    },
+    {
+      "type": "verse",
+      "arabic": "وَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ وَارْكَعُوا مَعَ الرَّاكِعِينَ",
+      "surah": "Al-Baqarah",
+      "chapter": 2,
+      "verse": 43
+    },
+    {
+      "type": "list",
+      "items": [
+        "Shalat Subuh - 2 rakaat",
+        "Shalat Dzuhur - 4 rakaat",
+        "Shalat Ashar - 4 rakaat",
+        "Shalat Maghrib - 3 rakaat",
+        "Shalat Isya - 4 rakaat"
+      ]
+    },
+    {
+      "type": "subheading",
+      "text": "3. Zakat (Menunaikan Zakat)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Zakat adalah kewajiban mengeluarkan sebagian harta untuk diberikan kepada yang berhak menerimanya. Zakat mensucikan harta dan jiwa serta sebagai bentuk kepedulian sosial."
+    },
+    {
+      "type": "concept",
+      "title": "Nisab zakat emas: 20 dinar atau setara 85 gram emas"
+    },
+    {
+      "type": "concept",
+      "title": "Nisab zakat perak: 200 dirham atau setara 595 gram perak"
+    },
+    {
+      "type": "subheading",
+      "text": "4. Puasa Ramadhan"
+    },
+    {
+      "type": "verse",
+      "arabic": "يَا أَيُّهَا الَّذِينَ آمَنُوا كُتِبَ عَلَيْكُمُ الصِّيَامُ كَمَا كُتِبَ عَلَى الَّذِينَ مِنْ قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُونَ",
+      "surah": "Al-Baqarah",
+      "chapter": 2,
+      "verse": 183
+    },
+    {
+      "type": "paragraph",
+      "text": "Puasa di bulan Ramadhan adalah menahan diri dari makan, minum, dan hal-hal yang membatalkan puasa dari terbit fajar hingga terbenam matahari selama sebulan penuh."
+    },
+    {
+      "type": "subheading",
+      "text": "5. Haji (Menunaikan Ibadah Haji)"
+    },
+    {
+      "type": "verse",
+      "arabic": "وَلِلَّهِ عَلَى النَّاسِ حِجُّ الْبَيْتِ مَنِ اسْتَطَاعَ إِلَيْهِ سَبِيلًا ۚ وَمَنْ كَفَرَ فَإِنَّ اللَّهَ غَنِيٌّ عَنِ الْعَالَمِينَ",
+      "surah": "Ali Imran",
+      "chapter": 3,
+      "verse": 97
+    },
+    {
+      "type": "paragraph",
+      "text": "Haji adalah ibadah yang dilaksanakan di Makkah pada bulan Dzulhijjah. Haji wajib dilaksanakan sekali seumur hidup bagi yang mampu secara fisik dan finansial."
+    },
+    {
+      "type": "list",
+      "items": [
+        "Ihram - berniat dan berpakaian ihram",
+        "Wukuf di Arafah - rukun haji yang paling utama",
+        "Mabit di Muzdalifah - bermalam di Muzdalifah",
+        "Melontar jumrah - melempar batu di Mina",
+        "Thawaf Ifadhah - thawaf wajib",
+        "Sa'i - berlari antara Shafa dan Marwah",
+        "Tahallul - mencukur atau memotong rambut"
+      ]
+    },
+    {
+      "type": "note",
+      "text": "Kelima rukun Islam ini saling berkaitan dan membentuk kesatuan ibadah yang sempurna dalam kehidupan seorang Muslim."
+    }
+  ]
+} 

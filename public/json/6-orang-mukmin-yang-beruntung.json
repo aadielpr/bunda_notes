@@ -1,0 +1,576 @@
+{
+  "id": "6-orang-mukmin-yang-beruntung",
+  "title": "6 Orang Mukmin yang Beruntung",
+  "sections": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "1. Ibadah Badaniyah",
+      "id": "ibadah-badaniyah"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ibadah fisik/jasmani"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2. Ibadah Maliyah (Harta)",
+      "id": "ibadah-maliyah"
+    },
+    {
+      "type": "definition",
+      "term": "Zakat",
+      "definition": "Mengeluarkan atau membersihkan kotoran"
+    },
+    {
+      "type": "definition",
+      "term": "Infaq",
+      "definition": "Terowongan, nafaqah",
+      "reference": {
+        "surah": "At-Taghabun",
+        "chapter": 64,
+        "verse": "9-10"
+      }
+    },
+    {
+      "type": "verse",
+      "arabic": "يَوْمَ يَجْمَعُكُمْ لِيَوْمِ الْجَمْعِ ذَٰلِكَ يَوْمُ التَّغَابُنِ",
+      "surah": "At-Taghabun",
+      "chapter": 64,
+      "verse": "9"
+    },
+    {
+      "type": "verse",
+      "arabic": "وَمَن يُؤْمِن بِاللَّهِ وَيَعْمَلْ صَالِحًا يُكَفِّرْ عَنْهُ سَيِّئَاتِهِ وَيُدْخِلْهُ جَنَّاتٍ تَجْرِي مِن تَحْتِهَا الْأَنْهَارُ",
+      "surah": "At-Taghabun",
+      "chapter": 64,
+      "verse": "10"
+    },
+    {
+      "type": "definition",
+      "term": "Sedekah",
+      "definition": "Memberi pada sasaran yang benar"
+    },
+    {
+      "type": "subheading",
+      "text": "Al Ihsan - Cara yang Benar",
+      "reference": {
+        "surah": "Al-Insan",
+        "chapter": 76,
+        "verse": "8-9"
+      }
+    },
+    {
+      "type": "verse",
+      "arabic": "وَيُطْعِمُونَ الطَّعَامَ عَلَىٰ حُبِّهِ مِسْكِينًا وَيَتِيمًا وَأَسِيرًا",
+      "surah": "Al-Insan",
+      "chapter": 76,
+      "verse": "8"
+    },
+    {
+      "type": "verse",
+      "arabic": "إِنَّمَا نُطْعِمُكُمْ لِوَجْهِ اللَّهِ لَا نُرِيدُ مِنكُمْ جَزَاءً وَلَا شُكُورًا",
+      "surah": "Al-Insan",
+      "chapter": 76,
+      "verse": "9"
+    },
+    {
+      "type": "concept",
+      "title": "Sumber yang Benar",
+      "reference": {
+        "surah": "Al-Baqarah",
+        "chapter": 2,
+        "verse": "264"
+      }
+    },
+    {
+      "type": "verse",
+      "arabic": "يَا أَيُّهَا الَّذِينَ آمَنُوا لَا تُبْطِلُوا صَدَقَاتِكُم بِالْمَنِّ وَالْأَذَىٰ",
+      "surah": "Al-Baqarah",
+      "chapter": 2,
+      "verse": "264"
+    },
+    {
+      "type": "concept",
+      "title": "Motif yang Benar",
+      "reference": {
+        "surah": "Al-Baqarah",
+        "chapter": 2,
+        "verse": "267"
+      }
+    },
+    {
+      "type": "verse",
+      "arabic": "يَا أَيُّهَا الَّذِينَ آمَنُوا أَنفِقُوا مِن طَيِّبَاتِ مَا كَسَبْتُمْ",
+      "surah": "Al-Baqarah",
+      "chapter": 2,
+      "verse": "267"
+    },
+    {
+      "type": "concept",
+      "title": "Tujuan yang Benar",
+      "reference": {
+        "surah": "Al-An'am",
+        "chapter": 6,
+        "verse": "162"
+      }
+    },
+    {
+      "type": "verse",
+      "arabic": "قُلْ إِنَّ صَلَاتِي وَنُسُكِي وَمَحْيَايَ وَمَمَاتِي لِلَّهِ رَبِّ الْعَالَمِينَ",
+      "surah": "Al-An'am",
+      "chapter": 6,
+      "verse": "162"
+    },
+    {
+      "type": "definition",
+      "term": "Waqaf",
+      "definition": "Berhenti (wakaf)"
+    },
+    {
+      "type": "definition",
+      "term": "Wasiat",
+      "definition": "Pesan penting yang disampaikan waktu hidup dan berlaku setelah mati"
+    },
+    {
+      "type": "definition",
+      "term": "Hibah",
+      "definition": "Pemberian karena bangga pada seseorang"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "3. Ibadah Qolbiyah (Kalbu/Hati)",
+      "id": "ibadah-qolbiyah"
+    },
+    {
+      "type": "definition",
+      "term": "Qona'ah",
+      "definition": "Cukup",
+      "reference": {
+        "surah": "At-Takathur",
+        "chapter": 102,
+        "verse": "1-2"
+      }
+    },
+    {
+      "type": "verse",
+      "arabic": "أَلْهَاكُمُ التَّكَاثُرُ",
+      "surah": "At-Takathur",
+      "chapter": 102,
+      "verse": "1"
+    },
+    {
+      "type": "verse",
+      "arabic": "حَتَّىٰ زُرْتُمُ الْمَقَابِرَ",
+      "surah": "At-Takathur",
+      "chapter": 102,
+      "verse": "2"
+    },
+    {
+      "type": "definition",
+      "term": "Syukur",
+      "reference": {
+        "surah": "Ibrahim",
+        "chapter": 14,
+        "verse": "7"
+      }
+    },
+    {
+      "type": "verse",
+      "arabic": "وَإِذْ تَأَذَّنَ رَبُّكُمْ لَئِن شَكَرْتُمْ لَأَزِيدَنَّكُمْ",
+      "surah": "Ibrahim",
+      "chapter": 14,
+      "verse": "7"
+    },
+    {
+      "type": "definition",
+      "term": "Sabar",
+      "definition": "Menahan gejolak, menahan hawa nafsu"
+    },
+    {
+      "type": "subheading",
+      "text": "Sabar Terbagi 3:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Sabar taat kepada Allah",
+        "Sabar meninggalkan maksiat", 
+        "Sabar ketika ditimpa musibah"
+      ]
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "2. Zakat",
+      "id": "zakat"
+    },
+    {
+      "type": "subheading",
+      "text": "Dalil Zakat"
+    },
+    {
+      "type": "concept",
+      "title": "Dalil zakat",
+      "reference": {
+        "surah": "Al-Baqarah",
+        "chapter": 2,
+        "verse": "43"
+      }
+    },
+    {
+      "type": "verse",
+      "arabic": "وَأَقِيمُوا الصَّلَاةَ وَآتُوا الزَّكَاةَ وَارْكَعُوا مَعَ الرَّاكِعِينَ",
+      "surah": "Al-Baqarah",
+      "chapter": 2,
+      "verse": "43"
+    },
+    {
+      "type": "concept",
+      "title": "Siapa yang menerima zakat",
+      "reference": {
+        "surah": "At-Taubah",
+        "chapter": 9,
+        "verse": "60"
+      }
+    },
+    {
+      "type": "verse",
+      "arabic": "إِنَّمَا الصَّدَقَاتُ لِلْفُقَرَاءِ وَالْمَسَاكِينِ وَالْعَامِلِينَ عَلَيْهَا وَالْمُؤَلَّفَةِ قُلُوبُهُمْ وَفِي الرِّقَابِ وَالْغَارِمِينَ وَفِي سَبِيلِ اللَّهِ وَابْنِ السَّبِيلِ",
+      "surah": "At-Taubah",
+      "chapter": 9,
+      "verse": "60"
+    },
+    {
+      "type": "concept",
+      "title": "Tentang zakat",
+      "reference": {
+        "surah": "At-Taubah",
+        "chapter": 9,
+        "verse": "103"
+      }
+    },
+    {
+      "type": "verse",
+      "arabic": "خُذْ مِنْ أَمْوَالِهِمْ صَدَقَةً تُطَهِّرُهُمْ وَتُزَكِّيهِم بِهَا",
+      "surah": "At-Taubah",
+      "chapter": 9,
+      "verse": "103"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "3. Orang yang Menjaga Kehormatan",
+      "id": "kehormatan"
+    },
+    {
+      "type": "subheading",
+      "text": "Surah Al-Ankabut 29:45"
+    },
+    {
+      "type": "definition",
+      "term": "Fahsya",
+      "definition": "Sexual/sembunyi-sembunyi"
+    },
+    {
+      "type": "definition",
+      "term": "Mungkar",
+      "definition": "Non-seksual/terang-terangan"
+    },
+    {
+      "type": "verse",
+      "arabic": "إِنَّ الصَّلَاةَ تَنْهَىٰ عَنِ الْفَحْشَاءِ وَالْمُنكَرِ",
+      "surah": "Al-Ankabut",
+      "chapter": 29,
+      "verse": "45"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "4. Hikmah Tatasriq",
+      "id": "hikmah-tatasriq"
+    },
+    {
+      "type": "subheading",
+      "text": "Hikmah",
+      "reference": {
+        "surah": "Al-Isra",
+        "chapter": 17,
+        "verse": "32"
+      }
+    },
+    {
+      "type": "concept",
+      "title": "Mencegah campur nasab (akad baru nikah)"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Bin atau binti ke ayah",
+        "Tidak dapat waris",
+        "Harus pakai wali nikah"
+      ]
+    },
+    {
+      "type": "list",
+      "items": [
+        "Mencegah aborsi",
+        "Mencegah anak terlantar",
+        "Mencegah penyakit menular seksual",
+        "Mencegah pembunuhan",
+        "Menjaga kehormatan"
+      ]
+    },
+    {
+      "type": "verse",
+      "arabic": "وَلَا تَقْرَبُوا الزِّنَىٰ إِنَّهُ كَانَ فَاحِشَةً وَسَاءَ سَبِيلًا",
+      "surah": "Al-Isra",
+      "chapter": 17,
+      "verse": "32"
+    },
+    {
+      "type": "subheading",
+      "text": "Tahayul vs Khurofat"
+    },
+    {
+      "type": "definition",
+      "term": "Tahayul",
+      "definition": "Pikiran"
+    },
+    {
+      "type": "definition",
+      "term": "Khurofat",
+      "definition": "Perbuatan"
+    },
+    {
+      "type": "subheading",
+      "text": "Ayat-ayat Penting"
+    },
+    {
+      "type": "concept",
+      "title": "Keresahan",
+      "reference": {
+        "surah": "Ali 'Imran",
+        "chapter": 3,
+        "verse": "151"
+      }
+    },
+    {
+      "type": "verse",
+      "arabic": "سَنُلْقِي فِي قُلُوبِ الَّذِينَ كَفَرُوا الرُّعْبَ",
+      "surah": "Ali 'Imran",
+      "chapter": 3,
+      "verse": "151"
+    },
+    {
+      "type": "concept",
+      "title": "Ruh",
+      "reference": {
+        "surah": "Al-Baqarah",
+        "chapter": 2,
+        "verse": "28"
+      }
+    },
+    {
+      "type": "verse",
+      "arabic": "كَيْفَ تَكْفُرُونَ بِاللَّهِ وَكُنتُمْ أَمْوَاتًا فَأَحْيَاكُمْ",
+      "surah": "Al-Baqarah",
+      "chapter": 2,
+      "verse": "28"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "5. Orang yang Sanggup Menjaga Amanah",
+      "id": "amanah"
+    },
+    {
+      "type": "subheading",
+      "text": "Amanah: Percaya/Tenang"
+    },
+    {
+      "type": "paragraph",
+      "text": "Amanah ada 2:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Wadi'ah/Titipan",
+        "Umur"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Umur",
+      "reference": {
+        "surah": "Al-A'raf",
+        "chapter": 7,
+        "verse": "34"
+      }
+    },
+    {
+      "type": "verse",
+      "arabic": "وَلِكُلِّ أُمَّةٍ أَجَلٌ فَإِذَا جَاءَ أَجَلُهُمْ لَا يَسْتَأْخِرُونَ سَاعَةً وَلَا يَسْتَقْدِمُونَ",
+      "surah": "Al-A'raf",
+      "chapter": 7,
+      "verse": "34"
+    },
+    {
+      "type": "subheading",
+      "text": "Istilah Kematian"
+    },
+    {
+      "type": "definition",
+      "term": "Ajal",
+      "definition": "Berakhir"
+    },
+    {
+      "type": "definition",
+      "term": "Wafat",
+      "definition": "Sempurna"
+    },
+    {
+      "type": "definition",
+      "term": "Maut",
+      "definition": "Cabut",
+      "reference": {
+        "surah": "Ali 'Imran",
+        "chapter": 3,
+        "verse": "185"
+      }
+    },
+    {
+      "type": "verse",
+      "arabic": "كُلُّ نَفْسٍ ذَائِقَةُ الْمَوْتِ",
+      "surah": "Ali 'Imran",
+      "chapter": 3,
+      "verse": "185"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "6. Rahasia Ilahi",
+      "id": "rahasia-ilahi",
+      "reference": {
+        "surah": "Luqman",
+        "chapter": 31,
+        "verse": "34"
+      }
+    },
+    {
+      "type": "subheading",
+      "text": "5 Rahasia yang Hanya Allah Tahu:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Kiamat",
+        "Hujan",
+        "Rahim ibu: Takdir tentang anak laki-laki atau perempuan",
+        "Apa yang terjadi esok hari",
+        "Di mana dan kapan orang meninggal dunia"
+      ]
+    },
+    {
+      "type": "verse",
+      "arabic": "إِنَّ اللَّهَ عِندَهُ عِلْمُ السَّاعَةِ وَيُنَزِّلُ الْغَيْثَ وَيَعْلَمُ مَا فِي الْأَرْحَامِ",
+      "surah": "Luqman",
+      "chapter": 31,
+      "verse": "34"
+    },
+    {
+      "type": "subheading",
+      "text": "Takdir"
+    },
+    {
+      "type": "paragraph",
+      "text": "Takdir ada 2:"
+    },
+    {
+      "type": "definition",
+      "term": "Mubrom/Statis",
+      "definition": "tidak bisa berubah: Gender, umur, suku"
+    },
+    {
+      "type": "definition",
+      "term": "Muallaq/Dinamis",
+      "definition": "bisa berubah: Pilihan",
+      "reference": {
+        "surah": "Ash-Shams",
+        "chapter": 91,
+        "verse": "8-10"
+      }
+    },
+    {
+      "type": "verse",
+      "arabic": "فَأَلْهَمَهَا فُجُورَهَا وَتَقْوَاهَا",
+      "surah": "Ash-Shams",
+      "chapter": 91,
+      "verse": "8"
+    },
+    {
+      "type": "verse",
+      "arabic": "قَدْ أَفْلَحَ مَن زَكَّاهَا",
+      "surah": "Ash-Shams",
+      "chapter": 91,
+      "verse": "9"
+    },
+    {
+      "type": "verse",
+      "arabic": "وَقَدْ خَابَ مَن دَسَّاهَا",
+      "surah": "Ash-Shams",
+      "chapter": 91,
+      "verse": "10"
+    },
+    {
+      "type": "concept",
+      "title": "Contoh: Rezeki",
+      "reference": {
+        "surah": "Saba",
+        "chapter": 34,
+        "verse": "39"
+      }
+    },
+    {
+      "type": "list",
+      "items": [
+        "Didapatkan",
+        "Dimanfaatkan"
+      ]
+    },
+    {
+      "type": "verse",
+      "arabic": "قُلْ إِنَّ رَبِّي يَبْسُطُ الرِّزْقَ لِمَن يَشَاءُ وَيَقْدِرُ",
+      "surah": "Saba",
+      "chapter": 34,
+      "verse": "39"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "7. Panjang Umur",
+      "id": "panjang-umur"
+    },
+    {
+      "type": "subheading",
+      "text": "Makna Panjang Umur:"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Kualitas hidup",
+        "Nikmat umur (tidak menyusahkan orang lain)",
+        "Mati dengan baik: Doa, didoakan orang, dan diingat yang baik-baik"
+      ]
+    },
+    {
+      "type": "divider"
+    },
+    {
+      "type": "note",
+      "text": "Catatan: Dari zaman nabi ke nabi, aqidah sama tapi syariat berbeda."
+    }
+  ]
+} 

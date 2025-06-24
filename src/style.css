@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-white text-primary-900 font-sans;
+    font-family: 'Poppins', system-ui, sans-serif;
+  }
+}
+
+@layer components {
+  .arabic-text {
+    @apply text-right text-lg bg-primary-50 p-4 my-3 border-r-2 border-accent-500 font-serif;
+    direction: rtl;
+    font-family: 'Amiri', 'Traditional Arabic', serif;
+  }
+  
+  .btn-primary {
+    @apply bg-orange-500 hover:bg-orange-600 text-white px-4 py-2 rounded-lg transition-colors duration-200 font-medium;
+  }
+  
+  .btn-secondary {
+    @apply bg-primary-200 hover:bg-primary-300 text-primary-800 px-4 py-2 rounded-md transition-colors duration-200 font-medium;
+  }
+  
+  .card {
+    @apply bg-white border border-primary-200 rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+} 
