@@ -255,7 +255,6 @@ interface Props {
             verse?: string | number
             items?: string[]
             verses?: Array<{
-                arabic: string
                 surah: string
                 chapter: number
                 verse: string | number
