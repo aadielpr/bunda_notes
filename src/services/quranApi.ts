@@ -1,4 +1,4 @@
-const QURAN_API_BASE = 'http://api.alquran.cloud/v1'
+const QURAN_API_BASE = 'https://api.alquran.cloud/v1'
 
 // Edition identifiers
 const ARABIC_EDITION = 'quran-uthmani'
