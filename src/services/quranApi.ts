@@ -84,14 +84,15 @@ export async function fetchVerse(chapter: number, verse: number): Promise<VerseD
 
 
 /**
- * Parse verse range (e.g., "8-10" or "9") and return array of verse numbers
+ * Parse verse range (e.g., "8-10" or "9" or 9) and return array of verse numbers
  */
-export function parseVerseRange(verseRange: string): number[] {
-    if (verseRange.includes('-')) {
-        const [start, end] = verseRange.split('-').map((num: string) => parseInt(num.trim()))
+export function parseVerseRange(verseRange: string | number): number[] {
+    const verseStr = String(verseRange)
+    if (verseStr.includes('-')) {
+        const [start, end] = verseStr.split('-').map((num: string) => parseInt(num.trim()))
         return Array.from({ length: end - start + 1 }, (_, i) => start + i)
     }
-    return [parseInt(verseRange)]
+    return [parseInt(verseStr)]
 }
 
  
