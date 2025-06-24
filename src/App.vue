@@ -75,18 +75,28 @@
                 :key="note.id"
                 @click="selectNoteAndCloseSidebar(note.id)"
                 class="cursor-pointer transition-all duration-200 group rounded-md p-3 hover:bg-green-50"
-                :class="selectedNoteId === note.id ? 'bg-red-50 border-l-4 border-red-600' : ''"
+                :class="[
+                  selectedNoteId === note.id ? 'bg-red-50 border-l-4 border-red-600' : '',
+                  isLoadingNote ? 'pointer-events-none opacity-60' : ''
+                ]"
               >
                 <div class="flex items-start space-x-3">
-                  <div class="flex-shrink-0 w-2 h-2 rounded-full bg-green-600 mt-2"></div>
+                  <div class="flex-shrink-0 w-2 h-2 rounded-full mt-2"
+                       :class="selectedNoteId === note.id && isLoadingNote 
+                         ? 'bg-gray-400' 
+                         : 'bg-green-600'">
+                  </div>
                   <div class="flex-1 min-w-0">
                     <h3 
-                      class="font-medium text-sm leading-relaxed truncate"
+                      class="font-medium text-sm leading-relaxed truncate flex items-center"
                       :class="selectedNoteId === note.id 
                         ? 'text-red-700' 
                         : 'text-gray-700 group-hover:text-gray-900'"
                     >
                       {{ note.title }}
+                      <div v-if="isLoadingNote && selectedNoteId === note.id" 
+                           class="ml-2 inline-block animate-spin rounded-full h-3 w-3 border border-red-600 border-t-transparent">
+                      </div>
                     </h3>
                     <p class="text-xs text-gray-500 mt-1">{{ note.category }}</p>
                   </div>
@@ -103,13 +113,25 @@
 
       <!-- Main Content -->
       <main class="flex-1 bg-white overflow-y-auto" :class="showMobileSidebar ? 'lg:h-screen' : 'h-full lg:h-screen'">
-        <div v-if="selectedNote" class="h-full">
+        <!-- Loading state -->
+        <div v-if="isLoadingNote" class="h-full flex items-center justify-center p-4">
+          <div class="text-center">
+            <div class="inline-block animate-spin rounded-full h-8 w-8 lg:h-12 lg:w-12 border-b-2 border-green-600 mb-4"></div>
+            <h2 class="text-lg lg:text-xl font-medium text-gray-700 mb-2">Memuat Catatan</h2>
+            <p class="text-gray-500 text-sm lg:text-base">Mohon tunggu sebentar...</p>
+          </div>
+        </div>
+        
+        <!-- Content loaded -->
+        <div v-else-if="selectedNote && noteContent" class="h-full">
           <JsonNoteViewer 
             :note="selectedNote" 
             :content="noteContent"
             @download-pdf="downloadPDF"
           />
         </div>
+        
+        <!-- Empty state when no note is selected -->
         <div v-else class="h-full flex items-center justify-center p-4">
           <div class="text-center">
             <div class="text-gray-400 mb-4">
@@ -175,6 +197,7 @@ const searchQuery = ref('')
 const selectedNoteId = ref<string | null>(null)
 const noteContent = ref<NoteContent | null>(null)
 const showMobileSidebar = ref(false)
+const isLoadingNote = ref(false)
 
 // Computed properties
 const filteredNotes = computed(() => {
@@ -212,6 +235,7 @@ function closeMobileSidebar() {
 }
 
 async function loadNoteContent(id: string) {
+    isLoadingNote.value = true
     try {
         const note = getNoteById(id)
         if (note && note.jsonFile) {
@@ -238,6 +262,8 @@ async function loadNoteContent(id: string) {
                 }
             ]
         }
+    } finally {
+        isLoadingNote.value = false
     }
 }
 function downloadPDF() {
