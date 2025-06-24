@@ -137,7 +137,6 @@ import { ref, computed, onMounted, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { getAllNotes, getNoteById } from './data/notes'
 import JsonNoteViewer from './components/JsonNoteViewer.vue'
-import { fetchVerse, parseVerseRange } from './services/quranApi'
 
 // Type definitions
 interface NoteContent {
@@ -240,7 +239,7 @@ async function loadNoteContent(id: string) {
         }
     }
 }
-async function downloadPDF() {
+function downloadPDF() {
     if (!selectedNote.value || !noteContent.value) return
     
     // Enhanced PDF generation - match website styling
@@ -293,68 +292,7 @@ async function downloadPDF() {
         }
     }
     
-    // Fetch Arabic text for all verses first
-    const versePromises: Promise<any>[] = []
-    const verseMap = new Map<string, string>()
-    
-    for (const section of groupedSections) {
-        if (section.type === 'verse') {
-            const key = `${section.chapter}:${section.verse}`
-            if (!verseMap.has(key)) {
-                versePromises.push(
-                    (async () => {
-                        try {
-                            const verseNumbers = parseVerseRange(section.verse)
-                            if (verseNumbers.length === 1) {
-                                const apiData = await fetchVerse(section.chapter, verseNumbers[0])
-                                verseMap.set(key, apiData.arabic)
-                            } else {
-                                const promises = verseNumbers.map((vNum: number) => 
-                                    fetchVerse(section.chapter, vNum)
-                                )
-                                const results = await Promise.all(promises)
-                                const combinedArabic = results.map(r => r.arabic).join(' ۝ ')
-                                verseMap.set(key, combinedArabic)
-                            }
-                        } catch (error) {
-                            console.error(`Error fetching Arabic for ${key}:`, error)
-                            verseMap.set(key, 'خطأ في تحميل النص العربي')
-                        }
-                    })()
-                )
-            }
-        } else if (section.type === 'verse-group') {
-            for (const verse of section.verses) {
-                const key = `${verse.chapter}:${verse.verse}`
-                if (!verseMap.has(key)) {
-                    versePromises.push(
-                        (async () => {
-                            try {
-                                const verseNumbers = parseVerseRange(verse.verse)
-                                if (verseNumbers.length === 1) {
-                                    const apiData = await fetchVerse(verse.chapter, verseNumbers[0])
-                                    verseMap.set(key, apiData.arabic)
-                                } else {
-                                    const promises = verseNumbers.map((vNum: number) => 
-                                        fetchVerse(verse.chapter, vNum)
-                                    )
-                                    const results = await Promise.all(promises)
-                                    const combinedArabic = results.map(r => r.arabic).join(' ۝ ')
-                                    verseMap.set(key, combinedArabic)
-                                }
-                            } catch (error) {
-                                console.error(`Error fetching Arabic for ${key}:`, error)
-                                verseMap.set(key, 'خطأ في تحميل النص العربي')
-                            }
-                        })()
-                    )
-                }
-            }
-        }
-    }
-    
-    // Wait for all Arabic text to be fetched
-    await Promise.all(versePromises)
+
     
     // Generate HTML for each section
     groupedSections.forEach(section => {
@@ -393,11 +331,10 @@ async function downloadPDF() {
             case 'verse-group':
                 htmlContent += `<div class="verse-card">`
                 section.verses.forEach((verse: any, vIndex: number) => {
-                    const arabicText = verseMap.get(`${verse.chapter}:${verse.verse}`) || 'النص العربي غير متوفر'
                     htmlContent += `
                         <div class="verse-item">
                             ${vIndex > 0 ? '<hr class="verse-divider">' : ''}
-                            <div class="arabic">${arabicText}</div>
+                            <div class="arabic">${verse.arabic}</div>
                         </div>
                     `
                 })
@@ -413,11 +350,10 @@ async function downloadPDF() {
                 break
                 
             case 'verse':
-                const arabicText = verseMap.get(`${section.chapter}:${section.verse}`) || 'النص العربي غير متوفر'
                 htmlContent += `
                     <div class="verse-card">
                         <div class="verse-item">
-                            <div class="arabic">${arabicText}</div>
+                            <div class="arabic">${section.arabic}</div>
                         </div>
                         <div class="verse-reference">
                             QS. ${section.surah} ${section.chapter}:${section.verse}

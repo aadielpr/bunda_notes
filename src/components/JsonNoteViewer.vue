@@ -75,19 +75,9 @@
                 </div>
                 <!-- Arabic Text -->
                 <div class="text-right mb-2">
-                  <!-- Loading state for Arabic -->
-                  <div v-if="getVerseState(verse).loadingArabic" class="text-center">
-                    <p class="text-xs lg:text-sm text-gray-500">Memuat teks Arab...</p>
-                  </div>
-                  <!-- Error state for Arabic -->
-                  <div v-else-if="getVerseState(verse).arabicError" class="text-center">
-                    <p class="text-xs lg:text-sm text-red-500">Gagal memuat teks Arab</p>
-                  </div>
-                  <!-- Arabic text -->
-                  <p v-else-if="getVerseState(verse).arabic" 
-                     class="text-lg lg:text-2xl xl:text-3xl leading-relaxed text-gray-900 font-arabic" 
+                  <p class="text-lg lg:text-2xl xl:text-3xl leading-relaxed text-gray-900 font-arabic" 
                      style="font-family: 'Amiri', 'Traditional Arabic', serif; direction: rtl; line-height: 1.8;">
-                    {{ getVerseState(verse).arabic }}
+                    {{ verse.arabic }}
                   </p>
                 </div>
                 
@@ -134,19 +124,9 @@
                  class="my-3 lg:my-4 p-3 lg:p-4 bg-red-50/30 rounded-lg border border-red-400">
               <!-- Arabic Text -->
               <div class="text-right mb-2">
-                <!-- Loading state for Arabic -->
-                <div v-if="getVerseState(section).loadingArabic" class="text-center">
-                  <p class="text-xs lg:text-sm text-gray-500">Memuat teks Arab...</p>
-                </div>
-                <!-- Error state for Arabic -->
-                <div v-else-if="getVerseState(section).arabicError" class="text-center">
-                  <p class="text-xs lg:text-sm text-red-500">Gagal memuat teks Arab</p>
-                </div>
-                <!-- Arabic text -->
-                <p v-else-if="getVerseState(section).arabic" 
-                   class="text-lg lg:text-2xl xl:text-3xl leading-relaxed text-gray-900 font-arabic" 
+                <p class="text-lg lg:text-2xl xl:text-3xl leading-relaxed text-gray-900 font-arabic" 
                    style="font-family: 'Amiri', 'Traditional Arabic', serif; direction: rtl; line-height: 1.8;">
-                  {{ getVerseState(section).arabic }}
+                  {{ section.arabic }}
                 </p>
               </div>
               
@@ -255,6 +235,7 @@ interface Props {
             verse?: string | number
             items?: string[]
             verses?: Array<{
+                arabic: string
                 surah: string
                 chapter: number
                 verse: string | number
@@ -272,11 +253,8 @@ const props = defineProps<Props>()
 
 // Reactive state
 interface VerseState {
-    arabic: string | null
     indonesian: string | null
-    loadingArabic: boolean
     loadingTranslation: boolean
-    arabicError: boolean
     translationError: boolean
 }
 
@@ -367,54 +345,15 @@ function getVerseState(verse: any): VerseState {
     const key = getVerseKey(verse)
     if (!verseStates[key]) {
         verseStates[key] = {
-            arabic: null,
             indonesian: null,
-            loadingArabic: false,
             loadingTranslation: false,
-            arabicError: false,
             translationError: false
         }
-        // Automatically fetch Arabic text when state is created
-        fetchArabicText(verse)
     }
     return verseStates[key]
 }
 
-async function fetchArabicText(verse: any) {
-    const state = getVerseState(verse)
-    
-    // If Arabic is already loaded or loading, do nothing
-    if (state.arabic || state.loadingArabic) {
-        return
-    }
 
-    // Start loading Arabic text
-    state.loadingArabic = true
-    state.arabicError = false
-
-    try {
-        const verseNumbers = parseVerseRange(verse.verse)
-        
-        if (verseNumbers.length === 1) {
-            // Single verse
-            const apiData = await fetchVerse(verse.chapter, verseNumbers[0])
-            state.arabic = apiData.arabic
-        } else {
-            // Multiple verses - fetch all and join Arabic text
-            const promises = verseNumbers.map((vNum: number) => 
-                fetchVerse(verse.chapter, vNum)
-            )
-            const results = await Promise.all(promises)
-            const combinedArabic = results.map(r => r.arabic).join(' ۝ ')
-            state.arabic = combinedArabic
-        }
-    } catch (error) {
-        console.error('Error fetching Arabic text:', error)
-        state.arabicError = true
-    } finally {
-        state.loadingArabic = false
-    }
-}
 
 async function toggleTranslation(verse: any) {
     const state = getVerseState(verse)
