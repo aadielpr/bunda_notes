@@ -315,12 +315,13 @@ function getVerseRange(verses: any[]) {
       
       // Extract verse numbers and sort them
       const verseNumbers = verses.map(v => {
+        const verseStr = String(v.verse)
         // Handle ranges like "8-9" or single numbers
-        if (v.verse.includes('-')) {
-          const [start, end] = v.verse.split('-').map((n: string) => parseInt(n))
+        if (verseStr.includes('-')) {
+          const [start, end] = verseStr.split('-').map((n: string) => parseInt(n))
           return { start, end, original: v.verse }
         } else {
-          const num = parseInt(v.verse)
+          const num = parseInt(verseStr)
           return { start: num, end: num, original: v.verse }
         }
       }).sort((a, b) => a.start - b.start)

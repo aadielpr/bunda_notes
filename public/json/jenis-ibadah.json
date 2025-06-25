@@ -1,0 +1,180 @@
+{
+    "title": "Jenis Ibadah",
+    "category": "Akidah & Ibadah",
+    "sections": [
+        {
+            "type": "heading",
+            "level": 2,
+            "text": "Jenis Ibadah"
+        },
+        {
+            "type": "paragraph",
+            "text": "Ibadah dalam Islam terbagi menjadi dua jenis utama: badaniyah (ibadah jasmani) dan maliyah (ibadah harta)."
+        },
+        {
+            "type": "subheading",
+            "text": "1. Ibadah Badaniyah"
+        },
+        {
+            "type": "definition",
+            "term": "Shalat",
+            "definition": "Ibadah jasmani yang berfungsi untuk mencegah perbuatan buruk"
+        },
+        {
+            "type": "verse",
+            "surah": "Al-Baqarah",
+            "chapter": 2,
+            "verse": 43,
+            "arabic": "وَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ وَٱرْكَعُوا۟ مَعَ ٱلرَّٰكِعِينَ"
+        },
+        {
+            "type": "verse",
+            "surah": "Al-Ankabut",
+            "chapter": 29,
+            "verse": 45,
+            "arabic": "ٱتْلُ مَآ أُوحِىَ إِلَيْكَ مِنَ ٱلْكِتَٰبِ وَأَقِمِ ٱلصَّلَوٰةَ ۖ إِنَّ ٱلصَّلَوٰةَ تَنْهَىٰ عَنِ ٱلْفَحْشَآءِ وَٱلْمُنكَرِ ۗ وَلَذِكْرُ ٱللَّهِ أَكْبَرُ ۗ وَٱللَّهُ يَعْلَمُ مَا تَصْنَعُونَ"
+        },
+        {
+            "type": "concept",
+            "title": "Fungsi shalat untuk mencegah perbuatan buruk"
+        },
+        {
+            "type": "definition",
+            "term": "Fahsha",
+            "definition": "Perbuatan buruk yang tersembunyi, berhubungan dengan seksual"
+        },
+        {
+            "type": "definition",
+            "term": "Munkar",
+            "definition": "Perbuatan buruk yang terang-terangan, lebih dahsyat daripada fahsha"
+        },
+        {
+            "type": "concept",
+            "title": "Ibadah berakhir apabila ajal tiba"
+        },
+        {
+            "type": "definition",
+            "term": "Siam (Puasa)",
+            "definition": "Ibadah menahan diri dari makan, minum dan hal yang membatalkan puasa"
+        },
+        {
+            "type": "subheading",
+            "text": "Hutang Puasa"
+        },
+        {
+            "type": "list",
+            "items": [
+                "Bayar puasa tanpa bayar fidyah (untuk yang sakit, musafir)",
+                "Tidak bayar puasa tapi bayar fidyah (untuk orang tua renta, pikun)",
+                "Fidyah dibayar oleh anak laki-laki atau anak dari anak laki-laki",
+                "Wanita hamil dan menyusui: puasa dibayar ibu, fidyah wajib dibayar bapak dari yang dikandung/disusui"
+            ]
+        },
+        {
+            "type": "subheading",
+            "text": "2. Ibadah Maliyah"
+        },
+        {
+            "type": "paragraph",
+            "text": "Ibadah yang berkaitan dengan harta benda, meliputi sumber halal dan menjauhi yang haram."
+        },
+        {
+            "type": "subheading",
+            "text": "Sumber Halal"
+        },
+        {
+            "type": "verse",
+            "surah": "Al-Baqarah",
+            "chapter": 2,
+            "verse": 168,
+            "arabic": "يَٰٓأَيُّهَا ٱلنَّاسُ كُلُوا۟ مِمَّا فِى ٱلْأَرْضِ حَلَٰلًۭا طَيِّبًۭا وَلَا تَتَّبِعُوا۟ خُطُوَٰتِ ٱلشَّيْطَٰنِ ۚ إِنَّهُۥ لَكُمْ عَدُوٌّۭ مُّبِينٌۭ"
+        },
+        {
+            "type": "concept",
+            "title": "Hai manusia, makanlah bagimu dari yang halal lagi baik"
+        },
+        {
+            "type": "subheading",
+            "text": "Yang Haram"
+        },
+        {
+            "type": "list",
+            "items": [
+                "Curang",
+                "Mengambil hak orang lain",
+                "Riba"
+            ]
+        },
+        {
+            "type": "definition",
+            "term": "Curang",
+            "definition": "Berbuat tidak jujur dalam transaksi atau urusan"
+        },
+        {
+            "type": "verse-group",
+            "verses": [
+                {
+                    "surah": "Al-Mutaffifin",
+                    "chapter": 83,
+                    "verse": 1,
+                    "arabic": "وَيْلٌۭ لِّلْمُطَفِّفِينَ"
+                },
+                {
+                    "surah": "Al-Mutaffifin",
+                    "chapter": 83,
+                    "verse": 2,
+                    "arabic": "ٱلَّذِينَ إِذَا ٱكْتَالُوا۟ عَلَى ٱلنَّاسِ يَسْتَوْفُونَ"
+                },
+                {
+                    "surah": "Al-Mutaffifin",
+                    "chapter": 83,
+                    "verse": 3,
+                    "arabic": "وَإِذَا كَالُوهُمْ أَو وَّزَنُوهُمْ يُخْسِرُونَ"
+                }
+            ]
+        },
+        {
+            "type": "verse",
+            "surah": "Al-Baqarah",
+            "chapter": 2,
+            "verse": 42,
+            "arabic": "وَلَا تَلْبِسُوا۟ ٱلْحَقَّ بِٱلْبَٰطِلِ وَتَكْتُمُوا۟ ٱلْحَقَّ وَأَنتُمْ تَعْلَمُونَ"
+        },
+        {
+            "type": "concept",
+            "title": "Jangan kalian campur yang hak dengan yang batil"
+        },
+        {
+            "type": "definition",
+            "term": "Hak Orang Lain",
+            "definition": "Mengambil yang bukan milik dengan cara yang tidak dibenarkan"
+        },
+        {
+            "type": "verse",
+            "surah": "Al-Baqarah",
+            "chapter": 2,
+            "verse": 188,
+            "arabic": "وَلَا تَأْكُلُوٓا۟ أَمْوَٰلَكُم بَيْنَكُم بِٱلْبَٰطِلِ وَتُدْلُوا۟ بِهَآ إِلَى ٱلْحُكَّامِ لِتَأْكُلُوا۟ فَرِيقًۭا مِّنْ أَمْوَٰلِ ٱلنَّاسِ بِٱلْإِثْمِ وَأَنتُمْ تَعْلَمُونَ"
+        },
+        {
+            "type": "definition",
+            "term": "Riba",
+            "definition": "Tambahan yang diambil dalam transaksi utang-piutang tanpa ada imbalan yang setara"
+        },
+        {
+            "type": "verse",
+            "surah": "Al-Baqarah",
+            "chapter": 2,
+            "verse": 275,
+            "arabic": "ٱلَّذِينَ يَأْكُلُونَ ٱلرِّبَوٰا۟ لَا يَقُومُونَ إِلَّا كَمَا يَقُومُ ٱلَّذِى يَتَخَبَّطُهُ ٱلشَّيْطَٰنُ مِنَ ٱلْمَسِّ ۚ ذَٰلِكَ بِأَنَّهُمْ قَالُوٓا۟ إِنَّمَا ٱلْبَيْعُ مِثْلُ ٱلرِّبَوٰا۟ ۗ وَأَحَلَّ ٱللَّهُ ٱلْبَيْعَ وَحَرَّمَ ٱلرِّبَوٰا۟ ۚ فَمَن جَآءَهُۥ مَوْعِظَةٌۭ مِّن رَّبِّهِۦ فَٱنتَهَىٰ فَلَهُۥ مَا سَلَفَ وَأَمْرُهُۥٓ إِلَى ٱللَّهِ ۖ وَمَنْ عَادَ فَأُو۟لَٰٓئِكَ أَصْحَٰبُ ٱلنَّارِ ۖ هُمْ فِيهَا خَٰلِدُونَ"
+        },
+        {
+            "type": "concept",
+            "title": "Orang yang memakan riba akan dibangkitkan pada hari kiamat seperti orang yang kesurupan setan"
+        },
+        {
+            "type": "note",
+            "text": "Ibadah yang benar mencakup kedua aspek: badaniyah dan maliyah. Keduanya harus dilaksanakan dengan penuh kesadaran dan mengikuti tuntunan Al-Quran dan Sunnah untuk mencapai ridha Allah SWT."
+        }
+    ]
+} 

@@ -1,0 +1,69 @@
+## JSON Note Conversion Guide
+
+### File Structure
+```json
+{
+    "title": "Title of the Note",
+    "category": "islamic-studies",
+    "sections": [
+        {
+            "title": "Section Title",
+            "content": [
+                {
+                    "type": "text",
+                    "value": "Regular text content"
+                },
+                {
+                    "type": "quran",
+                    "surah": 2,
+                    "ayah": 43,
+                    "arabic": "Uthmani Arabic text",
+                    "translation": "Translation of the verse"
+                },
+                {
+                    "type": "list",
+                    "items": ["Item 1", "Item 2"]
+                }
+            ]
+        }
+    ]
+}
+```
+
+### Content Types
+1. `text` - Regular paragraphs
+2. `quran` - Quranic verses with Uthmani script
+3. `list` - Bullet points or numbered lists
+4. `definition` - Key terms and their meanings
+
+### Conversion Rules
+1. Each txt file becomes one JSON file
+2. Main title becomes the JSON title
+3. Major sections marked with `~` or numbered headings become section titles
+4. Quran references must include:
+   - Surah number
+   - Ayah number
+   - Uthmani Arabic text
+   - Translation
+5. Lists marked with `•` or numbers become list type content
+6. Keep original text formatting (camelCase)
+
+### File Locations
+- Source txt files: `notes/`
+- Generated JSON: `public/json/`
+- Navigation updates: `src/data/notes.ts`
+
+### Navigation Update
+Add new notes to `notes.ts` following format:
+```typescript
+{
+    title: "Note Title",
+    path: "/json/filename.json"
+}
+```
+
+### Reference Examples
+Check these files in `public/json/` for real examples:
+1. `5-rukun-islam.json` - Example of structured Islamic pillars
+2. `asmaul-husna.json` - Example of names listing
+3. `6-orang-mukmin-yang-beruntung.json` - Example of Quran verses with translations 

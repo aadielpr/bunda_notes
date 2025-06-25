@@ -25,6 +25,36 @@ const notes: Note[] = [
         title: 'Asmaul Husna',
         category: 'Akidah & Tauhid',
         jsonFile: 'asmaul-husna.json'
+    },
+    {
+        id: 'amanah',
+        title: 'Amanah',
+        category: 'Akidah & Ibadah',
+        jsonFile: 'amanah.json'
+    },
+    {
+        id: 'mukmin-yang-beruntung',
+        title: 'Orang Mukmin yang Beruntung',
+        category: 'Akhlak & Ibadah',
+        jsonFile: 'mukmin-yang-beruntung.json'
+    },
+    {
+        id: 'jenis-ibadah',
+        title: 'Jenis Ibadah',
+        category: 'Akidah & Ibadah',
+        jsonFile: 'jenis-ibadah.json'
+    },
+    {
+        id: 'menghilangkan-takabur',
+        title: 'Menghilangkan Takabur',
+        category: 'Akhlak & Ibadah',
+        jsonFile: 'menghilangkan-takabur.json'
+    },
+    {
+        id: 'menjadi-orang-bertakwa',
+        title: 'Menjadi Orang Bertakwa',
+        category: 'Akhlak & Ibadah',
+        jsonFile: 'menjadi-orang-bertakwa.json'
     }
 ]
 

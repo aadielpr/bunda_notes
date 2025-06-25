@@ -1,0 +1,215 @@
+{
+    "title": "Amanah",
+    "category": "Akidah & Ibadah",
+    "sections": [
+        {
+            "type": "heading",
+            "level": 2,
+            "text": "Amanah"
+        },
+        {
+            "type": "paragraph",
+            "text": "Amanah memiliki dua pengertian utama: sebagai wadi'ah (titipan) dan sebagai ibadah. Keduanya merupakan tanggung jawab yang diamanahkan Allah SWT kepada manusia."
+        },
+        {
+            "type": "list",
+            "items": [
+                "Wadi'ah (titipan)",
+                "Ibadah"
+            ]
+        },
+        {
+            "type": "subheading",
+            "text": "1. Amanah Wadi'ah - Umur"
+        },
+        {
+            "type": "definition",
+            "term": "Ajal",
+            "definition": "Masa berakhir"
+        },
+        {
+            "type": "definition",
+            "term": "Wafat",
+            "definition": "Sempurna"
+        },
+        {
+            "type": "definition",
+            "term": "Maut",
+            "definition": "Dicabut (ruh)"
+        },
+        {
+            "type": "paragraph",
+            "text": "Urutan: Wafat, Ajal, dan Maut. Wadi'ah adalah titipan dari Allah SWT."
+        },
+        {
+            "type": "concept",
+            "title": "Rahasia Ilahi (Lima Perkara yang Hanya Allah Yang Tahu)"
+        },
+        {
+            "type": "list",
+            "items": [
+                "Kiamat",
+                "Hujan",
+                "Apa yang dikandung ibu",
+                "Apa yang akan terjadi esok hari",
+                "Kapan dan dimana meninggal dunia"
+            ]
+        },
+        {
+            "type": "subheading",
+            "text": "Taqdir/Qadhar/Ukuran"
+        },
+        {
+            "type": "definition",
+            "term": "Mubrom",
+            "definition": "Yang tidak bisa dirubah seperti umur dan gender"
+        },
+        {
+            "type": "definition",
+            "term": "Muallaq",
+            "definition": "Dinamis atau bisa dirubah seperti rezeki"
+        },
+        {
+            "type": "subheading",
+            "text": "2. Amanah Wadi'ah - Harta"
+        },
+        {
+            "type": "paragraph",
+            "text": "Harta dalam Islam memiliki berbagai makna sesuai ayat Al-Quran:"
+        },
+        {
+            "type": "verse",
+            "surah": "At-Taghabun",
+            "chapter": 64,
+            "verse": 15,
+            "arabic": "إِنَّمَآ أَمْوَٰلُكُمْ وَأَوْلَٰدُكُمْ فِتْنَةٌۭ ۚ وَٱللَّهُ عِندَهُۥٓ أَجْرٌ عَظِيمٌۭ"
+        },
+        {
+            "type": "concept",
+            "title": "Surah 64:15 - Harta merupakan ujian"
+        },
+        {
+            "type": "verse",
+            "surah": "Al-Kahf",
+            "chapter": 18,
+            "verse": 46,
+            "arabic": "ٱلْمَالُ وَٱلْبَنُونَ زِينَةُ ٱلْحَيَوٰةِ ٱلدُّنْيَا ۖ وَٱلْبَٰقِيَٰتُ ٱلصَّٰلِحَٰتُ خَيْرٌ عِندَ رَبِّكَ ثَوَابًۭا وَخَيْرٌ أَمَلًۭا"
+        },
+        {
+            "type": "concept",
+            "title": "Surah 18:46 - Harta merupakan perhiasan"
+        },
+        {
+            "type": "verse",
+            "surah": "Ali Imran",
+            "chapter": 3,
+            "verse": 14,
+            "arabic": "زُيِّنَ لِلنَّاسِ حُبُّ ٱلشَّهَوَٰتِ مِنَ ٱلنِّسَآءِ وَٱلْبَنِينَ وَٱلْقَنَٰطِيرِ ٱلْمُقَنطَرَةِ مِنَ ٱلذَّهَبِ وَٱلْفِضَّةِ وَٱلْخَيْلِ ٱلْمُسَوَّمَةِ وَٱلْأَنْعَٰمِ وَٱلْحَرْثِ ۗ ذَٰلِكَ مَتَٰعُ ٱلْحَيَوٰةِ ٱلدُّنْيَا ۖ وَٱللَّهُ عِندَهُۥ حُسْنُ ٱلْمَـَٔابِ"
+        },
+        {
+            "type": "concept",
+            "title": "Surah 3:14 - Harta sebagai keniscayaan (pasangan, anak, harta karun, kendaraan, ternak dan pertanian)"
+        },
+        {
+            "type": "verse",
+            "surah": "Al-Hadid",
+            "chapter": 57,
+            "verse": 20,
+            "arabic": "ٱعْلَمُوٓا۟ أَنَّمَا ٱلْحَيَوٰةُ ٱلدُّنْيَا لَعِبٌۭ وَلَهْوٌۭ وَزِينَةٌۭ وَتَفَاخُرٌۢ بَيْنَكُمْ وَتَكَاثُرٌۭ فِى ٱلْأَمْوَٰلِ وَٱلْأَوْلَٰدِ ۖ كَمَثَلِ غَيْثٍ أَعْجَبَ ٱلْكُفَّارَ نَبَاتُهُۥ ثُمَّ يَهِيجُ فَتَرَىٰهُ مُصْفَرًّۭا ثُمَّ يَكُونُ حُطَٰمًۭا ۖ وَفِى ٱلْءَاخِرَةِ عَذَابٌۭ شَدِيدٌۭ وَمَغْفِرَةٌۭ مِّنَ ٱللَّهِ وَرِضْوَٰنٌۭ ۚ وَمَا ٱلْحَيَوٰةُ ٱلدُّنْيَآ إِلَّا مَتَٰعُ ٱلْغُرُورِ"
+        },
+        {
+            "type": "concept",
+            "title": "Surah 57:20 - Kehidupan dunia (permainan, lalai, perhiasan, bangga terhadap harta dan anak)"
+        },
+        {
+            "type": "subheading",
+            "text": "Alokasi Nafkah"
+        },
+        {
+            "type": "definition",
+            "term": "1. Para Istri",
+            "definition": "Pangan, sandang, papan, pendidikan dan perhatian",
+            "reference": {
+                "surah": "At-Talaq",
+                "chapter": 65,
+                "verse": 7
+            }
+        },
+        {
+            "type": "verse",
+            "surah": "At-Talaq",
+            "chapter": 65,
+            "verse": 7,
+            "arabic": "لِيُنفِقْ ذُو سَعَةٍۢ مِّن سَعَتِهِۦ ۖ وَمَن قُدِرَ عَلَيْهِ رِزْقُهُۥ فَلْيُنفِقْ مِمَّآ ءَاتَىٰهُ ٱللَّهُ ۚ لَا يُكَلِّفُ ٱللَّهُ نَفْسًا إِلَّا مَآ ءَاتَىٰهَا ۚ سَيَجْعَلُ ٱللَّهُ بَعْدَ عُسْرٍۢ يُسْرًۭا"
+        },
+        {
+            "type": "definition",
+            "term": "2. Anak-anak",
+            "definition": "Kewajiban nafkah untuk anak-anak",
+            "reference": {
+                "surah": "Al-Baqarah",
+                "chapter": 2,
+                "verse": 233
+            }
+        },
+        {
+            "type": "verse",
+            "surah": "Al-Baqarah",
+            "chapter": 2,
+            "verse": 233,
+            "arabic": "وَٱلْوَٰلِدَٰتُ يُرْضِعْنَ أَوْلَٰدَهُنَّ حَوْلَيْنِ كَامِلَيْنِ ۖ لِمَنْ أَرَادَ أَن يُتِمَّ ٱلرَّضَاعَةَ ۚ وَعَلَى ٱلْمَوْلُودِ لَهُۥ رِزْقُهُنَّ وَكِسْوَتُهُنَّ بِٱلْمَعْرُوفِ ۚ لَا تُكَلَّفُ نَفْسٌ إِلَّا وُسْعَهَا ۚ لَا تُضَآرَّ وَٰلِدَةٌۢ بِوَلَدِهَا وَلَا مَوْلُودٌۭ لَّهُۥ بِوَلَدِهِۦ ۚ وَعَلَى ٱلْوَارِثِ مِثْلُ ذَٰلِكَ ۗ فَإِنْ أَرَادَا فِصَالًا عَن تَرَاضٍۢ مِّنْهُمَا وَتَشَاوُرٍۢ فَلَا جُنَاحَ عَلَيْهِمَا ۗ وَإِنْ أَرَدتُّمْ أَن تَسْتَرْضِعُوٓا۟ أَوْلَٰدَكُمْ فَلَا جُنَاحَ عَلَيْكُمْ إِذَا سَلَّمْتُم مَّآ ءَاتَيْتُم بِٱلْمَعْرُوفِ ۗ وَٱتَّقُوا۟ ٱللَّهَ وَٱعْلَمُوٓا۟ أَنَّ ٱللَّهَ بِمَا تَعْمَلُونَ بَصِيرٌۭ"
+        },
+        {
+            "type": "definition",
+            "term": "3. Orang Tua",
+            "definition": "Kewajiban berbakti kepada orang tua",
+            "reference": {
+                "surah": "Al-Baqarah",
+                "chapter": 2,
+                "verse": 215
+            }
+        },
+        {
+            "type": "verse",
+            "surah": "Al-Baqarah",
+            "chapter": 2,
+            "verse": 215,
+            "arabic": "يَسْـَٔلُونَكَ مَاذَا يُنفِقُونَ ۖ قُلْ مَآ أَنفَقْتُم مِّنْ خَيْرٍۢ فَلِلْوَٰلِدَيْنِ وَٱلْأَقْرَبِينَ وَٱلْيَتَٰمَىٰ وَٱلْمَسَٰكِينِ وَٱبْنِ ٱلسَّبِيلِ ۗ وَمَا تَفْعَلُوا۟ مِنْ خَيْرٍۢ فَإِنَّ ٱللَّهَ بِهِۦ عَلِيمٌۭ"
+        },
+        {
+            "type": "subheading",
+            "text": "Prioritas dalam Beribadah",
+            "reference": {
+                "surah": "An-Nisa",
+                "chapter": 4,
+                "verse": 36
+            }
+        },
+        {
+            "type": "verse",
+            "surah": "An-Nisa",
+            "chapter": 4,
+            "verse": 36,
+            "arabic": "وَٱعْبُدُوا۟ ٱللَّهَ وَلَا تُشْرِكُوا۟ بِهِۦ شَيْـًۭٔا ۖ وَبِٱلْوَٰلِدَيْنِ إِحْسَٰنًۭا وَبِذِى ٱلْقُرْبَىٰ وَٱلْيَتَٰمَىٰ وَٱلْمَسَٰكِينِ وَٱلْجَارِ ذِى ٱلْقُرْبَىٰ وَٱلْجَارِ ٱلْجُنُبِ وَٱلصَّاحِبِ بِٱلْجَنۢبِ وَٱبْنِ ٱلسَّبِيلِ وَمَا مَلَكَتْ أَيْمَٰنُكُمْ ۗ إِنَّ ٱللَّهَ لَا يُحِبُّ مَن كَانَ مُخْتَالًۭا فَخُورًا"
+        },
+        {
+            "type": "list",
+            "items": [
+                "1. Allah",
+                "2. Orang tua",
+                "3. Kerabat",
+                "4. Anak yatim",
+                "5. Miskin",
+                "6. Tetangga dekat (seagama)",
+                "7. Tetangga jauh (tidak seagama)",
+                "8. Tetangga sejawat",
+                "9. Musafir",
+                "10. Hamba sahaya"
+            ]
+        },
+        {
+            "type": "note",
+            "text": "Amanah adalah tanggung jawab besar yang harus dipikul dengan penuh kesadaran dan keimanan. Setiap aspek kehidupan, dari umur hingga harta, merupakan amanah Allah yang harus dipertanggungjawabkan di akhirat."
+        }
+    ]
+} 
