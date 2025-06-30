@@ -11,7 +11,7 @@
     <div class="p-6">
       <!-- Logo -->
       <div class="flex justify-center mb-6">
-        <img src="/MT AZ-ZAHRA Pekanbaru.png" alt="MT Az-Zahra Pekanbaru Logo" class="h-32 w-auto" />
+        <img src="/logo.png" alt="MT Az-Zahra Pekanbaru Logo" class="h-32 w-auto" />
       </div>
       
       <!-- Mobile Close Button -->
