@@ -9,12 +9,9 @@
     ]"
   >
     <div class="p-6">
-      <!-- Desktop Header -->
-      <div class="mb-8 hidden lg:block">
-        <h1 class="text-lg font-bold text-gray-900 mb-1">
-          MT Az-Zahra Pekanbaru
-        </h1>
-        <p class="text-xs text-gray-500">Kumpulan catatan pengajian</p>
+      <!-- Logo -->
+      <div class="flex justify-center mb-6">
+        <img src="/MT AZ-ZAHRA Pekanbaru.png" alt="MT Az-Zahra Pekanbaru Logo" class="h-32 w-auto" />
       </div>
       
       <!-- Mobile Close Button -->
