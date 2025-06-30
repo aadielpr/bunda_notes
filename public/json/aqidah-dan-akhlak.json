@@ -1,0 +1,402 @@
+{
+  "title": "Aqidah & Akhlak",
+  "category": "Akidah & Ibadah",
+  "sections": [
+    {
+      "type": "heading",
+      "level": 2,
+      "text": "Aqidah & Akhlak"
+    },
+    {
+      "type": "paragraph",
+      "text": "Aqidah dan Akhlak adalah dua pilar utama dalam Islam yang saling melengkapi untuk membentuk kepribadian Muslim yang sempurna."
+    },
+    {
+      "type": "subheading",
+      "text": "A. Akidah"
+    },
+    {
+      "type": "definition",
+      "term": "Akidah",
+      "definition": "Ikatan kuat di hati dan keyakinan yang kokoh di jiwa"
+    },
+    {
+      "type": "verse",
+      "surah": "Az-Zumar",
+      "chapter": 39,
+      "verse": 38,
+      "arabic": "وَلَئِن سَأَلْتَهُم مَّنْ خَلَقَ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضَ لَيَقُولُنَّ ٱللَّهُ ۚ قُلْ أَفَرَأَيْتُم مَّآ تَدْعُونَ مِن دُونِ ٱللَّهِ إِنْ أَرَادَنِىَ ٱللَّهُ بِضُرٍّ هَلْ هُنَّ كَٰشِفَٰتُ ضُرِّهِۦٓ أَوْ أَرَادَنِى بِرَحْمَةٍ هَلْ هُنَّ مُمْسِكَٰتُ رَحْمَتِهِۦ ۚ قُلْ حَسْبِىَ ٱللَّهُ ۖ عَلَيْهِ يَتَوَكَّلُ ٱلْمُتَوَكِّلُونَ"
+    },
+    {
+      "type": "concept",
+      "title": "Bahkan kafir Quraisy pun meyakinkan bahwa Allah lah yang menciptakan langit dan bumi"
+    },
+    {
+      "type": "subheading",
+      "text": "Bagian dari Akidah"
+    },
+    {
+      "type": "subheading",
+      "text": "1. Allah yang Maha Pencipta"
+    },
+    {
+      "type": "verse",
+      "surah": "Ghafir",
+      "chapter": 40,
+      "verse": 68,
+      "arabic": "هُوَ ٱلَّذِى يُحْيِى وَيُمِيتُ ۖ فَإِذَا قَضَىٰٓ أَمْرًۭا فَإِنَّمَا يَقُولُ لَهُۥ كُن فَيَكُونُ"
+    },
+    {
+      "type": "verse",
+      "surah": "Ali Imran",
+      "chapter": 3,
+      "verse": 190,
+      "arabic": "إِنَّ فِى خَلْقِ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ وَٱخْتِلَٰفِ ٱلَّيْلِ وَٱلنَّهَارِ لَءَايَٰتٍۢ لِّأُو۟لِى ٱلْأَلْبَٰبِ"
+    },
+    {
+      "type": "verse",
+      "surah": "Ar-Rahman",
+      "chapter": 55,
+      "verse": 26,
+      "arabic": "كُلُّ مَنْ عَلَيْهَا فَانٍۢ"
+    },
+    {
+      "type": "verse",
+      "surah": "Ar-Rahman",
+      "chapter": 55,
+      "verse": 27,
+      "arabic": "وَيَبْقَىٰ وَجْهُ رَبِّكَ ذُو ٱلْجَلَٰلِ وَٱلْإِكْرَامِ"
+    },
+    {
+      "type": "subheading",
+      "text": "2. Kepada-Nya Kita Beribadah"
+    },
+    {
+      "type": "verse",
+      "surah": "Adh-Dhariyat",
+      "chapter": 51,
+      "verse": 56,
+      "arabic": "وَمَا خَلَقْتُ ٱلْجِنَّ وَٱلْإِنسَ إِلَّا لِيَعْبُدُونِ"
+    },
+    {
+      "type": "concept",
+      "title": "Tidaklah Aku menciptakan jin dan manusia kecuali untuk beribadah kepada-Ku"
+    },
+    {
+      "type": "verse",
+      "surah": "Al-Baqarah",
+      "chapter": 2,
+      "verse": 21,
+      "arabic": "يَٰٓأَيُّهَا ٱلنَّاسُ ٱعْبُدُوا۟ رَبَّكُمُ ٱلَّذِى خَلَقَكُمْ وَٱلَّذِينَ مِن قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُونَ"
+    },
+    {
+      "type": "concept",
+      "title": "Wahai manusia! Sembahlah Tuhanmu yang telah menciptakan kamu dan orang-orang yang sebelum kamu, agar kamu bertakwa"
+    },
+    {
+      "type": "verse",
+      "surah": "Fatir",
+      "chapter": 35,
+      "verse": 15,
+      "arabic": "يَٰٓأَيُّهَا ٱلنَّاسُ أَنتُمُ ٱلْفُقَرَآءُ إِلَى ٱللَّهِ ۖ وَٱللَّهُ هُوَ ٱلْغَنِىُّ ٱلْحَمِيدُ"
+    },
+    {
+      "type": "concept",
+      "title": "Wahai manusia! Kamulah yang memerlukan Allah; dan Allah Dialah Yang Mahakaya (tidak memerlukan apa pun), Maha Terpuji"
+    },
+    {
+      "type": "subheading",
+      "text": "3. Kepada-Nya Kita Berdoa dan Meminta"
+    },
+    {
+      "type": "verse",
+      "surah": "Ghafir",
+      "chapter": 40,
+      "verse": 60,
+      "arabic": "وَقَالَ رَبُّكُمُ ٱدْعُونِىٓ أَسْتَجِبْ لَكُمْ ۚ إِنَّ ٱلَّذِينَ يَسْتَكْبِرُونَ عَنْ عِبَادَتِى سَيَدْخُلُونَ جَهَنَّمَ دَاخِرِينَ"
+    },
+    {
+      "type": "verse",
+      "surah": "Al-A'raf",
+      "chapter": 7,
+      "verse": 55,
+      "arabic": "ٱدْعُوا۟ رَبَّكُمْ تَضَرُّعًۭا وَخُفْيَةً ۚ إِنَّهُۥ لَا يُحِبُّ ٱلْمُعْتَدِينَ"
+    },
+    {
+      "type": "verse",
+      "surah": "Al-A'raf",
+      "chapter": 7,
+      "verse": 56,
+      "arabic": "وَلَا تُفْسِدُوا۟ فِى ٱلْأَرْضِ بَعْدَ إِصْلَٰحِهَا وَٱدْعُوهُ خَوْفًۭا وَطَمَعًا ۚ إِنَّ رَحْمَتَ ٱللَّهِ قَرِيبٌۭ مِّنَ ٱلْمُحْسِنِينَ"
+    },
+    {
+      "type": "verse",
+      "surah": "Al-Baqarah",
+      "chapter": 2,
+      "verse": 186,
+      "arabic": "وَإِذَا سَأَلَكَ عِبَادِى عَنِّى فَإِنِّى قَرِيبٌ ۖ أُجِيبُ دَعْوَةَ ٱلدَّاعِ إِذَا دَعَانِ ۖ فَلْيَسْتَجِيبُوا۟ لِى وَلْيُؤْمِنُوا۟ بِى لَعَلَّهُمْ يَرْشُدُونَ"
+    },
+    {
+      "type": "subheading",
+      "text": "Doa = ibadah"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Dikabulkan = sesuai yang diminta",
+        "Diganti dari yang kita minta dengan yang lebih baik",
+        "Menunda di masa yang tepat (QS. Al-Baqarah 2:216)",
+        "Ditolak Allah doanya"
+      ]
+    },
+    {
+      "type": "subheading",
+      "text": "Sebab ditolak"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Mengaku Allah sebagai Tuhan tapi kewajiban ditinggalkan",
+        "Mengaku cinta dengan Nabi tapi benci dengan sunah Nabi (QS. Ali Imran 3:31)",
+        "Mengaku Al-Qur'an pedoman hidup tapi perilaku tidak sesuai dengan Al-Qur'an",
+        "Mengaku Akhirat itu pasti tapi tidak mempersiapkan diri"
+      ]
+    },
+    {
+      "type": "subheading",
+      "text": "4. Kepada-Nya Kita Bertawakal"
+    },
+    {
+      "type": "definition",
+      "term": "Tawakal",
+      "definition": "Menyerahkan hasil akhir pada Allah (setelah berikhtiar dan berdoa kepada Allah, agar tidak kecewa)"
+    },
+    {
+      "type": "verse",
+      "surah": "Asy-Syarh",
+      "chapter": 94,
+      "verse": 7,
+      "arabic": "فَإِذَا فَرَغْتَ فَٱنصَبْ"
+    },
+    {
+      "type": "verse",
+      "surah": "Asy-Syarh",
+      "chapter": 94,
+      "verse": 8,
+      "arabic": "وَإِلَىٰ رَبِّكَ فَٱرْغَب"
+    },
+    {
+      "type": "verse",
+      "surah": "Hud",
+      "chapter": 11,
+      "verse": 6,
+      "arabic": "وَمَا مِن دَآبَّةٍۢ فِى ٱلْأَرْضِ إِلَّا عَلَى ٱللَّهِ رِزْقُهَا وَيَعْلَمُ مُسْتَقَرَّهَا وَمُسْتَوْدَعَهَا ۚ كُلٌّۭ فِى كِتَٰبٍۢ مُّبِينٍۭ"
+    },
+    {
+      "type": "concept",
+      "title": "Rumus tawakal: IKHTIAR = BERGERAK = DOA"
+    },
+    {
+      "type": "verse",
+      "surah": "Ghafir",
+      "chapter": 40,
+      "verse": 60,
+      "arabic": "وَقَالَ رَبُّكُمُ ٱدْعُونِىٓ أَسْتَجِبْ لَكُمْ ۚ إِنَّ ٱلَّذِينَ يَسْتَكْبِرُونَ عَنْ عِبَادَتِى سَيَدْخُلُونَ جَهَنَّمَ دَاخِرِينَ"
+    },
+    {
+      "type": "subheading",
+      "text": "Tanda orang tawakal"
+    },
+    {
+      "type": "list",
+      "items": [
+        "GAGAL – BERSABAR – DIANGGAP UJIAN ALLAH",
+        "BERHASIL – BERSYUKUR – DIANGGAP UJIAN ALLAH"
+      ]
+    },
+    {
+      "type": "concept",
+      "title": "Tawakal adalah karakter orang beriman"
+    },
+    {
+      "type": "subheading",
+      "text": "Ciri-ciri Orang Tawakal"
+    },
+    {
+      "type": "definition",
+      "term": "1. Bila menyebut nama Allah bergetar hatinya",
+      "definition": "QS. Al-Anfal 8:2"
+    },
+    {
+      "type": "verse",
+      "surah": "Al-Anfal",
+      "chapter": 8,
+      "verse": 2,
+      "arabic": "إِنَّمَا ٱلْمُؤْمِنُونَ ٱلَّذِينَ إِذَا ذُكِرَ ٱللَّهُ وَجِلَتْ قُلُوبُهُمْ وَإِذَا تُلِيَتْ عَلَيْهِمْ ءَايَٰتُهُۥ زَادَتْهُمْ إِيمَٰنًۭا وَعَلَىٰ رَبِّهِمْ يَتَوَكَّلُونَ"
+    },
+    {
+      "type": "concept",
+      "title": "Sesungguhnya orang-orang yang beriman adalah mereka yang apabila disebut nama Allah gemetar hatinya, dan apabila dibacakan ayat-ayat-Nya kepada mereka, bertambah (kuat) imannya dan hanya kepada Tuhan mereka bertawakal"
+    },
+    {
+      "type": "concept",
+      "title": "Bergetar hati ada 2 karena takut atau cinta"
+    },
+    {
+      "type": "verse",
+      "surah": "Al-Kautsar",
+      "chapter": 108,
+      "verse": 1,
+      "arabic": "إِنَّآ أَعْطَيْنَٰكَ ٱلْكَوْثَرَ"
+    },
+    {
+      "type": "concept",
+      "title": "Allah memberi nikmat yang banyak"
+    },
+    {
+      "type": "definition",
+      "term": "2. Diingatkan Ayat Allah tambah keimanan",
+      "definition": "Salah satu penyesalan karena tidak mau mendengarkan nasehat"
+    },
+    {
+      "type": "verse",
+      "surah": "Al-Mulk",
+      "chapter": 67,
+      "verse": 10,
+      "arabic": "وَقَالُوا۟ لَوْ كُنَّا نَسْمَعُ أَوْ نَعْقِلُ مَا كُنَّا فِىٓ أَصْحَٰبِ ٱلسَّعِيرِ"
+    },
+    {
+      "type": "subheading",
+      "text": "Penyesalan salah memilih teman"
+    },
+    {
+      "type": "verse",
+      "surah": "Al-Furqan",
+      "chapter": 25,
+      "verse": 28,
+      "arabic": "يَٰوَيْلَتَىٰ لَيْتَنِى لَمْ أَتَّخِذْ فُلَانًا خَلِيلًۭا"
+    },
+    {
+      "type": "verse",
+      "surah": "Al-Furqan",
+      "chapter": 25,
+      "verse": 29,
+      "arabic": "لَقَدْ أَضَلَّنِى عَنِ ٱلذِّكْرِ بَعْدَ إِذْ جَآءَنِى ۗ وَكَانَ ٱلشَّيْطَٰنُ لِلْإِنسَٰنِ خَذُولًۭا"
+    },
+    {
+      "type": "concept",
+      "title": "Wahai celakalah aku! Sekiranya dulu aku tidak menjadikan si fulan itu teman akrabku"
+    },
+    {
+      "type": "concept",
+      "title": "Sungguh, dia telah menyesatkan aku dari peringatan (Al-Qur'an) ketika telah datang padaku dan syaitan memang penghianat manusia"
+    },
+    {
+      "type": "subheading",
+      "text": "Tawakal adalah untuk masa depan, berikhtiar dan berdoa pada Allah"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Sa'i = usaha/perjalanan",
+        "Safa = bersih",
+        "Marwa = harga diri",
+        "Ikhtiar = usaha yang baik",
+        "Usaha = usaha yang umum"
+      ]
+    },
+    {
+      "type": "subheading",
+      "text": "5. Kepada-Nya Dikembalikan"
+    },
+    {
+      "type": "verse",
+      "surah": "Al-Ankabut",
+      "chapter": 29,
+      "verse": 57,
+      "arabic": "كُلُّ نَفْسٍۢ ذَآئِقَةُ ٱلْمَوْتِ ۖ ثُمَّ إِلَيْنَا تُرْجَعُونَ"
+    },
+    {
+      "type": "concept",
+      "title": "Dikembalikan pasti"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Maut = cabut = ruh",
+        "Jenazah = bangkai",
+        "Wafat = sempurna menjalani hidup",
+        "Ajal = masa berakhir hidup"
+      ]
+    },
+    {
+      "type": "verse",
+      "surah": "Ali Imran",
+      "chapter": 3,
+      "verse": 185,
+      "arabic": "كُلُّ نَفْسٍۢ ذَآئِقَةُ ٱلْمَوْتِ ۗ وَإِنَّمَا تُوَفَّوْنَ أُجُورَكُمْ يَوْمَ ٱلْقِيَٰمَةِ ۖ فَمَن زُحْزِحَ عَنِ ٱلنَّارِ وَأُدْخِلَ ٱلْجَنَّةَ فَقَدْ فَازَ ۗ وَمَا ٱلْحَيَوٰةُ ٱلدُّنْيَآ إِلَّا مَتَٰعُ ٱلْغُرُورِ"
+    },
+    {
+      "type": "concept",
+      "title": "Balasan: Disempurnakan balasanmu di akhirat"
+    },
+    {
+      "type": "verse",
+      "surah": "Al-Anbiya",
+      "chapter": 21,
+      "verse": 35,
+      "arabic": "كُلُّ نَفْسٍۢ ذَآئِقَةُ ٱلْمَوْتِ ۗ وَنَبْلُوكُم بِٱلشَّرِّ وَٱلْخَيْرِ فِتْنَةًۭ ۖ وَإِلَيْنَا تُرْجَعُونَ"
+    },
+    {
+      "type": "concept",
+      "title": "Fakta ujian: Ujian itu = keniscayaan"
+    },
+    {
+      "type": "definition",
+      "term": "Fitnah",
+      "definition": "Ujian dari Allah (QS. At-Taghabun 64:15)"
+    },
+    {
+      "type": "list",
+      "items": [
+        "Ujian yang berujung 2 bisa lulus atau tidak",
+        "Kapan dikembalikan (QS. Al-A'raf 7:34)",
+        "Tempat jiwa ada 2: ILIYYIN = baik, SIJJIN = buruk"
+      ]
+    },
+    {
+      "type": "verse",
+      "surah": "Al-Furqan",
+      "chapter": 25,
+      "verse": 70,
+      "arabic": "إِلَّا مَن تَابَ وَءَامَنَ وَعَمِلَ عَمَلًۭا صَٰلِحًۭا فَأُو۟لَٰٓئِكَ يُبَدِّلُ ٱللَّهُ سَيِّـَٔاتِهِمْ حَسَنَٰتٍۢ ۗ وَكَانَ ٱللَّهُ غَفُورًۭا رَّحِيمًۭا"
+    },
+    {
+      "type": "concept",
+      "title": "Allah menggantikan kejahatan dengan kebaikan dengan bertobat"
+    },
+    {
+      "type": "verse",
+      "surah": "Ar-Ra'd",
+      "chapter": 13,
+      "verse": 11,
+      "arabic": "لَهُۥ مُعَقِّبَٰتٌۭ مِّنۢ بَيْنِ يَدَيْهِ وَمِنْ خَلْفِهِۦ يَحْفَظُونَهُۥ مِنْ أَمْرِ ٱللَّهِ ۗ إِنَّ ٱللَّهَ لَا يُغَيِّرُ مَا بِقَوْمٍ حَتَّىٰ يُغَيِّرُوا۟ مَا بِأَنفُسِهِمْ ۗ وَإِذَآ أَرَادَ ٱللَّهُ بِقَوْمٍۢ سُوٓءًۭا فَلَا مَرَدَّ لَهُۥ ۚ وَمَا لَهُم مِّن دُونِهِۦ مِن وَالٍۢ"
+    },
+    {
+      "type": "concept",
+      "title": "Allah merubah nasib kita jika kita berusaha merubahnya"
+    },
+    {
+      "type": "subheading",
+      "text": "B. Akhlak"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bagian Akhlak belum lengkap dalam catatan asli"
+    },
+    {
+      "type": "note",
+      "text": "Aqidah yang kuat akan melahirkan akhlak yang mulia. Keduanya saling terkait dan membentuk kepribadian Muslim yang seimbang antara hubungan dengan Allah (hablum minallah) dan hubungan dengan sesama manusia (hablum minannas)."
+    }
+  ]
+} 

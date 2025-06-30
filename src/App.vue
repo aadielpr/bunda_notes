@@ -3,14 +3,14 @@
     <!-- Mobile Header -->
     <header class="lg:hidden bg-white border-b border-gray-200 sticky top-0 z-50">
       <div class="flex items-center justify-between p-4">
-        <h1 class="text-lg font-semibold text-gray-900">
-          Catatan Mengajiku
+        <h1 class="text-base font-bold text-gray-900">
+          MT Az-Zahra Pekanbaru
         </h1>
         <button 
           @click="toggleMobileSidebar"
           class="p-2 rounded-md text-gray-500 hover:text-gray-700 hover:bg-gray-100 transition-colors"
         >
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path v-if="!showMobileSidebar" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
             <path v-else stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
           </svg>
@@ -26,99 +26,26 @@
         @click="closeMobileSidebar"
       ></div>
 
-      <!-- Sidebar -->
-      <aside 
-        class="w-80 bg-white border-r border-gray-200 flex-shrink-0 shadow-lg overflow-y-auto"
-        :class="[
-          'lg:relative lg:translate-x-0 lg:h-screen',
-          showMobileSidebar 
-            ? 'fixed inset-y-0 left-0 z-50 transform translate-x-0 transition-transform duration-300 ease-in-out' 
-            : 'lg:block hidden lg:translate-x-0 -translate-x-full'
-        ]"
-      >
-        <div class="p-6">
-          <!-- Desktop Header -->
-          <div class="mb-8 hidden lg:block">
-            <h1 class="text-2xl font-semibold text-gray-900 mb-2">
-              Catatan Mengajiku
-            </h1>
-          </div>
-          
-          <!-- Mobile Close Button -->
-          <div class="flex justify-between items-center mb-6 lg:hidden">
-            <h2 class="text-xl font-semibold text-gray-900">Menu</h2>
-            <button 
-              @click="closeMobileSidebar"
-              class="p-2 rounded-md text-gray-500 hover:text-gray-700 hover:bg-gray-100"
-            >
-              <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-              </svg>
-            </button>
-          </div>
-          
-          <!-- Search -->
-          <div class="mb-6">
-            <input 
-            v-model="searchQuery" 
-            type="text" 
-            placeholder="Cari catatan..." 
-            class="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-green-600 focus:border-green-600 text-sm bg-gray-50/50 transition-all duration-200"
-          >
-          </div>
-          
-          <!-- Notes List -->
-          <nav>
-            <ul class="space-y-1">
-              <li 
-                v-for="note in filteredNotes" 
-                :key="note.id"
-                @click="selectNoteAndCloseSidebar(note.id)"
-                class="cursor-pointer transition-all duration-200 group rounded-md p-3 hover:bg-green-50"
-                :class="[
-                  selectedNoteId === note.id ? 'bg-red-50 border-l-4 border-red-600' : '',
-                  isLoadingNote ? 'pointer-events-none opacity-60' : ''
-                ]"
-              >
-                <div class="flex items-start space-x-3">
-                  <div class="flex-shrink-0 w-2 h-2 rounded-full mt-2"
-                       :class="selectedNoteId === note.id && isLoadingNote 
-                         ? 'bg-gray-400' 
-                         : 'bg-green-600'">
-                  </div>
-                  <div class="flex-1 min-w-0">
-                    <h3 
-                      class="font-medium text-sm leading-relaxed truncate flex items-center"
-                      :class="selectedNoteId === note.id 
-                        ? 'text-red-700' 
-                        : 'text-gray-700 group-hover:text-gray-900'"
-                    >
-                      {{ note.title }}
-                      <div v-if="isLoadingNote && selectedNoteId === note.id" 
-                           class="ml-2 inline-block animate-spin rounded-full h-3 w-3 border border-red-600 border-t-transparent">
-                      </div>
-                    </h3>
-                    <p class="text-xs text-gray-500 mt-1">{{ note.category }}</p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </nav>
-          
-          <div v-if="filteredNotes.length === 0" class="text-center py-8">
-            <p class="text-gray-500 text-sm">Tidak ada catatan yang ditemukan.</p>
-          </div>
-        </div>
-      </aside>
+      <!-- Sidebar Component -->
+      <Sidebar
+        :notes="notes"
+        :search-query="searchQuery"
+        :selected-note-id="selectedNoteId"
+        :show-mobile-sidebar="showMobileSidebar"
+        :is-loading-note="isLoadingNote"
+        @select-note-and-close="selectNoteAndCloseSidebar"
+        @close-mobile-sidebar="closeMobileSidebar"
+        @update-search-query="updateSearchQuery"
+      />
 
       <!-- Main Content -->
       <main class="flex-1 bg-white overflow-y-auto" :class="showMobileSidebar ? 'lg:h-screen' : 'h-full lg:h-screen'">
         <!-- Loading state -->
         <div v-if="isLoadingNote" class="h-full flex items-center justify-center p-4">
           <div class="text-center">
-            <div class="inline-block animate-spin rounded-full h-8 w-8 lg:h-12 lg:w-12 border-b-2 border-green-600 mb-4"></div>
-            <h2 class="text-lg lg:text-xl font-medium text-gray-700 mb-2">Memuat Catatan</h2>
-            <p class="text-gray-500 text-sm lg:text-base">Mohon tunggu sebentar...</p>
+            <div class="inline-block animate-spin rounded-full h-6 w-6 lg:h-8 lg:w-8 border-b-2 border-green-600 mb-3"></div>
+            <h2 class="text-base lg:text-lg font-medium text-gray-700 mb-1">Memuat Catatan</h2>
+            <p class="text-gray-500 text-xs lg:text-sm">Mohon tunggu sebentar...</p>
           </div>
         </div>
         
@@ -135,15 +62,15 @@
         <div v-else class="h-full flex items-center justify-center p-4">
           <div class="text-center">
             <div class="text-gray-400 mb-4">
-              <svg class="w-12 h-12 lg:w-16 lg:h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg class="w-10 h-10 lg:w-12 lg:h-12 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
               </svg>
             </div>
-            <p class="text-gray-600 text-base lg:text-lg font-medium">Pilih catatan dari sidebar</p>
-            <p class="text-gray-500 text-sm mt-1">untuk mulai membaca</p>
+            <p class="text-gray-600 text-sm lg:text-base font-medium">Pilih catatan dari sidebar</p>
+            <p class="text-gray-500 text-xs mt-1">untuk mulai membaca</p>
             <button 
               @click="toggleMobileSidebar"
-              class="lg:hidden mt-4 px-4 py-2 bg-green-600 text-white rounded-md text-sm font-medium hover:bg-green-700 transition-colors"
+              class="lg:hidden mt-4 px-4 py-2 bg-green-600 text-white rounded-md text-xs font-medium hover:bg-green-700 transition-colors"
             >
               Buka Menu
             </button>
@@ -159,6 +86,7 @@ import { ref, computed, onMounted, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { getAllNotes, getNoteById } from './data/notes'
 import JsonNoteViewer from './components/JsonNoteViewer.vue'
+import Sidebar from './components/Sidebar.vue'
 
 // Type definitions
 interface NoteContent {
@@ -200,16 +128,10 @@ const showMobileSidebar = ref(false)
 const isLoadingNote = ref(false)
 
 // Computed properties
-const filteredNotes = computed(() => {
-    return notes.value.filter(note => 
-        note.title.toLowerCase().includes(searchQuery.value.toLowerCase()) ||
-        note.category.toLowerCase().includes(searchQuery.value.toLowerCase())
-    )
-})
-
 const selectedNote = computed(() => {
     return selectedNoteId.value ? getNoteById(selectedNoteId.value) : null
 })
+
 // Methods
 async function selectNote(id: string) {
     selectedNoteId.value = id
@@ -266,6 +188,7 @@ async function loadNoteContent(id: string) {
         isLoadingNote.value = false
     }
 }
+
 function downloadPDF() {
     if (!selectedNote.value || !noteContent.value) return
     
@@ -403,7 +326,7 @@ function downloadPDF() {
                 section.items?.forEach((item: string, idx: number) => {
                     htmlContent += `
                         <li class="list-item">
-                            <span class="list-number">${idx + 1}</span>
+                            <span class="list-number"></span>
                             <span class="list-text">${item}</span>
                         </li>
                     `
@@ -709,6 +632,10 @@ onMounted(() => {
         selectNote(notes.value[0].id)
     }
 })
+
+function updateSearchQuery(query: string) {
+    searchQuery.value = query
+}
 </script>
 
 <style scoped>

@@ -65,44 +65,43 @@
             "title": "Surah Yasin 36:12 - Langkah kaki dicatat"
         },
         {
-            "type": "verse-group",
-            "verses": [
-                {
-                    "surah": "Al-Infitar",
-                    "chapter": 82,
-                    "verse": 10,
-                    "arabic": "وَإِنَّ عَلَيْكُمْ لَحَٰفِظِينَ"
-                },
-                {
-                    "surah": "Al-Infitar",
-                    "chapter": 82,
-                    "verse": 11,
-                    "arabic": "كِرَامًۭا كَٰتِبِينَ"
-                },
-                {
-                    "surah": "Al-Infitar",
-                    "chapter": 82,
-                    "verse": 12,
-                    "arabic": "يَعْلَمُونَ مَا تَفْعَلُونَ"
-                }
-            ]
+            "type": "verse",
+            "surah": "Al-Infitar",
+            "chapter": 82,
+            "verse": 10,
+            "arabic": "وَإِنَّ عَلَيْكُمْ لَحَٰفِظِينَ"
         },
         {
-            "type": "verse-group",
-            "verses": [
-                {
-                    "surah": "Az-Zalzalah",
-                    "chapter": 99,
-                    "verse": 7,
-                    "arabic": "فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًۭا يَرَهُۥ"
-                },
-                {
-                    "surah": "Az-Zalzalah",
-                    "chapter": 99,
-                    "verse": 8,
-                    "arabic": "وَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍۢ شَرًّۭا يَرَهُۥ"
-                }
-            ]
+            "type": "verse",
+            "surah": "Al-Infitar",
+            "chapter": 82,
+            "verse": 11,
+            "arabic": "كِرَامًۭا كَٰتِبِينَ"
+        },
+        {
+            "type": "verse",
+            "surah": "Al-Infitar",
+            "chapter": 82,
+            "verse": 12,
+            "arabic": "يَعْلَمُونَ مَا تَفْعَلُونَ"
+        },
+        {
+            "type": "concept",
+            "title": "Surah Al-Infitar 82:10-12 - Malaikat pencatat"
+        },
+        {
+            "type": "verse",
+            "surah": "Az-Zalzalah",
+            "chapter": 99,
+            "verse": 7,
+            "arabic": "فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًۭا يَرَهُۥ"
+        },
+        {
+            "type": "verse",
+            "surah": "Az-Zalzalah",
+            "chapter": 99,
+            "verse": 8,
+            "arabic": "وَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍۢ شَرًّۭا يَرَهُۥ"
         },
         {
             "type": "concept",
@@ -143,7 +142,7 @@
             "type": "list",
             "items": [
                 "1. Niat",
-                "2. Iman", 
+                "2. Iman",
                 "3. Ilmu",
                 "4. Mujahadah atau kesungguhan",
                 "5. Istiqamah"
