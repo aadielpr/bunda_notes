@@ -75,8 +75,8 @@
                 </div>
                 <!-- Arabic Text -->
                 <div class="text-right mb-2">
-                  <p class="text-xl lg:text-3xl xl:text-4xl leading-relaxed text-gray-900 font-arabic" 
-                     style="font-family: 'Omar', serif; direction: rtl; line-height: 1.8;">
+                  <p class="text-2xl lg:text-4xl xl:text-5xl leading-relaxed text-gray-900 font-arabic" 
+                     style="font-family: 'Omar', serif; direction: rtl; line-height: 2.2; font-weight: 500;">
                     {{ verse.arabic }}
                   </p>
                 </div>
@@ -102,8 +102,8 @@
                  class="my-3 lg:my-4 p-3 lg:p-4 bg-red-50/30 rounded-lg border border-red-400">
               <!-- Arabic Text -->
               <div class="text-right mb-2">
-                <p class="text-xl lg:text-3xl xl:text-4xl leading-relaxed text-gray-900 font-arabic" 
-                   style="font-family: 'Omar', serif; direction: rtl; line-height: 1.8;">
+                <p class="text-2xl lg:text-4xl xl:text-5xl leading-relaxed text-gray-900 font-arabic" 
+                   style="font-family: 'Omar', serif; direction: rtl; line-height: 2.2; font-weight: 500;">
                   {{ section.arabic }}
                 </p>
               </div>
@@ -295,5 +295,7 @@ function getVerseRange(verses: any[]) {
 .font-arabic {
   font-family: 'Omar', serif;
   direction: rtl;
+  line-height: 2.2;
+  font-weight: 500;
 }
 </style> 
