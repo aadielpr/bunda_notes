@@ -26,7 +26,8 @@
             "surah": "Al-Baqarah",
             "chapter": 2,
             "verse": 43,
-            "arabic": "Uthmani Arabic text"
+            "arabic": "Uthmani Arabic text",
+            "indonesian": "Indonesian translation"
         },
         {
             "type": "definition",
@@ -53,7 +54,7 @@
 1. `heading` - Main section headings (level: 2)
 2. `subheading` - Subsection headings
 3. `paragraph` - Regular text paragraphs
-4. `verse` - Single Quranic verse with Arabic text
+4. `verse` - Single Quranic verse with Arabic text and Indonesian translation
 5. `verse-group` - Multiple consecutive verses
 6. `definition` - Key terms and their meanings
 7. `list` - Numbered or bulleted lists
@@ -102,7 +103,8 @@
     "surah": "Al-Baqarah",
     "chapter": 2,
     "verse": 43,
-    "arabic": "وَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ وَٱرْكَعُوا۟ مَعَ ٱلرَّٰكِعِينَ"
+    "arabic": "وَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ وَٱرْكَعُوا۟ مَعَ ٱلرَّٰكِعِينَ",
+    "indonesian": "Dan laksanakanlah salat, tunaikanlah zakat, dan rukuklah bersama orang yang rukuk."
 }
 ```
 
@@ -115,13 +117,15 @@
             "surah": "Ali Imran",
             "chapter": 3,
             "verse": 133,
-            "arabic": "وَسَارِعُوٓا۟ إِلَىٰ مَغْفِرَةٍۢ مِّن رَّبِّكُمْ..."
+            "arabic": "وَسَارِعُوٓا۟ إِلَىٰ مَغْفِرَةٍۢ مِّن رَّبِّكُمْ...",
+            "indonesian": "Dan bersegeralah kamu mencari ampunan dari Tuhanmu..."
         },
         {
             "surah": "Ali Imran",
             "chapter": 3,
             "verse": 134,
-            "arabic": "ٱلَّذِينَ يُنفِقُونَ فِى ٱلسَّرَّآءِ..."
+            "arabic": "ٱلَّذِينَ يُنفِقُونَ فِى ٱلسَّرَّآءِ...",
+            "indonesian": "Yaitu orang-orang yang menafkahkan hartanya..."
         }
     ]
 }
@@ -141,7 +145,8 @@ Use these standard categories:
    - Surah name (e.g., "Al-Baqarah")
    - Chapter number
    - Verse number
-   - Uthmani Arabic text
+   - Uthmani Arabic text (from EQuran.id API)
+   - Indonesian translation (from EQuran.id API)
 5. Lists marked with `•` or numbers become list type content
 6. Keep original text formatting and meaning
 7. Use proper content types for different elements
@@ -162,25 +167,56 @@ Add new notes to `src/data/notes.ts` following format:
 }
 ```
 
+### Arabic & Indonesian Text Fetching
+
+#### Using the Script
+The project includes a script to fetch both Arabic text and Indonesian translations from EQuran.id API:
+
+```bash
+# Fetch for a specific file
+node scripts/fetch-equran-arabic.js <filename>.json
+
+# Example
+node scripts/fetch-equran-arabic.js amanah.json
+```
+
+#### Manual Process
+1. Convert txt to JSON with correct structure
+2. Add verse references (surah, chapter, verse)
+3. Run the script to fetch Arabic and Indonesian text
+4. Test the JSON file loads correctly
+
 ### Testing Checklist
 - [ ] JSON file loads without errors
 - [ ] All sections display correctly
 - [ ] Quran verses show Arabic text
-- [ ] Translations load properly
+- [ ] Indonesian translations display properly
 - [ ] Navigation includes the new note
 - [ ] No console errors in browser
 
 ### Reference Examples
 Check these files in `public/json/` for real examples:
-1. `5-rukun-islam.json` - Complete structure example
-2. `amanah.json` - Complex content with multiple sections
-3. `jenis-ibadah.json` - Mixed content types
-4. `mukmin-yang-beruntung.json` - Quran verses with translations
+1. `amanah.json` - Complete structure with embedded translations
+2. `aqidah.json` - Simple content with verses
+3. `aqidah-dan-akhlak.json` - Complex content with multiple sections
+4. `jenis-ibadah.json` - Mixed content types
+5. `menghilangkan-takabur.json` - Quran verses with translations
+6. `mukmin-yang-beruntung.json` - Large content with many verses
 
 ### Development Workflow
 1. Convert txt to JSON using correct structure
-2. Test JSON syntax with online validator
-3. Add to navigation in `src/data/notes.ts`
-4. Test in development server
-5. Check all content types render correctly
-6. Verify Quran translations load 
+2. Add verse references for all Quran citations
+3. Run `node scripts/fetch-equran-arabic.js <filename>.json` to fetch Arabic and Indonesian text
+4. Test JSON syntax with online validator
+5. Add to navigation in `src/data/notes.ts`
+6. Test in development server
+7. Check all content types render correctly
+8. Verify Arabic text and Indonesian translations display properly
+
+### Technical Notes
+- **API Source**: EQuran.id API v2.0 (`https://equran.id/api/v2`)
+- **Arabic Text**: Uses `teksArab` field from API response
+- **Indonesian Translation**: Uses `teksIndonesia` field from API response
+- **Embedded Translations**: All translations are stored in JSON, no runtime API calls
+- **Performance**: Faster loading, works offline, no API dependencies
+- **Consistency**: All translations from same source for uniformity 

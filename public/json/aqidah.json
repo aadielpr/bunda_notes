@@ -1,160 +1,165 @@
 {
-  "title": "Aqidah Lengkap",
-  "category": "Akidah & Tauhid",
-  "sections": [
-    {
-      "type": "heading",
-      "level": 2,
-      "text": "Aqidah"
-    },
-    {
-      "type": "paragraph",
-      "text": "Aqidah adalah fondasi utama dalam Islam yang membentuk keyakinan dan keimanan seorang Muslim."
-    },
-    {
-      "type": "subheading",
-      "text": "Definisi Aqidah"
-    },
-    {
-      "type": "definition",
-      "term": "Aqidah",
-      "definition": "AKAD, yang artinya Ikatan kokoh di hati kuat keyakinan"
-    },
-    {
-      "type": "subheading",
-      "text": "Tingkatan Keyakinan"
-    },
-    {
-      "type": "list",
-      "items": [
-        "Yakin = 100%",
-        "Zon (sangka) = 75%",
-        "Syak (ragu) = 50%",
-        "Waham (terlintas) = 25%"
-      ]
-    },
-    {
-      "type": "subheading",
-      "text": "Yakin bahwa:"
-    },
-    {
-      "type": "definition",
-      "term": "a. Allah Maha Pencipta",
-      "definition": "QS. Ghafir 40:68 - 'Dia lah yang menghidupkan dan mematikan'"
-    },
-    {
-      "type": "verse",
-      "surah": "Ghafir",
-      "chapter": 40,
-      "verse": 68,
-      "arabic": "هُوَ ٱلَّذِى يُحْيِى وَيُمِيتُ ۖ فَإِذَا قَضَىٰٓ أَمْرًۭا فَإِنَّمَا يَقُولُ لَهُۥ كُن فَيَكُونُ"
-    },
-    {
-      "type": "subheading",
-      "text": "Catatan"
-    },
-    {
-      "type": "definition",
-      "term": "Qodho'",
-      "definition": "Skenario/ketetapan"
-    },
-    {
-      "type": "definition",
-      "term": "Qodar",
-      "definition": "Ukuran/menjalani proses"
-    },
-    {
-      "type": "definition",
-      "term": "Makna doa",
-      "definition": "Nikmat hidup, tidak menyusahkan, mati tetap di hati"
-    },
-    {
-      "type": "verse",
-      "surah": "Ali Imran",
-      "chapter": 3,
-      "verse": 190,
-      "arabic": "إِنَّ فِى خَلْقِ ٱلسَّمَٰوَٰتِ وَٱلْأَرْضِ وَٱخْتِلَٰفِ ٱلَّيْلِ وَٱلنَّهَارِ لَءَايَٰتٍۢ لِّأُو۟لِى ٱلْأَلْبَٰبِ"
-    },
-    {
-      "type": "concept",
-      "title": "Allah menciptakan langit dan bumi serta berganti malam dan siang terdapat tanda-tanda kebesaran Allah bagi orang yang berakal"
-    },
-    {
-      "type": "subheading",
-      "text": "Sifat Allah"
-    },
-    {
-      "type": "definition",
-      "term": "Wujud",
-      "definition": "Ada"
-    },
-    {
-      "type": "definition",
-      "term": "Qidam",
-      "definition": "Tidak ada awal"
-    },
-    {
-      "type": "definition",
-      "term": "Baqo",
-      "definition": "Tidak ada akhir"
-    },
-    {
-      "type": "verse",
-      "surah": "Ar-Rahman",
-      "chapter": 55,
-      "verse": 26,
-      "arabic": "كُلُّ مَنْ عَلَيْهَا فَانٍۢ"
-    },
-    {
-      "type": "verse",
-      "surah": "Ar-Rahman",
-      "chapter": 55,
-      "verse": 27,
-      "arabic": "وَيَبْقَىٰ وَجْهُ رَبِّكَ ذُو ٱلْجَلَٰلِ وَٱلْإِكْرَامِ"
-    },
-    {
-      "type": "verse",
-      "surah": "Al-Baqarah",
-      "chapter": 2,
-      "verse": 28,
-      "arabic": "كَيْفَ تَكْفُرُونَ بِٱللَّهِ وَكُنتُمْ أَمْوَٰتًۭا فَأَحْيَٰكُمْ ۖ ثُمَّ يُمِيتُكُمْ ثُمَّ يُحْيِيكُمْ ثُمَّ إِلَيْهِ تُرْجَعُونَ"
-    },
-    {
-      "type": "subheading",
-      "text": "Siklus Kehidupan"
-    },
-    {
-      "type": "list",
-      "items": [
-        "Mati = dalam kandungan (0-4 bulan)",
-        "Dihidupkan = dilahirkan",
-        "Dimatikan = meninggal",
-        "Dihidupkan = dibangkitkan di padang mahsyar",
-        "Dikembalikan = masuk surga/neraka"
-      ]
-    },
-    {
-      "type": "subheading",
-      "text": "Catatan"
-    },
-    {
-      "type": "definition",
-      "term": "Hakikat",
-      "definition": "Kebenaran yang sebenar-benarnya, inilah tauhidnya"
-    },
-    {
-      "type": "definition",
-      "term": "Syariat/jalannya",
-      "definition": "Yang digerakkan Allah"
-    },
-    {
-      "type": "definition",
-      "term": "Wasilah",
-      "definition": "Perantara sebelum terjadi"
-    },
-    {
-      "type": "note",
-      "text": "Aqidah yang benar adalah fondasi yang kokoh bagi seluruh amal ibadah. Tanpa aqidah yang kuat, ibadah tidak akan memiliki makna yang mendalam dan tidak akan diterima oleh Allah SWT."
-    }
-  ]
-} 
+    "title": "Aqidah Lengkap",
+    "category": "Akidah & Tauhid",
+    "sections": [
+        {
+            "type": "heading",
+            "level": 2,
+            "text": "Aqidah"
+        },
+        {
+            "type": "paragraph",
+            "text": "Aqidah adalah fondasi utama dalam Islam yang membentuk keyakinan dan keimanan seorang Muslim."
+        },
+        {
+            "type": "subheading",
+            "text": "Definisi Aqidah"
+        },
+        {
+            "type": "definition",
+            "term": "Aqidah",
+            "definition": "AKAD, yang artinya Ikatan kokoh di hati kuat keyakinan"
+        },
+        {
+            "type": "subheading",
+            "text": "Tingkatan Keyakinan"
+        },
+        {
+            "type": "list",
+            "items": [
+                "Yakin = 100%",
+                "Zon (sangka) = 75%",
+                "Syak (ragu) = 50%",
+                "Waham (terlintas) = 25%"
+            ]
+        },
+        {
+            "type": "subheading",
+            "text": "Yakin bahwa:"
+        },
+        {
+            "type": "definition",
+            "term": "a. Allah Maha Pencipta",
+            "definition": "QS. Ghafir 40:68 - 'Dia lah yang menghidupkan dan mematikan'"
+        },
+        {
+            "type": "verse",
+            "surah": "Ghafir",
+            "chapter": 40,
+            "verse": 68,
+            "arabic": "هُوَ الَّذِيْ يُحْيٖ وَيُمِيْتُۚ فَاِذَا قَضٰىٓ اَمْرًا فَاِنَّمَا يَقُوْلُ لَهٗ كُنْ فَيَكُوْنُ ࣖ ",
+            "indonesian": "Dialah yang menghidupkan dan mematikan. Maka apabila Dia hendak menetapkan sesuatu urusan, Dia hanya berkata kepadanya, “Jadilah!” Maka jadilah sesuatu itu."
+        },
+        {
+            "type": "subheading",
+            "text": "Catatan"
+        },
+        {
+            "type": "definition",
+            "term": "Qodho'",
+            "definition": "Skenario/ketetapan"
+        },
+        {
+            "type": "definition",
+            "term": "Qodar",
+            "definition": "Ukuran/menjalani proses"
+        },
+        {
+            "type": "definition",
+            "term": "Makna doa",
+            "definition": "Nikmat hidup, tidak menyusahkan, mati tetap di hati"
+        },
+        {
+            "type": "verse",
+            "surah": "Ali Imran",
+            "chapter": 3,
+            "verse": 190,
+            "arabic": "اِنَّ فِيْ خَلْقِ السَّمٰوٰتِ وَالْاَرْضِ وَاخْتِلَافِ الَّيْلِ وَالنَّهَارِ لَاٰيٰتٍ لِّاُولِى الْاَلْبَابِۙ",
+            "indonesian": "Sesungguhnya dalam penciptaan langit dan bumi, dan pergantian malam dan siang terdapat tanda-tanda (kebesaran Allah) bagi orang yang berakal,"
+        },
+        {
+            "type": "concept",
+            "title": "Allah menciptakan langit dan bumi serta berganti malam dan siang terdapat tanda-tanda kebesaran Allah bagi orang yang berakal"
+        },
+        {
+            "type": "subheading",
+            "text": "Sifat Allah"
+        },
+        {
+            "type": "definition",
+            "term": "Wujud",
+            "definition": "Ada"
+        },
+        {
+            "type": "definition",
+            "term": "Qidam",
+            "definition": "Tidak ada awal"
+        },
+        {
+            "type": "definition",
+            "term": "Baqo",
+            "definition": "Tidak ada akhir"
+        },
+        {
+            "type": "verse",
+            "surah": "Ar-Rahman",
+            "chapter": 55,
+            "verse": 26,
+            "arabic": "كُلُّ مَنْ عَلَيْهَا فَانٍۖ  ",
+            "indonesian": "Semua yang ada di bumi itu akan binasa, "
+        },
+        {
+            "type": "verse",
+            "surah": "Ar-Rahman",
+            "chapter": 55,
+            "verse": 27,
+            "arabic": "وَّيَبْقٰى وَجْهُ رَبِّكَ ذُو الْجَلٰلِ وَالْاِكْرَامِۚ  ",
+            "indonesian": "tetapi wajah Tuhanmu yang memiliki kebesaran dan kemuliaan tetap kekal. "
+        },
+        {
+            "type": "verse",
+            "surah": "Al-Baqarah",
+            "chapter": 2,
+            "verse": 28,
+            "arabic": "كَيْفَ تَكْفُرُوْنَ بِاللّٰهِ وَكُنْتُمْ اَمْوَاتًا فَاَحْيَاكُمْۚ  ثُمَّ يُمِيْتُكُمْ ثُمَّ يُحْيِيْكُمْ ثُمَّ اِلَيْهِ تُرْجَعُوْنَ ",
+            "indonesian": "Bagaimana kamu ingkar kepada Allah, padahal kamu (tadinya) mati, lalu Dia menghidupkan kamu, kemudian Dia mematikan kamu lalu Dia menghidupkan kamu kembali. Kemudian kepada-Nyalah kamu dikembalikan."
+        },
+        {
+            "type": "subheading",
+            "text": "Siklus Kehidupan"
+        },
+        {
+            "type": "list",
+            "items": [
+                "Mati = dalam kandungan (0-4 bulan)",
+                "Dihidupkan = dilahirkan",
+                "Dimatikan = meninggal",
+                "Dihidupkan = dibangkitkan di padang mahsyar",
+                "Dikembalikan = masuk surga/neraka"
+            ]
+        },
+        {
+            "type": "subheading",
+            "text": "Catatan"
+        },
+        {
+            "type": "definition",
+            "term": "Hakikat",
+            "definition": "Kebenaran yang sebenar-benarnya, inilah tauhidnya"
+        },
+        {
+            "type": "definition",
+            "term": "Syariat/jalannya",
+            "definition": "Yang digerakkan Allah"
+        },
+        {
+            "type": "definition",
+            "term": "Wasilah",
+            "definition": "Perantara sebelum terjadi"
+        },
+        {
+            "type": "note",
+            "text": "Aqidah yang benar adalah fondasi yang kokoh bagi seluruh amal ibadah. Tanpa aqidah yang kuat, ibadah tidak akan memiliki makna yang mendalam dan tidak akan diterima oleh Allah SWT."
+        }
+    ]
+}

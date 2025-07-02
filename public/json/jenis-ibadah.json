@@ -1,426 +1,445 @@
 {
-  "title": "Jenis Ibadah Lengkap",
-  "category": "Akidah & Ibadah",
-  "sections": [
-    {
-      "type": "heading",
-      "level": 2,
-      "text": "Jenis Ibadah"
-    },
-    {
-      "type": "paragraph",
-      "text": "Ibadah dalam Islam terbagi menjadi tiga jenis utama: badaniyah (ibadah jasmani), maliyah (ibadah harta), dan qalbiyah (ibadah hati)."
-    },
-    {
-      "type": "subheading",
-      "text": "1. IBADAH BADANIYAH"
-    },
-    {
-      "type": "subheading",
-      "text": "Shalat"
-    },
-    {
-      "type": "verse",
-      "surah": "Al-Baqarah",
-      "chapter": 2,
-      "verse": 43,
-      "arabic": "وَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ وَٱرْكَعُوا۟ مَعَ ٱلرَّٰكِعِينَ"
-    },
-    {
-      "type": "concept",
-      "title": "Dirikan shalat"
-    },
-    {
-      "type": "verse",
-      "surah": "Al-Ankabut",
-      "chapter": 29,
-      "verse": 45,
-      "arabic": "ٱتْلُ مَآ أُوحِّيَ إِلَيْكَ مِنَ ٱلْكِتَٰبِ وَأَقِمِ ٱلصَّلَوٰةَ ۖ إِنَّ ٱلصَّلَوٰةَ تَنْهَىٰ عَنِ ٱلْفَحْشَآءِ وَٱلْمُنكَرِ ۗ وَلَذِكْرُ ٱللَّهِ أَكْبَرُ ۗ وَٱللَّهُ يَعْلَمُ مَا تَصْنَعُونَ"
-    },
-    {
-      "type": "concept",
-      "title": "Fungsi shalat untuk mencegah perbuatan buruk"
-    },
-    {
-      "type": "verse",
-      "surah": "Al-Hijr",
-      "chapter": 15,
-      "verse": 99,
-      "arabic": "وَٱعْبُدْ رَبَّكَ حَتَّىٰ يَأْتِيَكَ ٱلْيَقِينُ"
-    },
-    {
-      "type": "concept",
-      "title": "Batas akhir shalat sampai kematian"
-    },
-    {
-      "type": "subheading",
-      "text": "Perbuatan Buruk"
-    },
-    {
-      "type": "definition",
-      "term": "Fahsha",
-      "definition": "Perbuatan sembunyi-sembunyi yang berhubungan dengan seksual"
-    },
-    {
-      "type": "definition",
-      "term": "Munkar",
-      "definition": "Perbuatan buruk yang dilakukan terang-terangan, lebih dahsyat dari fahsha"
-    },
-    {
-      "type": "subheading",
-      "text": "Puasa"
-    },
-    {
-      "type": "verse",
-      "surah": "Al-Baqarah",
-      "chapter": 2,
-      "verse": 183,
-      "arabic": "يَٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ كُتِبَ عَلَيْكُمُ ٱلصِّيَامُ كَمَا كُتِبَ عَلَى ٱلَّذِينَ مِن قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُونَ"
-    },
-    {
-      "type": "concept",
-      "title": "Diwajibkan berpuasa agar kamu bertakwa"
-    },
-    {
-      "type": "subheading",
-      "text": "Hutang Puasa"
-    },
-    {
-      "type": "list",
-      "items": [
-        "Wajib ganti puasa tapi tidak bayar fidyah - Contoh: karena sakit, musafir, haid",
-        "Tidak wajib puasa tapi bayar fidyah - Contoh: sudah usia 72 tahun, pikun - Bayar fidyah diwajibkan anak laki-laki atau anak dari anak laki-laki - Kenapa lebih dekat ke anak laki-laki: nasab, wali (QS. Al-Baqarah 2:196-197), waris",
-        "Wajib bayar puasa dan bayar fidyah - Contoh: hamil dan menyusui"
-      ]
-    },
-    {
-      "type": "subheading",
-      "text": "Konsep"
-    },
-    {
-      "type": "definition",
-      "term": "Ruhsoh",
-      "definition": "Dimudahkan"
-    },
-    {
-      "type": "definition",
-      "term": "Djawil arham (kasih sayang)",
-      "definition": "Hubungan dari ibu/pertalian dari ibu hanya pertalian kasih sayang"
-    },
-    {
-      "type": "concept",
-      "title": "Warisan dibagikan setelah selesai hutang dan wasiat"
-    },
-    {
-      "type": "subheading",
-      "text": "2. IBADAH MALIYAH (Ibadah Amal)"
-    },
-    {
-      "type": "subheading",
-      "text": "Sumber Halal"
-    },
-    {
-      "type": "verse",
-      "surah": "Al-Baqarah",
-      "chapter": 2,
-      "verse": 168,
-      "arabic": "يَٰٓأَيُّهَا ٱلنَّاسُ كُلُوا۟ مِمَّا فِى ٱلْأَرْضِ حَلَٰلًۭا طَيِّبًۭا وَلَا تَتَّبِعُوا۟ خُطُوَٰتِ ٱلشَّيْطَٰنِ ۚ إِنَّهُۥ لَكُمْ عَدُوٌّۭ مُّبِينٌۭ"
-    },
-    {
-      "type": "concept",
-      "title": "Hai manusia makanlah dari yang halal lagi baik"
-    },
-    {
-      "type": "subheading",
-      "text": "Sumber Haram"
-    },
-    {
-      "type": "verse",
-      "surah": "Al-Mutaffifin",
-      "chapter": 83,
-      "verse": 1,
-      "arabic": "وَيْلٌۭ لِّلْمُطَفِّفِينَ"
-    },
-    {
-      "type": "concept",
-      "title": "Curang"
-    },
-    {
-      "type": "verse",
-      "surah": "Al-Baqarah",
-      "chapter": 2,
-      "verse": 42,
-      "arabic": "وَلَا تَلْبِسُوا۟ ٱلْحَقَّ بِٱلْبَٰطِلِ وَتَكْتُمُوا۟ ٱلْحَقَّ وَأَنتُمْ تَعْلَمُونَ"
-    },
-    {
-      "type": "concept",
-      "title": "Jangan kau campur yang hak dan batil"
-    },
-    {
-      "type": "verse",
-      "surah": "Al-Baqarah",
-      "chapter": 2,
-      "verse": 188,
-      "arabic": "وَلَا تَأْكُلُوٓا۟ أَمْوَٰلَكُم بَيْنَكُم بِٱلْبَٰطِلِ وَتُدْلُوا۟ بِهَآ إِلَى ٱلْحُكَّامِ لِتَأْكُلُوا۟ فَرِيقًۭا مِّنْ أَمْوَٰلِ ٱلنَّاسِ بِٱلْإِثْمِ وَأَنتُمْ تَعْلَمُونَ"
-    },
-    {
-      "type": "concept",
-      "title": "Hak orang lain"
-    },
-    {
-      "type": "verse",
-      "surah": "Al-Baqarah",
-      "chapter": 2,
-      "verse": 275,
-      "arabic": "ٱلَّذِينَ يَأْكُلُونَ ٱلرِّبَوٰا۟ لَا يَقُومُونَ إِلَّا كَمَا يَقُومُ ٱلَّذِى يَتَخَبَّطُهُ ٱلشَّيْطَٰنُ مِنَ ٱلْمَسِّ ۚ ذَٰلِكَ بِأَنَّهُمْ قَالُوٓا۟ إِنَّمَا ٱلْبَيْعُ مِثْلُ ٱلرِّبَوٰا۟ ۗ وَأَحَلَّ ٱللَّهُ ٱلْبَيْعَ وَحَرَّمَ ٱلرِّبَوٰا۟ ۚ فَمَن جَآءَهُۥ مَوْعِظَةٌۭ مِّن رَّبِّهِۦ فَٱنتَهَىٰ فَلَهُۥ مَا سَلَفَ وَأَمْرُهُۥٓ إِلَى ٱللَّهِ ۖ وَمَنْ عَادَ فَأُو۟لَٰٓئِكَ أَصْحَٰبُ ٱلنَّارِ ۖ هُمْ فِيهَا خَٰلِدُونَ"
-    },
-    {
-      "type": "concept",
-      "title": "Riba (orang yang makan riba di hari kiamat akan dibangkitkan seperti orang gila)"
-    },
-    {
-      "type": "subheading",
-      "text": "Catatan"
-    },
-    {
-      "type": "definition",
-      "term": "Menyuap/sogok",
-      "definition": "Dosa pada Allah dan juga pada manusia"
-    },
-    {
-      "type": "definition",
-      "term": "Berkah",
-      "definition": "Tak nampak oleh mata dirasakan oleh hati"
-    },
-    {
-      "type": "definition",
-      "term": "Barokah",
-      "definition": "Menjadi lebih baik"
-    },
-    {
-      "type": "subheading",
-      "text": "Penggunaan Harta"
-    },
-    {
-      "type": "list",
-      "items": [
-        "Jalan Allah",
-        "Jalan syaitan",
-        "Contoh: nafkah (QS. At-Talaq 65:7)"
-      ]
-    },
-    {
-      "type": "subheading",
-      "text": "Konsep Harta Menurut Al-Qur'an"
-    },
-    {
-      "type": "definition",
-      "term": "a. Ujian (QS. At-Taghabun 64:15)",
-      "definition": "Anak (QS. Al-Ghashiyah 88:21-22) - harta dulu baru anak"
-    },
-    {
-      "type": "definition",
-      "term": "b. Perhiasan (QS. Al-Kahf 18:46)",
-      "definition": "Harta sebagai perhiasan dunia"
-    },
-    {
-      "type": "definition",
-      "term": "c. Jangan lalai ibadah (QS. Al-Munafiqun 63:9)",
-      "definition": "Harta jangan sampai melalaikan dari ibadah"
-    },
-    {
-      "type": "subheading",
-      "text": "d. Jangan lalai akhirat"
-    },
-    {
-      "type": "verse",
-      "surah": "At-Takatsur",
-      "chapter": 102,
-      "verse": 1,
-      "arabic": "أَلْهَىٰكُمُ ٱلتَّكَاثُرُ"
-    },
-    {
-      "type": "verse",
-      "surah": "At-Takatsur",
-      "chapter": 102,
-      "verse": 2,
-      "arabic": "حَتَّىٰ زُرْتُمُ ٱلْمَقَابِرَ"
-    },
-    {
-      "type": "concept",
-      "title": "Katsir = banyak, Takatsur = 2 lebih banyak bersaing"
-    },
-    {
-      "type": "list",
-      "items": [
-        "Bersaing ada 3: 1. darah 2. jarak 3. pekerjaan",
-        "Fasbiqulkhairat = berlomba-lomba dalam kebajikan",
-        "Ziarah = kunjungan singkat",
-        "Durasi akhirat – dunia: 24 jam akhirat = 1000 tahun dunia, 1 jam akhirat = 42 tahun dunia"
-      ]
-    },
-    {
-      "type": "subheading",
-      "text": "3. IBADAH QALBIYAH"
-    },
-    {
-      "type": "subheading",
-      "text": "a. Ikhlas"
-    },
-    {
-      "type": "definition",
-      "term": "Ikhlas",
-      "definition": "Kholaso, bersih tidak bercampur/murni/suci karena Allah"
-    },
-    {
-      "type": "verse",
-      "surah": "Al-Bayyinah",
-      "chapter": 98,
-      "verse": 5,
-      "arabic": "وَمَآ أُمِرُوٓا۟ إِلَّا لِيَعْبُدُوا۟ ٱللَّهَ مُخْلِصِينَ لَهُ ٱلدِّينَ حُنَفَآءَ وَيُقِيمُوا۟ ٱلصَّلَوٰةَ وَيُؤْتُوا۟ ٱلزَّكَوٰةَ ۚ وَذَٰلِكَ دِينُ ٱلْقَيِّمَةِ"
-    },
-    {
-      "type": "verse",
-      "surah": "Al-An'am",
-      "chapter": 6,
-      "verse": 162,
-      "arabic": "قُلْ إِنَّ صَلَاتِى وَنُسُكِى وَمَحْيَاىَ وَمَمَاتِى لِلَّهِ رَبِّ ٱلْعَٰلَمِينَ"
-    },
-    {
-      "type": "concept",
-      "title": "Lawan ikhlas adalah Riya"
-    },
-    {
-      "type": "subheading",
-      "text": "Catatan"
-    },
-    {
-      "type": "list",
-      "items": [
-        "Ibadah = ritual dan sosial",
-        "Ikhlas termasuk ritual",
-        "Ukuran ikhlas adalah dipuji tidak melambung/terbang dan dihina tidak menurun/tumbang",
-        "Pengajian harus mencerdaskan: IQ = akal/otak/fikiran bagaimana cara menumbuhkan ilmu, EQ = kecerdasan sosial/emosional sosial, SQ = spiritual",
-        "Ilmu bisa berubah menjadi hikmah dengan mengamalkannya"
-      ]
-    },
-    {
-      "type": "subheading",
-      "text": "b. Qanaah (Merasa Cukup)"
-    },
-    {
-      "type": "definition",
-      "term": "Qanaah",
-      "definition": "Rasa syukur di dalam hati dan merasa cukup apa yang dimiliki"
-    },
-    {
-      "type": "verse",
-      "surah": "An-Nahl",
-      "chapter": 16,
-      "verse": 18,
-      "arabic": "وَإِن تَعُدُّوا۟ نِعْمَةَ ٱللَّهِ لَا تُحْصُوهَآ ۗ إِنَّ ٱللَّهَ لَغَفُورٌۭ رَّحِيمٌۭ"
-    },
-    {
-      "type": "concept",
-      "title": "Cukup, merasa cukup bersyukur apa yang dimiliki"
-    },
-    {
-      "type": "verse",
-      "surah": "Adh-Dhariyat",
-      "chapter": 51,
-      "verse": 21,
-      "arabic": "وَفِىٓ أَنفُسِكُمْ ۚ أَفَلَا تُبْصِرُونَ"
-    },
-    {
-      "type": "concept",
-      "title": "Ukur apa yang ada di diri kita"
-    },
-    {
-      "type": "concept",
-      "title": "Lawan kata qanaah adalah hasad"
-    },
-    {
-      "type": "subheading",
-      "text": "Hasad"
-    },
-    {
-      "type": "verse",
-      "surah": "Al-Falaq",
-      "chapter": 113,
-      "verse": 5,
-      "arabic": "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ"
-    },
-    {
-      "type": "concept",
-      "title": "Tentang doanya"
-    },
-    {
-      "type": "concept",
-      "title": "Ciri orang hasad (QS. Ali Imran 3:120)"
-    },
-    {
-      "type": "concept",
-      "title": "Asbabul nuzulnya, Lubaid bin Asham (dukun/peramal) yang merasa tersaingi dengan nabi, dan menyihir nabi"
-    },
-    {
-      "type": "subheading",
-      "text": "Nama-nama Dukun dalam Qur'an dan Hadits"
-    },
-    {
-      "type": "list",
-      "items": [
-        "Kahin = Seseorang yang mengabarkan sesuatu yang akan terjadi di masa yang akan datang",
-        "'Arraf = Orang yang mengaku-ngaku mengetahui urusan-urusan tertentu",
-        "Rammal = Tukang ramal yang menggaris-garis di pasir untuk meramal sesuatu",
-        "Munajjim (ahli ilmu nujum) = Nujum artinya bintang-bintang, populer dengan nama astrologi",
-        "Sahir (tukang sihir) = Ini lebih jahat dari yang sebelumnya, identik dengan kejahatan"
-      ]
-    },
-    {
-      "type": "concept",
-      "title": "Semua nama-nama dukun di atas adalah haram dilakukan"
-    },
-    {
-      "type": "subheading",
-      "text": "c. Tawakal"
-    },
-    {
-      "type": "verse",
-      "surah": "Asy-Syarh",
-      "chapter": 94,
-      "verse": 7,
-      "arabic": "فَإِذَا فَرَغْتَ فَٱنصَبْ"
-    },
-    {
-      "type": "verse",
-      "surah": "Asy-Syarh",
-      "chapter": 94,
-      "verse": 8,
-      "arabic": "وَإِلَىٰ رَبِّكَ فَٱرْغَب"
-    },
-    {
-      "type": "definition",
-      "term": "Tawakal",
-      "definition": "Menyerahkan hasil akhir setelah ikhtiar. Hasil akhir bisa positif (ujian positif, bersyukur atau tidak) bisa negatif juga ujian untuk sabar atau tidak"
-    },
-    {
-      "type": "verse",
-      "surah": "Hud",
-      "chapter": 11,
-      "verse": 6,
-      "arabic": "وَمَا مِن دَآبَّةٍۢ فِى ٱلْأَرْضِ إِلَّا عَلَى ٱللَّهِ رِزْقُهَا وَيَعْلَمُ مُسْتَقَرَّهَا وَمُسْتَوْدَعَهَا ۚ كُلٌّۭ فِى كِتَٰبٍۢ مُّبِينٍۭ"
-    },
-    {
-      "type": "concept",
-      "title": "Dijamin Allah bagi yang mau bergerak (melata)/bekerja"
-    },
-    {
-      "type": "concept",
-      "title": "Ibadah Badaniyah, Maliyah, Qalbiyah itu ibarat bibit tanaman. Sedangkan Aqidah/Akhlak ibarat tanah. Tanah yang subur bibit akan tumbuh dengan baik"
-    },
-    {
-      "type": "note",
-      "text": "Ketiga jenis ibadah ini saling melengkapi dan membentuk kesatuan ibadah yang sempurna dalam kehidupan seorang Muslim. Ibadah badaniyah melatih fisik, maliyah melatih pengelolaan harta, dan qalbiyah melatih hati dan jiwa."
-    }
-  ]
-} 
+    "title": "Jenis Ibadah Lengkap",
+    "category": "Akidah & Ibadah",
+    "sections": [
+        {
+            "type": "heading",
+            "level": 2,
+            "text": "Jenis Ibadah"
+        },
+        {
+            "type": "paragraph",
+            "text": "Ibadah dalam Islam terbagi menjadi tiga jenis utama: badaniyah (ibadah jasmani), maliyah (ibadah harta), dan qalbiyah (ibadah hati)."
+        },
+        {
+            "type": "subheading",
+            "text": "1. IBADAH BADANIYAH"
+        },
+        {
+            "type": "subheading",
+            "text": "Shalat"
+        },
+        {
+            "type": "verse",
+            "surah": "Al-Baqarah",
+            "chapter": 2,
+            "verse": 43,
+            "arabic": "وَاَقِيْمُوا الصَّلٰوةَ وَاٰتُوا الزَّكٰوةَ وَارْكَعُوْا مَعَ الرّٰكِعِيْنَ",
+            "indonesian": "Dan laksanakanlah salat, tunaikanlah zakat, dan rukuklah beserta orang yang rukuk."
+        },
+        {
+            "type": "concept",
+            "title": "Dirikan shalat"
+        },
+        {
+            "type": "verse",
+            "surah": "Al-Ankabut",
+            "chapter": 29,
+            "verse": 45,
+            "arabic": "اُتْلُ مَآ اُوْحِيَ اِلَيْكَ مِنَ الْكِتٰبِ وَاَقِمِ الصَّلٰوةَۗ اِنَّ الصَّلٰوةَ تَنْهٰى عَنِ الْفَحْشَاۤءِ وَالْمُنْكَرِ ۗوَلَذِكْرُ اللّٰهِ اَكْبَرُ ۗوَاللّٰهُ يَعْلَمُ مَا تَصْنَعُوْنَ",
+            "indonesian": "Bacalah Kitab (Al-Qur'an) yang telah diwahyukan kepadamu (Muhammad) dan laksanakanlah salat. Sesungguhnya salat itu mencegah dari (perbuatan) keji dan mungkar. Dan (ketahuilah) mengingat Allah (salat) itu lebih besar (keutamaannya dari ibadah yang lain). Allah mengetahui apa yang kamu kerjakan. "
+        },
+        {
+            "type": "concept",
+            "title": "Fungsi shalat untuk mencegah perbuatan buruk"
+        },
+        {
+            "type": "verse",
+            "surah": "Al-Hijr",
+            "chapter": 15,
+            "verse": 99,
+            "arabic": "وَاعْبُدْ رَبَّكَ حَتّٰى يَأْتِيَكَ الْيَقِيْنُ ࣖࣖ ",
+            "indonesian": "Dan sembahlah Tuhanmu sampai yakin (ajal) datang kepadamu."
+        },
+        {
+            "type": "concept",
+            "title": "Batas akhir shalat sampai kematian"
+        },
+        {
+            "type": "subheading",
+            "text": "Perbuatan Buruk"
+        },
+        {
+            "type": "definition",
+            "term": "Fahsha",
+            "definition": "Perbuatan sembunyi-sembunyi yang berhubungan dengan seksual"
+        },
+        {
+            "type": "definition",
+            "term": "Munkar",
+            "definition": "Perbuatan buruk yang dilakukan terang-terangan, lebih dahsyat dari fahsha"
+        },
+        {
+            "type": "subheading",
+            "text": "Puasa"
+        },
+        {
+            "type": "verse",
+            "surah": "Al-Baqarah",
+            "chapter": 2,
+            "verse": 183,
+            "arabic": "يٰٓاَيُّهَا الَّذِيْنَ اٰمَنُوْا كُتِبَ عَلَيْكُمُ الصِّيَامُ كَمَا كُتِبَ عَلَى الَّذِيْنَ مِنْ قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُوْنَۙ",
+            "indonesian": "Wahai orang-orang yang beriman! Diwajibkan atas kamu berpuasa sebagaimana diwajibkan atas orang sebelum kamu agar kamu bertakwa,"
+        },
+        {
+            "type": "concept",
+            "title": "Diwajibkan berpuasa agar kamu bertakwa"
+        },
+        {
+            "type": "subheading",
+            "text": "Hutang Puasa"
+        },
+        {
+            "type": "list",
+            "items": [
+                "Wajib ganti puasa tapi tidak bayar fidyah - Contoh: karena sakit, musafir, haid",
+                "Tidak wajib puasa tapi bayar fidyah - Contoh: sudah usia 72 tahun, pikun - Bayar fidyah diwajibkan anak laki-laki atau anak dari anak laki-laki - Kenapa lebih dekat ke anak laki-laki: nasab, wali (QS. Al-Baqarah 2:196-197), waris",
+                "Wajib bayar puasa dan bayar fidyah - Contoh: hamil dan menyusui"
+            ]
+        },
+        {
+            "type": "subheading",
+            "text": "Konsep"
+        },
+        {
+            "type": "definition",
+            "term": "Ruhsoh",
+            "definition": "Dimudahkan"
+        },
+        {
+            "type": "definition",
+            "term": "Djawil arham (kasih sayang)",
+            "definition": "Hubungan dari ibu/pertalian dari ibu hanya pertalian kasih sayang"
+        },
+        {
+            "type": "concept",
+            "title": "Warisan dibagikan setelah selesai hutang dan wasiat"
+        },
+        {
+            "type": "subheading",
+            "text": "2. IBADAH MALIYAH (Ibadah Amal)"
+        },
+        {
+            "type": "subheading",
+            "text": "Sumber Halal"
+        },
+        {
+            "type": "verse",
+            "surah": "Al-Baqarah",
+            "chapter": 2,
+            "verse": 168,
+            "arabic": "يٰٓاَيُّهَا النَّاسُ كُلُوْا مِمَّا فِى الْاَرْضِ حَلٰلًا طَيِّبًا ۖوَّلَا تَتَّبِعُوْا خُطُوٰتِ الشَّيْطٰنِۗ اِنَّهٗ لَكُمْ عَدُوٌّ مُّبِيْنٌ",
+            "indonesian": "Wahai manusia! Makanlah dari (makanan) yang halal dan baik yang terdapat di bumi, dan janganlah kamu mengikuti langkah-langkah setan. Sungguh, setan itu musuh yang nyata bagimu."
+        },
+        {
+            "type": "concept",
+            "title": "Hai manusia makanlah dari yang halal lagi baik"
+        },
+        {
+            "type": "subheading",
+            "text": "Sumber Haram"
+        },
+        {
+            "type": "verse",
+            "surah": "Al-Mutaffifin",
+            "chapter": 83,
+            "verse": 1,
+            "arabic": "وَيْلٌ لِّلْمُطَفِّفِيْنَۙ",
+            "indonesian": "Celakalah bagi orang-orang yang curang (dalam menakar dan menimbang)! "
+        },
+        {
+            "type": "concept",
+            "title": "Curang"
+        },
+        {
+            "type": "verse",
+            "surah": "Al-Baqarah",
+            "chapter": 2,
+            "verse": 42,
+            "arabic": "وَلَا تَلْبِسُوا الْحَقَّ بِالْبَاطِلِ وَتَكْتُمُوا الْحَقَّ وَاَنْتُمْ تَعْلَمُوْنَ ",
+            "indonesian": "Dan janganlah kamu campuradukkan kebenaran dengan kebatilan dan (janganlah) kamu sembunyikan kebenaran, sedangkan kamu mengetahuinya."
+        },
+        {
+            "type": "concept",
+            "title": "Jangan kau campur yang hak dan batil"
+        },
+        {
+            "type": "verse",
+            "surah": "Al-Baqarah",
+            "chapter": 2,
+            "verse": 188,
+            "arabic": "وَلَا تَأْكُلُوْٓا اَمْوَالَكُمْ بَيْنَكُمْ بِالْبَاطِلِ وَتُدْلُوْا بِهَآ اِلَى الْحُكَّامِ لِتَأْكُلُوْا فَرِيْقًا مِّنْ اَمْوَالِ النَّاسِ بِالْاِثْمِ وَاَنْتُمْ تَعْلَمُوْنَ ࣖ",
+            "indonesian": "Dan janganlah kamu makan harta di antara kamu dengan jalan yang batil, dan (janganlah) kamu menyuap dengan harta itu kepada para hakim, dengan maksud agar kamu dapat memakan sebagian harta orang lain itu dengan jalan dosa, padahal kamu mengetahui."
+        },
+        {
+            "type": "concept",
+            "title": "Hak orang lain"
+        },
+        {
+            "type": "verse",
+            "surah": "Al-Baqarah",
+            "chapter": 2,
+            "verse": 275,
+            "arabic": "اَلَّذِيْنَ يَأْكُلُوْنَ الرِّبٰوا لَا يَقُوْمُوْنَ اِلَّا كَمَا يَقُوْمُ الَّذِيْ يَتَخَبَّطُهُ الشَّيْطٰنُ مِنَ الْمَسِّۗ ذٰلِكَ بِاَنَّهُمْ قَالُوْٓا اِنَّمَا الْبَيْعُ مِثْلُ الرِّبٰواۘ وَاَحَلَّ اللّٰهُ الْبَيْعَ وَحَرَّمَ الرِّبٰواۗ  فَمَنْ جَاۤءَهٗ مَوْعِظَةٌ مِّنْ رَّبِّهٖ فَانْتَهٰى فَلَهٗ مَا سَلَفَۗ وَاَمْرُهٗٓ اِلَى اللّٰهِ ۗ وَمَنْ عَادَ فَاُولٰۤىِٕكَ اَصْحٰبُ النَّارِ ۚ هُمْ فِيْهَا خٰلِدُوْنَ",
+            "indonesian": "Orang-orang yang memakan riba tidak dapat berdiri melainkan seperti berdirinya orang yang kemasukan setan karena gila. Yang demikian itu karena mereka berkata bahwa jual beli sama dengan riba. Padahal Allah telah menghalalkan jual beli dan mengharamkan riba. Barangsiapa mendapat peringatan dari Tuhannya, lalu dia berhenti, maka apa yang telah diperolehnya dahulu menjadi miliknya dan urusannya (terserah) kepada Allah. Barangsiapa mengulangi, maka mereka itu penghuni neraka, mereka kekal di dalamnya."
+        },
+        {
+            "type": "concept",
+            "title": "Riba (orang yang makan riba di hari kiamat akan dibangkitkan seperti orang gila)"
+        },
+        {
+            "type": "subheading",
+            "text": "Catatan"
+        },
+        {
+            "type": "definition",
+            "term": "Menyuap/sogok",
+            "definition": "Dosa pada Allah dan juga pada manusia"
+        },
+        {
+            "type": "definition",
+            "term": "Berkah",
+            "definition": "Tak nampak oleh mata dirasakan oleh hati"
+        },
+        {
+            "type": "definition",
+            "term": "Barokah",
+            "definition": "Menjadi lebih baik"
+        },
+        {
+            "type": "subheading",
+            "text": "Penggunaan Harta"
+        },
+        {
+            "type": "list",
+            "items": [
+                "Jalan Allah",
+                "Jalan syaitan",
+                "Contoh: nafkah (QS. At-Talaq 65:7)"
+            ]
+        },
+        {
+            "type": "subheading",
+            "text": "Konsep Harta Menurut Al-Qur'an"
+        },
+        {
+            "type": "definition",
+            "term": "a. Ujian (QS. At-Taghabun 64:15)",
+            "definition": "Anak (QS. Al-Ghashiyah 88:21-22) - harta dulu baru anak"
+        },
+        {
+            "type": "definition",
+            "term": "b. Perhiasan (QS. Al-Kahf 18:46)",
+            "definition": "Harta sebagai perhiasan dunia"
+        },
+        {
+            "type": "definition",
+            "term": "c. Jangan lalai ibadah (QS. Al-Munafiqun 63:9)",
+            "definition": "Harta jangan sampai melalaikan dari ibadah"
+        },
+        {
+            "type": "subheading",
+            "text": "d. Jangan lalai akhirat"
+        },
+        {
+            "type": "verse",
+            "surah": "At-Takatsur",
+            "chapter": 102,
+            "verse": 1,
+            "arabic": "اَلْهٰىكُمُ التَّكَاثُرُۙ",
+            "indonesian": "Bermegah-megahan telah melalaikan kamu,"
+        },
+        {
+            "type": "verse",
+            "surah": "At-Takatsur",
+            "chapter": 102,
+            "verse": 2,
+            "arabic": "حَتّٰى زُرْتُمُ الْمَقَابِرَۗ",
+            "indonesian": "sampai kamu masuk ke dalam kubur."
+        },
+        {
+            "type": "concept",
+            "title": "Katsir = banyak, Takatsur = 2 lebih banyak bersaing"
+        },
+        {
+            "type": "list",
+            "items": [
+                "Bersaing ada 3: 1. darah 2. jarak 3. pekerjaan",
+                "Fasbiqulkhairat = berlomba-lomba dalam kebajikan",
+                "Ziarah = kunjungan singkat",
+                "Durasi akhirat – dunia: 24 jam akhirat = 1000 tahun dunia, 1 jam akhirat = 42 tahun dunia"
+            ]
+        },
+        {
+            "type": "subheading",
+            "text": "3. IBADAH QALBIYAH"
+        },
+        {
+            "type": "subheading",
+            "text": "a. Ikhlas"
+        },
+        {
+            "type": "definition",
+            "term": "Ikhlas",
+            "definition": "Kholaso, bersih tidak bercampur/murni/suci karena Allah"
+        },
+        {
+            "type": "verse",
+            "surah": "Al-Bayyinah",
+            "chapter": 98,
+            "verse": 5,
+            "arabic": "وَمَآ اُمِرُوْٓا اِلَّا لِيَعْبُدُوا اللّٰهَ مُخْلِصِيْنَ لَهُ الدِّيْنَ ەۙ حُنَفَاۤءَ وَيُقِيْمُوا الصَّلٰوةَ وَيُؤْتُوا الزَّكٰوةَ وَذٰلِكَ دِيْنُ الْقَيِّمَةِۗ",
+            "indonesian": "Padahal mereka hanya diperintah menyembah Allah dengan ikhlas menaati-Nya semata-mata karena (menjalankan) agama, dan juga agar melaksanakan salat dan menunaikan zakat; dan yang demikian itulah agama yang lurus (benar)."
+        },
+        {
+            "type": "verse",
+            "surah": "Al-An'am",
+            "chapter": 6,
+            "verse": 162,
+            "arabic": "قُلْ اِنَّ صَلَاتِيْ وَنُسُكِيْ وَمَحْيَايَ وَمَمَاتِيْ لِلّٰهِ رَبِّ الْعٰلَمِيْنَۙ",
+            "indonesian": "Katakanlah (Muhammad), “Sesungguhnya salatku, ibadahku, hidupku dan matiku hanyalah untuk Allah, Tuhan seluruh alam,"
+        },
+        {
+            "type": "concept",
+            "title": "Lawan ikhlas adalah Riya"
+        },
+        {
+            "type": "subheading",
+            "text": "Catatan"
+        },
+        {
+            "type": "list",
+            "items": [
+                "Ibadah = ritual dan sosial",
+                "Ikhlas termasuk ritual",
+                "Ukuran ikhlas adalah dipuji tidak melambung/terbang dan dihina tidak menurun/tumbang",
+                "Pengajian harus mencerdaskan: IQ = akal/otak/fikiran bagaimana cara menumbuhkan ilmu, EQ = kecerdasan sosial/emosional sosial, SQ = spiritual",
+                "Ilmu bisa berubah menjadi hikmah dengan mengamalkannya"
+            ]
+        },
+        {
+            "type": "subheading",
+            "text": "b. Qanaah (Merasa Cukup)"
+        },
+        {
+            "type": "definition",
+            "term": "Qanaah",
+            "definition": "Rasa syukur di dalam hati dan merasa cukup apa yang dimiliki"
+        },
+        {
+            "type": "verse",
+            "surah": "An-Nahl",
+            "chapter": 16,
+            "verse": 18,
+            "arabic": "وَاِنْ تَعُدُّوْا نِعْمَةَ اللّٰهِ لَا تُحْصُوْهَا ۗاِنَّ اللّٰهَ لَغَفُوْرٌ رَّحِيْمٌ ",
+            "indonesian": "Dan jika kamu menghitung nikmat Allah, niscaya kamu tidak akan mampu menghitungnya. Sungguh, Allah benar-benar Maha Pengampun, Maha Penyayang."
+        },
+        {
+            "type": "concept",
+            "title": "Cukup, merasa cukup bersyukur apa yang dimiliki"
+        },
+        {
+            "type": "verse",
+            "surah": "Adh-Dhariyat",
+            "chapter": 51,
+            "verse": 21,
+            "arabic": "وَفِيْٓ اَنْفُسِكُمْ ۗ اَفَلَا تُبْصِرُوْنَ ",
+            "indonesian": "dan (juga) pada dirimu sendiri. Maka apakah kamu tidak memperhatikan?"
+        },
+        {
+            "type": "concept",
+            "title": "Ukur apa yang ada di diri kita"
+        },
+        {
+            "type": "concept",
+            "title": "Lawan kata qanaah adalah hasad"
+        },
+        {
+            "type": "subheading",
+            "text": "Hasad"
+        },
+        {
+            "type": "verse",
+            "surah": "Al-Falaq",
+            "chapter": 113,
+            "verse": 5,
+            "arabic": "وَمِنْ شَرِّ حَاسِدٍ اِذَا حَسَدَ ࣖ",
+            "indonesian": "dan dari kejahatan orang yang dengki apabila dia dengki.”"
+        },
+        {
+            "type": "concept",
+            "title": "Tentang doanya"
+        },
+        {
+            "type": "concept",
+            "title": "Ciri orang hasad (QS. Ali Imran 3:120)"
+        },
+        {
+            "type": "concept",
+            "title": "Asbabul nuzulnya, Lubaid bin Asham (dukun/peramal) yang merasa tersaingi dengan nabi, dan menyihir nabi"
+        },
+        {
+            "type": "subheading",
+            "text": "Nama-nama Dukun dalam Qur'an dan Hadits"
+        },
+        {
+            "type": "list",
+            "items": [
+                "Kahin = Seseorang yang mengabarkan sesuatu yang akan terjadi di masa yang akan datang",
+                "'Arraf = Orang yang mengaku-ngaku mengetahui urusan-urusan tertentu",
+                "Rammal = Tukang ramal yang menggaris-garis di pasir untuk meramal sesuatu",
+                "Munajjim (ahli ilmu nujum) = Nujum artinya bintang-bintang, populer dengan nama astrologi",
+                "Sahir (tukang sihir) = Ini lebih jahat dari yang sebelumnya, identik dengan kejahatan"
+            ]
+        },
+        {
+            "type": "concept",
+            "title": "Semua nama-nama dukun di atas adalah haram dilakukan"
+        },
+        {
+            "type": "subheading",
+            "text": "c. Tawakal"
+        },
+        {
+            "type": "verse",
+            "surah": "Asy-Syarh",
+            "chapter": 94,
+            "verse": 7,
+            "arabic": "فَاِذَا فَرَغْتَ فَانْصَبْۙ",
+            "indonesian": "Maka apabila engkau telah selesai (dari sesuatu urusan), tetaplah bekerja keras (untuk urusan yang lain),"
+        },
+        {
+            "type": "verse",
+            "surah": "Asy-Syarh",
+            "chapter": 94,
+            "verse": 8,
+            "arabic": "وَاِلٰى رَبِّكَ فَارْغَبْ ࣖ",
+            "indonesian": "dan hanya kepada Tuhanmulah engkau berharap."
+        },
+        {
+            "type": "definition",
+            "term": "Tawakal",
+            "definition": "Menyerahkan hasil akhir setelah ikhtiar. Hasil akhir bisa positif (ujian positif, bersyukur atau tidak) bisa negatif juga ujian untuk sabar atau tidak"
+        },
+        {
+            "type": "verse",
+            "surah": "Hud",
+            "chapter": 11,
+            "verse": 6,
+            "arabic": "۞ وَمَا مِنْ دَاۤبَّةٍ فِى الْاَرْضِ اِلَّا عَلَى اللّٰهِ رِزْقُهَا وَيَعْلَمُ مُسْتَقَرَّهَا وَمُسْتَوْدَعَهَا ۗ كُلٌّ فِيْ كِتٰبٍ مُّبِيْنٍ",
+            "indonesian": "Dan tidak satupun makhluk bergerak (bernyawa) di bumi melainkan semuanya dijamin Allah rezekinya. Dia mengetahui tempat kediamannya dan tempat penyimpanannya. Semua (tertulis) dalam Kitab yang nyata (Lauh Mahfuzh)."
+        },
+        {
+            "type": "concept",
+            "title": "Dijamin Allah bagi yang mau bergerak (melata)/bekerja"
+        },
+        {
+            "type": "concept",
+            "title": "Ibadah Badaniyah, Maliyah, Qalbiyah itu ibarat bibit tanaman. Sedangkan Aqidah/Akhlak ibarat tanah. Tanah yang subur bibit akan tumbuh dengan baik"
+        },
+        {
+            "type": "note",
+            "text": "Ketiga jenis ibadah ini saling melengkapi dan membentuk kesatuan ibadah yang sempurna dalam kehidupan seorang Muslim. Ibadah badaniyah melatih fisik, maliyah melatih pengelolaan harta, dan qalbiyah melatih hati dan jiwa."
+        }
+    ]
+}
