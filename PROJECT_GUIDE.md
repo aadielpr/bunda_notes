@@ -1,8 +1,23 @@
 # Islamic Notes Website - Development Guide
 
-## JSON Note Conversion Guide
+## Current Architecture
 
-### Correct JSON Structure
+### Component Structure
+- **`JsonNoteViewer.vue`** - Main content viewer with caching
+- **`VerseDisplay.vue`** - Single verse component
+- **`VerseGroupDisplay.vue`** - Multiple verses component  
+- **`Sidebar.vue`** - Navigation sidebar
+- **`App.vue`** - Main app with PDF downloader
+
+### Data Flow
+1. **Quran Data**: Loaded from `/json/quran.json` via `quranDataService`
+2. **Note Content**: JSON files in `/public/json/` with minimal verse references
+3. **Caching**: Verse data cached to avoid repeated API calls
+4. **PDF Generation**: Uses Quran data service for consistent formatting
+
+## JSON Note Structure (Updated)
+
+### Current JSON Structure
 ```json
 {
     "title": "Title of the Note",
@@ -23,16 +38,17 @@
         },
         {
             "type": "verse",
-            "surah": "Al-Baqarah",
             "chapter": 2,
-            "verse": 43,
-            "arabic": "Uthmani Arabic text",
-            "indonesian": "Indonesian translation"
+            "verse": 43
         },
         {
             "type": "definition",
             "term": "Term",
-            "definition": "Definition of the term"
+            "definition": "Definition of the term",
+            "reference": {
+                "chapter": 2,
+                "verse": 43
+            }
         },
         {
             "type": "list",
@@ -40,7 +56,11 @@
         },
         {
             "type": "concept",
-            "title": "Important concept or note"
+            "title": "Important concept or note",
+            "reference": {
+                "chapter": 2,
+                "verse": 43
+            }
         },
         {
             "type": "note",
@@ -50,173 +70,211 @@
 }
 ```
 
+### Key Changes from Previous Version
+- ❌ **Removed**: `surah`, `arabic`, `indonesian` properties from verses
+- ✅ **Added**: `reference` object for definitions and concepts
+- ✅ **Simplified**: Verses only need `chapter` and `verse` numbers
+- ✅ **Centralized**: All Arabic text and translations from `quran.json`
+
 ### Content Types
 1. `heading` - Main section headings (level: 2)
 2. `subheading` - Subsection headings
 3. `paragraph` - Regular text paragraphs
-4. `verse` - Single Quranic verse with Arabic text and Indonesian translation
-5. `verse-group` - Multiple consecutive verses
-6. `definition` - Key terms and their meanings
-7. `list` - Numbered or bulleted lists
-8. `concept` - Important concepts or notes
+4. `verse` - Single Quranic verse (chapter + verse only)
+5. `verse-group` - Multiple consecutive verses (auto-grouped)
+6. `definition` - Key terms with optional verse references
+7. `list` - Numbered lists
+8. `concept` - Important concepts with optional references
 9. `note` - Final notes or summaries
 
-### Common Issues & Solutions
+## Quran Data Service
 
-#### ❌ Wrong Structure (Don't Use)
-```json
-{
-    "sections": [
-        {
-            "title": "Section Title",
-            "content": [
-                {
-                    "type": "text",
-                    "value": "Content"
-                }
-            ]
-        }
-    ]
+### File Location
+- **Source**: `/json/quran.json` (in public directory)
+- **Service**: `src/services/quranData.ts`
+- **Usage**: Automatically loaded by components
+
+### Data Structure
+```typescript
+interface VerseData {
+    arabic: string           // Arabic text
+    translation: string      // Indonesian translation
+    surahName: string        // Surah name
+    surahNumber: number      // Chapter number
+    ayahNumber: string       // Verse number
+    arabicNumber: string     // Arabic verse number (۝١, ۝٢, etc.)
 }
 ```
 
-#### ✅ Correct Structure (Use This)
-```json
-{
-    "sections": [
-        {
-            "type": "subheading",
-            "text": "Section Title"
-        },
-        {
-            "type": "paragraph",
-            "text": "Content"
-        }
-    ]
-}
+### Usage in Components
+```typescript
+// Get verse data (cached)
+const verseData = quranDataService.getVerseData(chapter, verse)
+
+// Access properties
+verseData.arabic        // Arabic text
+verseData.translation   // Indonesian translation
+verseData.surahName     // Surah name
+verseData.arabicNumber  // Arabic verse number
 ```
 
-### Quran Verse Format
+## Component Architecture
+
+### VerseDisplay.vue
+**Purpose**: Renders single verses
+```vue
+<VerseDisplay 
+  :chapter="2"
+  :verse="43"
+  :verse-data="getCachedVerseData(2, 43)"
+/>
+```
+
+### VerseGroupDisplay.vue
+**Purpose**: Renders multiple verses
+```vue
+<VerseGroupDisplay 
+  :verses="section.verses"
+  :get-verse-data="getCachedVerseData"
+  :get-verse-range="getVerseRange"
+/>
+```
+
+### Performance Optimizations
+- **Caching**: `verseDataCache` Map prevents repeated service calls
+- **Lazy Loading**: Quran data loaded only when needed
+- **Component Separation**: Reusable verse components
+
+## PDF Downloader
+
+### Features
+- **Quran Integration**: Uses `quranDataService` for consistent data
+- **Arabic Numbers**: Displays verse numbers (۝١, ۝٢, etc.)
+- **Translations**: Includes Indonesian translations
+- **Surah Names**: Fetched from Quran data
+- **Error Handling**: Graceful fallbacks if data unavailable
+
+### Usage
+```typescript
+// Triggered from JsonNoteViewer
+@download-pdf="downloadPDF"
+
+// Automatically loads Quran data if needed
+await quranDataService.loadQuranData()
+```
+
+## Development Workflow
+
+### 1. Creating New Notes
+```bash
+# 1. Create JSON file in public/json/
+# 2. Add to navigation in src/data/notes.ts
+# 3. Test in development server
+```
+
+### 2. JSON Structure Rules
+- ✅ Use only `chapter` and `verse` for Quran references
+- ✅ Add `reference` objects for definitions/concepts
+- ✅ Remove embedded Arabic text and translations
+- ✅ Keep content types consistent
+
+### 3. Testing Checklist
+- [ ] JSON file loads without errors
+- [ ] Quran verses display Arabic text and translations
+- [ ] Surah names appear correctly
+- [ ] PDF download includes all content
+- [ ] No console errors
+- [ ] Performance is good (check caching)
+
+## File Locations
+
+### Core Files
+- **Quran Data**: `/json/quran.json`
+- **Note JSONs**: `/public/json/*.json`
+- **Components**: `src/components/`
+- **Services**: `src/services/quranData.ts`
+- **Navigation**: `src/data/notes.ts`
+
+### Example Files
+- `amanah.json` - Basic structure
+- `aqidah.json` - Simple content
+- `mukmin-yang-beruntung.json` - Complex content
+
+## Migration Guide
+
+### From Old Structure to New
+1. **Remove Properties**: Delete `surah`, `arabic`, `indonesian` from verses
+2. **Add References**: Add `reference` objects where needed
+3. **Update Navigation**: Ensure `src/data/notes.ts` is current
+4. **Test Components**: Verify all content types render correctly
+
+### Example Migration
 ```json
+// OLD (Don't use)
 {
     "type": "verse",
     "surah": "Al-Baqarah",
     "chapter": 2,
     "verse": 43,
-    "arabic": "وَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ وَٱرْكَعُوا۟ مَعَ ٱلرَّٰكِعِينَ",
-    "indonesian": "Dan laksanakanlah salat, tunaikanlah zakat, dan rukuklah bersama orang yang rukuk."
+    "arabic": "وَأَقِيمُوا۟ ٱلصَّلَوٰةَ...",
+    "indonesian": "Dan laksanakanlah salat..."
 }
-```
 
-### Verse Groups (Multiple Consecutive Verses)
-```json
+// NEW (Use this)
 {
-    "type": "verse-group",
-    "verses": [
-        {
-            "surah": "Ali Imran",
-            "chapter": 3,
-            "verse": 133,
-            "arabic": "وَسَارِعُوٓا۟ إِلَىٰ مَغْفِرَةٍۢ مِّن رَّبِّكُمْ...",
-            "indonesian": "Dan bersegeralah kamu mencari ampunan dari Tuhanmu..."
-        },
-        {
-            "surah": "Ali Imran",
-            "chapter": 3,
-            "verse": 134,
-            "arabic": "ٱلَّذِينَ يُنفِقُونَ فِى ٱلسَّرَّآءِ...",
-            "indonesian": "Yaitu orang-orang yang menafkahkan hartanya..."
-        }
-    ]
+    "type": "verse",
+    "chapter": 2,
+    "verse": 43
 }
 ```
 
-### Categories
-Use these standard categories:
-- `Akidah & Ibadah` - Faith and worship
-- `Akhlak & Ibadah` - Ethics and worship
-- `Akidah & Tauhid` - Faith and monotheism
+## Technical Notes
 
-### Conversion Rules
-1. Each txt file becomes one JSON file
-2. Main title becomes the JSON title
-3. Major sections marked with `~` or numbered headings become subheadings
-4. Quran references must include:
-   - Surah name (e.g., "Al-Baqarah")
-   - Chapter number
-   - Verse number
-   - Uthmani Arabic text (from EQuran.id API)
-   - Indonesian translation (from EQuran.id API)
-5. Lists marked with `•` or numbers become list type content
-6. Keep original text formatting and meaning
-7. Use proper content types for different elements
+### Performance
+- **Caching**: Verse data cached in memory
+- **Lazy Loading**: Quran data loaded on demand
+- **Component Optimization**: Separate components for reusability
 
-### File Locations
-- Source txt files: `notes/`
-- Generated JSON: `public/json/`
-- Navigation updates: `src/data/notes.ts`
+### Data Sources
+- **Quran Text**: `/json/quran.json` (local file)
+- **Translations**: Embedded in Quran data
+- **Surah Names**: Fetched from Quran data service
 
-### Navigation Update
-Add new notes to `src/data/notes.ts` following format:
-```typescript
-{
-    id: 'filename-without-extension',
-    title: 'Note Title',
-    category: 'Akidah & Ibadah',
-    jsonFile: 'filename.json'
-}
-```
+### Browser Support
+- **Modern Browsers**: Full support
+- **Offline Capable**: Works without internet
+- **Print Friendly**: PDF generation optimized
 
-### Arabic & Indonesian Text Fetching
-
-#### Using the Script
-The project includes a script to fetch both Arabic text and Indonesian translations from EQuran.id API:
-
+### Development Commands
 ```bash
-# Fetch for a specific file
-node scripts/fetch-equran-arabic.js <filename>.json
+# Start development server
+npm run dev
 
-# Example
-node scripts/fetch-equran-arabic.js amanah.json
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
 ```
 
-#### Manual Process
-1. Convert txt to JSON with correct structure
-2. Add verse references (surah, chapter, verse)
-3. Run the script to fetch Arabic and Indonesian text
-4. Test the JSON file loads correctly
+## Troubleshooting
 
-### Testing Checklist
-- [ ] JSON file loads without errors
-- [ ] All sections display correctly
-- [ ] Quran verses show Arabic text
-- [ ] Indonesian translations display properly
-- [ ] Navigation includes the new note
-- [ ] No console errors in browser
+### Common Issues
+1. **Verse not displaying**: Check `chapter` and `verse` numbers
+2. **PDF missing content**: Ensure Quran data is loaded
+3. **Performance issues**: Check caching implementation
+4. **Component errors**: Verify prop types and interfaces
 
-### Reference Examples
-Check these files in `public/json/` for real examples:
-1. `amanah.json` - Complete structure with embedded translations
-2. `aqidah.json` - Simple content with verses
-3. `aqidah-dan-akhlak.json` - Complex content with multiple sections
-4. `jenis-ibadah.json` - Mixed content types
-5. `menghilangkan-takabur.json` - Quran verses with translations
-6. `mukmin-yang-beruntung.json` - Large content with many verses
+### Debug Steps
+1. Check browser console for errors
+2. Verify JSON structure is correct
+3. Ensure Quran data file exists
+4. Test individual components
+5. Check network requests
 
-### Development Workflow
-1. Convert txt to JSON using correct structure
-2. Add verse references for all Quran citations
-3. Run `node scripts/fetch-equran-arabic.js <filename>.json` to fetch Arabic and Indonesian text
-4. Test JSON syntax with online validator
-5. Add to navigation in `src/data/notes.ts`
-6. Test in development server
-7. Check all content types render correctly
-8. Verify Arabic text and Indonesian translations display properly
-
-### Technical Notes
-- **API Source**: EQuran.id API v2.0 (`https://equran.id/api/v2`)
-- **Arabic Text**: Uses `teksArab` field from API response
-- **Indonesian Translation**: Uses `teksIndonesia` field from API response
-- **Embedded Translations**: All translations are stored in JSON, no runtime API calls
-- **Performance**: Faster loading, works offline, no API dependencies
-- **Consistency**: All translations from same source for uniformity 
+## Future Enhancements
+- **Search Functionality**: Full-text search across notes
+- **Bookmarking**: Save favorite verses/sections
+- **Sharing**: Share specific sections
+- **Audio Integration**: Quran recitation
+- **Mobile App**: Native mobile application 

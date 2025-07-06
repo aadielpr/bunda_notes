@@ -13,11 +13,8 @@
         },
         {
             "type": "verse",
-            "surah": "Luqman",
             "chapter": 31,
-            "verse": 18,
-            "arabic": "وَلَا تُصَعِّرْ خَدَّكَ لِلنَّاسِ وَلَا تَمْشِ فِى الْاَرْضِ مَرَحًاۗ اِنَّ اللّٰهَ لَا يُحِبُّ كُلَّ مُخْتَالٍ فَخُوْرٍۚ",
-            "indonesian": "Dan janganlah kamu memalingkan wajah dari manusia (karena sombong) dan janganlah berjalan di bumi dengan angkuh. Sungguh, Allah tidak menyukai orang-orang yang sombong dan membanggakan diri."
+            "verse": 18
         },
         {
             "type": "concept",
@@ -62,11 +59,8 @@
         },
         {
             "type": "verse",
-            "surah": "Ali Imran",
             "chapter": 3,
-            "verse": 112,
-            "arabic": "ضُرِبَتْ عَلَيْهِمُ الذِّلَّةُ اَيْنَ مَا ثُقِفُوْٓا اِلَّا بِحَبْلٍ مِّنَ اللّٰهِ وَحَبْلٍ مِّنَ النَّاسِ وَبَاۤءُوْ بِغَضَبٍ مِّنَ اللّٰهِ وَضُرِبَتْ عَلَيْهِمُ الْمَسْكَنَةُ ۗ ذٰلِكَ بِاَنَّهُمْ كَانُوْا يَكْفُرُوْنَ بِاٰيٰتِ اللّٰهِ وَيَقْتُلُوْنَ الْاَنْبِۢيَاۤءَ بِغَيْرِ حَقٍّۗ  ذٰلِكَ بِمَا عَصَوْا وَّكَانُوْا يَعْتَدُوْنَ ",
-            "indonesian": "Mereka diliputi kehinaan di mana saja mereka berada, kecuali jika mereka (berpegang) pada tali (agama) Allah dan tali (perjanjian) dengan manusia. Mereka mendapat murka dari Allah dan (selalu) diliputi kesengsaraan. Yang demikian itu karena mereka mengingkari ayat-ayat Allah dan membunuh para nabi, tanpa hak (alasan yang benar). Yang demikian itu karena mereka durhaka dan melampaui batas."
+            "verse": 112
         },
         {
             "type": "subheading",
@@ -115,7 +109,6 @@
             "type": "subheading",
             "text": "Tentang Maaf dan Taqwa",
             "reference": {
-                "surah": "Ali Imran",
                 "chapter": 3,
                 "verse": "133-134"
             }
@@ -124,18 +117,12 @@
             "type": "verse-group",
             "verses": [
                 {
-                    "surah": "Ali Imran",
                     "chapter": 3,
-                    "verse": 133,
-                    "arabic": "۞ وَسَارِعُوْٓا اِلٰى مَغْفِرَةٍ مِّنْ رَّبِّكُمْ وَجَنَّةٍ عَرْضُهَا السَّمٰوٰتُ وَالْاَرْضُۙ  اُعِدَّتْ لِلْمُتَّقِيْنَۙ",
-                    "indonesian": "Dan bersegeralah kamu mencari ampunan dari Tuhanmu dan mendapatkan surga yang luasnya seluas langit dan bumi yang disediakan bagi orang-orang yang bertakwa,"
+                    "verse": 133
                 },
                 {
-                    "surah": "Ali Imran",
                     "chapter": 3,
-                    "verse": 134,
-                    "arabic": "الَّذِيْنَ يُنْفِقُوْنَ فِى السَّرَّۤاءِ وَالضَّرَّۤاءِ وَالْكٰظِمِيْنَ الْغَيْظَ وَالْعَافِيْنَ عَنِ النَّاسِۗ وَاللّٰهُ يُحِبُّ الْمُحْسِنِيْنَۚ ",
-                    "indonesian": "(yaitu) orang yang berinfak, baik di waktu lapang maupun sempit, dan orang-orang yang menahan amarahnya dan memaafkan (kesalahan) orang lain. Dan Allah mencintai orang yang berbuat kebaikan,"
+                    "verse": 134
                 }
             ]
         },

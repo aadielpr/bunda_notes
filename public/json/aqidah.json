@@ -44,11 +44,8 @@
         },
         {
             "type": "verse",
-            "surah": "Ghafir",
             "chapter": 40,
-            "verse": 68,
-            "arabic": "هُوَ الَّذِيْ يُحْيٖ وَيُمِيْتُۚ فَاِذَا قَضٰىٓ اَمْرًا فَاِنَّمَا يَقُوْلُ لَهٗ كُنْ فَيَكُوْنُ ࣖ ",
-            "indonesian": "Dialah yang menghidupkan dan mematikan. Maka apabila Dia hendak menetapkan sesuatu urusan, Dia hanya berkata kepadanya, “Jadilah!” Maka jadilah sesuatu itu."
+            "verse": 68
         },
         {
             "type": "subheading",
@@ -71,11 +68,8 @@
         },
         {
             "type": "verse",
-            "surah": "Ali Imran",
             "chapter": 3,
-            "verse": 190,
-            "arabic": "اِنَّ فِيْ خَلْقِ السَّمٰوٰتِ وَالْاَرْضِ وَاخْتِلَافِ الَّيْلِ وَالنَّهَارِ لَاٰيٰتٍ لِّاُولِى الْاَلْبَابِۙ",
-            "indonesian": "Sesungguhnya dalam penciptaan langit dan bumi, dan pergantian malam dan siang terdapat tanda-tanda (kebesaran Allah) bagi orang yang berakal,"
+            "verse": 190
         },
         {
             "type": "concept",
@@ -102,27 +96,18 @@
         },
         {
             "type": "verse",
-            "surah": "Ar-Rahman",
             "chapter": 55,
-            "verse": 26,
-            "arabic": "كُلُّ مَنْ عَلَيْهَا فَانٍۖ  ",
-            "indonesian": "Semua yang ada di bumi itu akan binasa, "
+            "verse": 26
         },
         {
             "type": "verse",
-            "surah": "Ar-Rahman",
             "chapter": 55,
-            "verse": 27,
-            "arabic": "وَّيَبْقٰى وَجْهُ رَبِّكَ ذُو الْجَلٰلِ وَالْاِكْرَامِۚ  ",
-            "indonesian": "tetapi wajah Tuhanmu yang memiliki kebesaran dan kemuliaan tetap kekal. "
+            "verse": 27
         },
         {
             "type": "verse",
-            "surah": "Al-Baqarah",
             "chapter": 2,
-            "verse": 28,
-            "arabic": "كَيْفَ تَكْفُرُوْنَ بِاللّٰهِ وَكُنْتُمْ اَمْوَاتًا فَاَحْيَاكُمْۚ  ثُمَّ يُمِيْتُكُمْ ثُمَّ يُحْيِيْكُمْ ثُمَّ اِلَيْهِ تُرْجَعُوْنَ ",
-            "indonesian": "Bagaimana kamu ingkar kepada Allah, padahal kamu (tadinya) mati, lalu Dia menghidupkan kamu, kemudian Dia mematikan kamu lalu Dia menghidupkan kamu kembali. Kemudian kepada-Nyalah kamu dikembalikan."
+            "verse": 28
         },
         {
             "type": "subheading",

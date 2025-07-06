@@ -22,11 +22,8 @@
         },
         {
             "type": "verse",
-            "surah": "Az-Zumar",
             "chapter": 39,
-            "verse": 38,
-            "arabic": "وَلَىِٕنْ سَاَلْتَهُمْ مَّنْ خَلَقَ السَّمٰوٰتِ وَالْاَرْضَ لَيَقُوْلُنَّ اللّٰهُ ۗ قُلْ اَفَرَءَيْتُمْ مَّا تَدْعُوْنَ مِنْ دُوْنِ اللّٰهِ اِنْ اَرَادَنِيَ اللّٰهُ بِضُرٍّ هَلْ هُنَّ كٰشِفٰتُ ضُرِّهٖٓ اَوْ اَرَادَنِيْ بِرَحْمَةٍ هَلْ هُنَّ مُمْسِكٰتُ رَحْمَتِهٖۗ قُلْ حَسْبِيَ اللّٰهُ ۗعَلَيْهِ يَتَوَكَّلُ الْمُتَوَكِّلُوْنَ ",
-            "indonesian": "Dan sungguh, jika engkau tanyakan kepada mereka, “Siapakah yang menciptakan langit dan bumi?” Niscaya mereka menjawab, “Allah.” Katakanlah, “Kalau begitu tahukah kamu tentang apa yang kamu sembah selain Allah, jika Allah hendak mendatangkan bencana kepadaku, apakah mereka mampu menghilangkan bencana itu, atau jika Allah hendak memberi rahmat kepadaku, apakah mereka dapat mencegah rahmat-Nya?” Katakanlah, “Cukuplah Allah bagiku. Kepada-Nyalah orang-orang yang bertawakal berserah diri.”"
+            "verse": 38
         },
         {
             "type": "concept",
@@ -42,35 +39,23 @@
         },
         {
             "type": "verse",
-            "surah": "Ghafir",
             "chapter": 40,
-            "verse": 68,
-            "arabic": "هُوَ الَّذِيْ يُحْيٖ وَيُمِيْتُۚ فَاِذَا قَضٰىٓ اَمْرًا فَاِنَّمَا يَقُوْلُ لَهٗ كُنْ فَيَكُوْنُ ࣖ ",
-            "indonesian": "Dialah yang menghidupkan dan mematikan. Maka apabila Dia hendak menetapkan sesuatu urusan, Dia hanya berkata kepadanya, “Jadilah!” Maka jadilah sesuatu itu."
+            "verse": 68
         },
         {
             "type": "verse",
-            "surah": "Ali Imran",
             "chapter": 3,
-            "verse": 190,
-            "arabic": "اِنَّ فِيْ خَلْقِ السَّمٰوٰتِ وَالْاَرْضِ وَاخْتِلَافِ الَّيْلِ وَالنَّهَارِ لَاٰيٰتٍ لِّاُولِى الْاَلْبَابِۙ",
-            "indonesian": "Sesungguhnya dalam penciptaan langit dan bumi, dan pergantian malam dan siang terdapat tanda-tanda (kebesaran Allah) bagi orang yang berakal,"
+            "verse": 190
         },
         {
             "type": "verse",
-            "surah": "Ar-Rahman",
             "chapter": 55,
-            "verse": 26,
-            "arabic": "كُلُّ مَنْ عَلَيْهَا فَانٍۖ  ",
-            "indonesian": "Semua yang ada di bumi itu akan binasa, "
+            "verse": 26
         },
         {
             "type": "verse",
-            "surah": "Ar-Rahman",
             "chapter": 55,
-            "verse": 27,
-            "arabic": "وَّيَبْقٰى وَجْهُ رَبِّكَ ذُو الْجَلٰلِ وَالْاِكْرَامِۚ  ",
-            "indonesian": "tetapi wajah Tuhanmu yang memiliki kebesaran dan kemuliaan tetap kekal. "
+            "verse": 27
         },
         {
             "type": "subheading",
@@ -78,11 +63,8 @@
         },
         {
             "type": "verse",
-            "surah": "Adh-Dhariyat",
             "chapter": 51,
-            "verse": 56,
-            "arabic": "وَمَا خَلَقْتُ الْجِنَّ وَالْاِنْسَ اِلَّا لِيَعْبُدُوْنِ",
-            "indonesian": "Aku tidak menciptakan jin dan manusia melainkan agar mereka beribadah kepada-Ku. "
+            "verse": 56
         },
         {
             "type": "concept",
@@ -90,11 +72,8 @@
         },
         {
             "type": "verse",
-            "surah": "Al-Baqarah",
             "chapter": 2,
-            "verse": 21,
-            "arabic": " يٰٓاَيُّهَا النَّاسُ اعْبُدُوْا رَبَّكُمُ الَّذِيْ خَلَقَكُمْ وَالَّذِيْنَ مِنْ قَبْلِكُمْ لَعَلَّكُمْ تَتَّقُوْنَۙ",
-            "indonesian": "Wahai manusia! Sembahlah Tuhanmu yang telah menciptakan kamu dan orang-orang yang sebelum kamu, agar kamu bertakwa."
+            "verse": 21
         },
         {
             "type": "concept",
@@ -102,11 +81,8 @@
         },
         {
             "type": "verse",
-            "surah": "Fatir",
             "chapter": 35,
-            "verse": 15,
-            "arabic": "۞ يٰٓاَيُّهَا النَّاسُ اَنْتُمُ الْفُقَرَاۤءُ اِلَى اللّٰهِ ۚوَاللّٰهُ هُوَ الْغَنِيُّ الْحَمِيْدُ ",
-            "indonesian": "Wahai manusia! Kamulah yang memerlukan Allah; dan Allah Dialah Yang Mahakaya (tidak memerlukan sesuatu), Maha Terpuji."
+            "verse": 15
         },
         {
             "type": "concept",
@@ -118,35 +94,23 @@
         },
         {
             "type": "verse",
-            "surah": "Ghafir",
             "chapter": 40,
-            "verse": 60,
-            "arabic": "وَقَالَ رَبُّكُمُ ادْعُوْنِيْٓ اَسْتَجِبْ لَكُمْ ۗاِنَّ الَّذِيْنَ يَسْتَكْبِرُوْنَ عَنْ عِبَادَتِيْ سَيَدْخُلُوْنَ جَهَنَّمَ دَاخِرِيْنَ ࣖ ",
-            "indonesian": "Dan Tuhanmu berfirman, “Berdoalah kepada-Ku, niscaya akan Aku perkenankan bagimu. Sesungguhnya orang-orang yang sombong tidak mau menyembah-Ku akan masuk neraka Jahanam dalam keadaan hina dina.”"
+            "verse": 60
         },
         {
             "type": "verse",
-            "surah": "Al-A'raf",
             "chapter": 7,
-            "verse": 55,
-            "arabic": "اُدْعُوْا رَبَّكُمْ تَضَرُّعًا وَّخُفْيَةً ۗاِنَّهٗ لَا يُحِبُّ الْمُعْتَدِيْنَۚ ",
-            "indonesian": "Berdoalah kepada Tuhanmu dengan rendah hati dan suara yang lembut. Sungguh, Dia tidak menyukai orang-orang yang melampaui batas."
+            "verse": 55
         },
         {
             "type": "verse",
-            "surah": "Al-A'raf",
             "chapter": 7,
-            "verse": 56,
-            "arabic": "وَلَا تُفْسِدُوْا فِى الْاَرْضِ بَعْدَ اِصْلَاحِهَا وَادْعُوْهُ خَوْفًا وَّطَمَعًاۗ اِنَّ رَحْمَتَ اللّٰهِ قَرِيْبٌ مِّنَ الْمُحْسِنِيْنَ ",
-            "indonesian": "Dan janganlah kamu berbuat kerusakan di bumi setelah (diciptakan) dengan baik. Berdoalah kepada-Nya dengan rasa takut dan penuh harap. Sesungguhnya rahmat Allah sangat dekat kepada orang yang berbuat kebaikan."
+            "verse": 56
         },
         {
             "type": "verse",
-            "surah": "Al-Baqarah",
             "chapter": 2,
-            "verse": 186,
-            "arabic": "وَاِذَا سَاَلَكَ عِبَادِيْ عَنِّيْ فَاِنِّيْ قَرِيْبٌ ۗ اُجِيْبُ دَعْوَةَ الدَّاعِ اِذَا دَعَانِۙ فَلْيَسْتَجِيْبُوْا لِيْ وَلْيُؤْمِنُوْا بِيْ لَعَلَّهُمْ يَرْشُدُوْنَ ",
-            "indonesian": "Dan apabila hamba-hamba-Ku bertanya kepadamu (Muhammad) tentang Aku, maka sesungguhnya Aku dekat. Aku Kabulkan permohonan orang yang berdoa apabila dia berdoa kepada-Ku. Hendaklah mereka itu memenuhi (perintah)-Ku dan beriman kepada-Ku, agar mereka memperoleh kebenaran."
+            "verse": 186
         },
         {
             "type": "subheading",
@@ -185,27 +149,18 @@
         },
         {
             "type": "verse",
-            "surah": "Asy-Syarh",
             "chapter": 94,
-            "verse": 7,
-            "arabic": "فَاِذَا فَرَغْتَ فَانْصَبْۙ",
-            "indonesian": "Maka apabila engkau telah selesai (dari sesuatu urusan), tetaplah bekerja keras (untuk urusan yang lain),"
+            "verse": 7
         },
         {
             "type": "verse",
-            "surah": "Asy-Syarh",
             "chapter": 94,
-            "verse": 8,
-            "arabic": "وَاِلٰى رَبِّكَ فَارْغَبْ ࣖ",
-            "indonesian": "dan hanya kepada Tuhanmulah engkau berharap."
+            "verse": 8
         },
         {
             "type": "verse",
-            "surah": "Hud",
             "chapter": 11,
-            "verse": 6,
-            "arabic": "۞ وَمَا مِنْ دَاۤبَّةٍ فِى الْاَرْضِ اِلَّا عَلَى اللّٰهِ رِزْقُهَا وَيَعْلَمُ مُسْتَقَرَّهَا وَمُسْتَوْدَعَهَا ۗ كُلٌّ فِيْ كِتٰبٍ مُّبِيْنٍ",
-            "indonesian": "Dan tidak satupun makhluk bergerak (bernyawa) di bumi melainkan semuanya dijamin Allah rezekinya. Dia mengetahui tempat kediamannya dan tempat penyimpanannya. Semua (tertulis) dalam Kitab yang nyata (Lauh Mahfuzh)."
+            "verse": 6
         },
         {
             "type": "concept",
@@ -213,11 +168,8 @@
         },
         {
             "type": "verse",
-            "surah": "Ghafir",
             "chapter": 40,
-            "verse": 60,
-            "arabic": "وَقَالَ رَبُّكُمُ ادْعُوْنِيْٓ اَسْتَجِبْ لَكُمْ ۗاِنَّ الَّذِيْنَ يَسْتَكْبِرُوْنَ عَنْ عِبَادَتِيْ سَيَدْخُلُوْنَ جَهَنَّمَ دَاخِرِيْنَ ࣖ ",
-            "indonesian": "Dan Tuhanmu berfirman, “Berdoalah kepada-Ku, niscaya akan Aku perkenankan bagimu. Sesungguhnya orang-orang yang sombong tidak mau menyembah-Ku akan masuk neraka Jahanam dalam keadaan hina dina.”"
+            "verse": 60
         },
         {
             "type": "subheading",
@@ -245,11 +197,8 @@
         },
         {
             "type": "verse",
-            "surah": "Al-Anfal",
             "chapter": 8,
-            "verse": 2,
-            "arabic": "اِنَّمَا الْمُؤْمِنُوْنَ الَّذِيْنَ اِذَا ذُكِرَ اللّٰهُ وَجِلَتْ قُلُوْبُهُمْ وَاِذَا تُلِيَتْ عَلَيْهِمْ اٰيٰتُهٗ زَادَتْهُمْ اِيْمَانًا وَّعَلٰى رَبِّهِمْ يَتَوَكَّلُوْنَۙ",
-            "indonesian": "Sesungguhnya orang-orang yang beriman adalah mereka yang apabila disebut nama Allah gemetar hatinya, dan apabila dibacakan ayat-ayat-Nya kepada mereka, bertambah (kuat) imannya dan hanya kepada Tuhan mereka bertawakal,"
+            "verse": 2
         },
         {
             "type": "concept",
@@ -261,11 +210,8 @@
         },
         {
             "type": "verse",
-            "surah": "Al-Kautsar",
             "chapter": 108,
-            "verse": 1,
-            "arabic": "اِنَّآ اَعْطَيْنٰكَ الْكَوْثَرَۗ",
-            "indonesian": "Sungguh, Kami telah memberimu (Muhammad) nikmat yang banyak."
+            "verse": 1
         },
         {
             "type": "concept",
@@ -278,11 +224,8 @@
         },
         {
             "type": "verse",
-            "surah": "Al-Mulk",
             "chapter": 67,
-            "verse": 10,
-            "arabic": "وَقَالُوْا لَوْ كُنَّا نَسْمَعُ اَوْ نَعْقِلُ مَا كُنَّا فِيْٓ اَصْحٰبِ السَّعِيْرِ",
-            "indonesian": "Dan mereka berkata, “Sekiranya (dahulu) kami mendengarkan atau memikirkan (peringatan itu) tentulah kami tidak termasuk penghuni neraka yang menyala-nyala.”"
+            "verse": 10
         },
         {
             "type": "subheading",
@@ -290,19 +233,13 @@
         },
         {
             "type": "verse",
-            "surah": "Al-Furqan",
             "chapter": 25,
-            "verse": 28,
-            "arabic": "يٰوَيْلَتٰى لَيْتَنِيْ لَمْ اَتَّخِذْ فُلَانًا خَلِيْلًا ",
-            "indonesian": "Wahai, celaka aku! Sekiranya (dulu) aku tidak menjadikan si fulan itu teman akrab(ku), "
+            "verse": 28
         },
         {
             "type": "verse",
-            "surah": "Al-Furqan",
             "chapter": 25,
-            "verse": 29,
-            "arabic": "لَقَدْ اَضَلَّنِيْ عَنِ الذِّكْرِ بَعْدَ اِذْ جَاۤءَنِيْۗ وَكَانَ الشَّيْطٰنُ لِلْاِنْسَانِ خَذُوْلًا ",
-            "indonesian": "sungguh, dia telah menyesatkan aku dari peringatan (Al-Qur'an) ketika (Al-Qur'an) itu telah datang kepadaku. Dan setan memang pengkhianat manusia.” "
+            "verse": 29
         },
         {
             "type": "concept",
@@ -332,11 +269,8 @@
         },
         {
             "type": "verse",
-            "surah": "Al-Ankabut",
             "chapter": 29,
-            "verse": 57,
-            "arabic": "كُلُّ نَفْسٍ ذَاۤىِٕقَةُ الْمَوْتِۗ ثُمَّ اِلَيْنَا تُرْجَعُوْنَ",
-            "indonesian": "Setiap yang bernyawa akan merasakan mati. Kemudian hanya kepada Kami kamu dikembalikan. "
+            "verse": 57
         },
         {
             "type": "concept",
@@ -353,11 +287,8 @@
         },
         {
             "type": "verse",
-            "surah": "Ali Imran",
             "chapter": 3,
-            "verse": 185,
-            "arabic": "كُلُّ نَفْسٍ ذَاۤىِٕقَةُ الْمَوْتِۗ وَاِنَّمَا تُوَفَّوْنَ اُجُوْرَكُمْ يَوْمَ الْقِيٰمَةِ ۗ فَمَنْ زُحْزِحَ عَنِ النَّارِ وَاُدْخِلَ الْجَنَّةَ فَقَدْ فَازَ ۗ وَمَا الْحَيٰوةُ الدُّنْيَآ اِلَّا مَتَاعُ الْغُرُوْرِ ",
-            "indonesian": "Setiap yang bernyawa akan merasakan mati. Dan hanya pada hari Kiamat sajalah diberikan dengan sempurna balasanmu. Barangsiapa dijauhkan dari neraka dan dimasukkan ke dalam surga, sungguh, dia memperoleh kemenangan. Kehidupan dunia hanyalah kesenangan yang memperdaya."
+            "verse": 185
         },
         {
             "type": "concept",
@@ -365,11 +296,8 @@
         },
         {
             "type": "verse",
-            "surah": "Al-Anbiya",
             "chapter": 21,
-            "verse": 35,
-            "arabic": "كُلُّ نَفْسٍ ذَاۤىِٕقَةُ الْمَوْتِۗ وَنَبْلُوْكُمْ بِالشَّرِّ وَالْخَيْرِ فِتْنَةً ۗوَاِلَيْنَا تُرْجَعُوْنَ ",
-            "indonesian": "Setiap yang bernyawa akan merasakan mati. Kami akan menguji kamu dengan keburukan dan kebaikan sebagai cobaan. Dan kamu akan dikembalikan hanya kepada Kami."
+            "verse": 35
         },
         {
             "type": "concept",
@@ -390,11 +318,8 @@
         },
         {
             "type": "verse",
-            "surah": "Al-Furqan",
             "chapter": 25,
-            "verse": 70,
-            "arabic": "اِلَّا مَنْ تَابَ وَاٰمَنَ وَعَمِلَ عَمَلًا صَالِحًا فَاُولٰۤىِٕكَ يُبَدِّلُ اللّٰهُ سَيِّاٰتِهِمْ حَسَنٰتٍۗ وَكَانَ اللّٰهُ غَفُوْرًا رَّحِيْمًا ",
-            "indonesian": "kecuali orang-orang yang bertobat dan beriman dan mengerjakan kebajikan; maka kejahatan mereka diganti Allah dengan kebaikan. Allah Maha Pengampun, Maha Penyayang."
+            "verse": 70
         },
         {
             "type": "concept",
@@ -402,11 +327,8 @@
         },
         {
             "type": "verse",
-            "surah": "Ar-Ra'd",
             "chapter": 13,
-            "verse": 11,
-            "arabic": "لَهٗ مُعَقِّبٰتٌ مِّنْۢ بَيْنِ يَدَيْهِ وَمِنْ خَلْفِهٖ يَحْفَظُوْنَهٗ مِنْ اَمْرِ اللّٰهِ ۗاِنَّ اللّٰهَ لَا يُغَيِّرُ مَا بِقَوْمٍ حَتّٰى يُغَيِّرُوْا مَا بِاَنْفُسِهِمْۗ وَاِذَآ اَرَادَ اللّٰهُ بِقَوْمٍ سُوْۤءًا فَلَا مَرَدَّ لَهٗ ۚوَمَا لَهُمْ مِّنْ دُوْنِهٖ مِنْ وَّالٍ ",
-            "indonesian": "Baginya (manusia) ada malaikat-malaikat yang selalu menjaganya bergiliran, dari depan dan belakangnya. Mereka menjaganya atas perintah Allah. Sesungguhnya Allah tidak akan mengubah keadaan suatu kaum sebelum mereka mengubah keadaan diri mereka sendiri. Dan apabila Allah menghendaki keburukan terhadap suatu kaum, maka tak ada yang dapat menolaknya dan tidak ada pelindung bagi mereka selain Dia."
+            "verse": 11
         },
         {
             "type": "concept",

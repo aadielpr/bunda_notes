@@ -85,6 +85,7 @@
 import { ref, computed, onMounted, watch } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { getAllNotes, getNoteById } from './data/notes'
+import { quranDataService } from './services/quranData'
 import JsonNoteViewer from './components/JsonNoteViewer.vue'
 import Sidebar from './components/Sidebar.vue'
 
@@ -96,19 +97,15 @@ interface NoteContent {
         text?: string
         term?: string
         definition?: string
-        surah?: string
         chapter?: number
         verse?: string | number
         items?: string[]
         reference?: {
-            surah: string
             chapter: number
             verse: string | number
         }
         title?: string
         verses?: Array<{
-            arabic: string
-            surah: string
             chapter: number
             verse: string | number
         }>
@@ -189,8 +186,17 @@ async function loadNoteContent(id: string) {
     }
 }
 
-function downloadPDF() {
+async function downloadPDF() {
     if (!selectedNote.value || !noteContent.value) return
+    
+    // Load Quran data if not already loaded
+    if (!quranDataService.isLoaded()) {
+        try {
+            await quranDataService.loadQuranData()
+        } catch (error) {
+            console.error('Failed to load Quran data for PDF:', error)
+        }
+    }
     
     // Enhanced PDF generation - match website styling
     let htmlContent = `
@@ -220,7 +226,6 @@ function downloadPDF() {
                 const nextSection = noteContent.value.sections[j]
                 
                 if (nextSection.type === 'verse' && 
-                    nextSection.surah === section.surah &&
                     nextSection.chapter === section.chapter) {
                     verseGroup.verses.push(nextSection)
                     j++
@@ -242,7 +247,10 @@ function downloadPDF() {
         }
     }
     
-
+    // Helper function to get verse data
+    const getVerseData = (chapter: number, verse: number) => {
+        return quranDataService.getVerseData(chapter, verse)
+    }
     
     // Generate HTML for each section
     groupedSections.forEach(section => {
@@ -258,7 +266,8 @@ function downloadPDF() {
             case 'subheading':
                 htmlContent += `<h3 class="subheading">${section.text}</h3>`
                 if (section.reference) {
-                    htmlContent += `<p class="reference-inline">(${section.reference.surah} ${section.reference.chapter}:${section.reference.verse})</p>`
+                    const verseData = getVerseData(section.reference.chapter, section.reference.verse as number)
+                    htmlContent += `<p class="reference-inline">(QS. ${verseData?.surahName || 'Unknown'} ${section.reference.chapter}:${section.reference.verse})</p>`
                 }
                 break
                 
@@ -272,7 +281,7 @@ function downloadPDF() {
                         <span class="definition-bullet">•</span>
                         <div class="definition-content">
                             <strong>${section.term}</strong>: ${section.definition}
-                            ${section.reference ? `<span class="reference-inline">(${section.reference.surah} ${section.reference.chapter}:${section.reference.verse})</span>` : ''}
+                            ${section.reference ? `<span class="reference-inline">(QS. ${getVerseData(section.reference.chapter, section.reference.verse as number)?.surahName || 'Unknown'} ${section.reference.chapter}:${section.reference.verse})</span>` : ''}
                         </div>
                     </div>
                 `
@@ -281,10 +290,12 @@ function downloadPDF() {
             case 'verse-group':
                 htmlContent += `<div class="verse-card">`
                 section.verses.forEach((verse: any, vIndex: number) => {
+                    const verseData = getVerseData(verse.chapter, verse.verse as number)
                     htmlContent += `
                         <div class="verse-item">
                             ${vIndex > 0 ? '<hr class="verse-divider">' : ''}
-                            <div class="arabic">${verse.arabic}</div>
+                            <div class="arabic">${verseData?.arabic || ''} ${verseData?.arabicNumber || ''}</div>
+                            <div class="translation">"${verseData?.translation || ''}"</div>
                         </div>
                     `
                 })
@@ -292,21 +303,24 @@ function downloadPDF() {
                 const verseRange = section.verses.length === 1 
                     ? section.verses[0].verse 
                     : `${section.verses[0].verse}-${section.verses[section.verses.length - 1].verse}`
+                const firstVerseData = getVerseData(section.verses[0].chapter, section.verses[0].verse as number)
                 htmlContent += `
                     <div class="verse-reference">
-                        QS. ${section.verses[0].surah} ${section.verses[0].chapter}:${verseRange}
+                        QS. ${firstVerseData?.surahName || 'Unknown'} ${section.verses[0].chapter}:${verseRange}
                     </div>
                 </div>`
                 break
                 
             case 'verse':
+                const verseData = getVerseData(section.chapter, section.verse as number)
                 htmlContent += `
                     <div class="verse-card">
                         <div class="verse-item">
-                            <div class="arabic">${section.arabic}</div>
+                            <div class="arabic">${verseData?.arabic || ''} ${verseData?.arabicNumber || ''}</div>
+                            <div class="translation">"${verseData?.translation || ''}"</div>
                         </div>
                         <div class="verse-reference">
-                            QS. ${section.surah} ${section.chapter}:${section.verse}
+                            QS. ${verseData?.surahName || 'Unknown'} ${section.chapter}:${section.verse}
                         </div>
                     </div>
                 `
@@ -316,7 +330,7 @@ function downloadPDF() {
                 htmlContent += `
                     <div class="concept">
                         ${section.title}
-                        ${section.reference ? `<span class="reference-inline">(${section.reference.surah} ${section.reference.chapter}:${section.reference.verse})</span>` : ''}
+                        ${section.reference ? `<span class="reference-inline">(QS. ${getVerseData(section.reference.chapter, section.reference.verse as number)?.surahName || 'Unknown'} ${section.reference.chapter}:${section.reference.verse})</span>` : ''}
                     </div>
                 `
                 break
@@ -326,7 +340,7 @@ function downloadPDF() {
                 section.items?.forEach((item: string, idx: number) => {
                     htmlContent += `
                         <li class="list-item">
-                            <span class="list-number"></span>
+                            <span class="list-number">${idx + 1}</span>
                             <span class="list-text">${item}</span>
                         </li>
                     `
